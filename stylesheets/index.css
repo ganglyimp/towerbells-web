@@ -6,14 +6,96 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", 
-                "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-family: "Walter Turncoat", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", 
-                "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  font-size: 8vw;
+  font-size: 15vw;
+}
+
+.home-page header {
+  margin: 0 5em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-auto-flow: row;
+  align-items: center;
+  text-align: center;
+}
+
+.home-page header h1 {
+  margin: 0;
+}
+
+.home-page h2 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.home-page header section {
+  font-size: max(2vw, 18px);
+}
+
+.home-page nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  overflow: hidden;
+}
+.home-page nav li a {
+  padding: 1em;
+  text-decoration: none;
+  font-size: 18pt;
+  color: black;
+  transition: text-decoration ease-in-out 0.3s;
+}
+.home-page nav li a:hover {
+  text-decoration: underline;
+  transition: text-decoration ease-in-out 0.3s;
+}
+
+.home-page footer {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+#google_translate_element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+}
+
+.bi-search {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+  color: black;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .home-page header {
+    margin: 0 1.5em;
+    display: block;
+  }
 }
