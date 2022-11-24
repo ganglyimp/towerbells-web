@@ -59,13 +59,49 @@ h1 {
 .home-page nav li a {
   padding: 1em;
   text-decoration: none;
-  font-size: 18pt;
+  font-size: max(1.5vw, 15px);
   color: black;
   transition: text-decoration ease-in-out 0.3s;
 }
 .home-page nav li a:hover {
   text-decoration: underline;
   transition: text-decoration ease-in-out 0.3s;
+}
+
+.home-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home-news {
+  width: 23%;
+  padding: 0.5em;
+  float: left;
+}
+
+.news-card {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.news-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.news-card img {
+  width: 100%;
+}
+.news-card .news-card-info {
+  padding: 2px 16px;
+}
+
+.home-explore {
+  width: 75%;
+  float: left;
+}
+
+.explore-item {
+  margin: 1em;
 }
 
 .home-page footer {
@@ -97,5 +133,13 @@ h1 {
   .home-page header {
     margin: 0 1.5em;
     display: block;
+  }
+
+  .home-news {
+    width: 100%;
+  }
+
+  .home-explore {
+    width: 100%;
   }
 }
