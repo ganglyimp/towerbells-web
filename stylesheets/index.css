@@ -68,6 +68,18 @@ h1 {
   text-decoration: underline;
   transition: ease-in-out 0.3s;
 }
+nav .bi-search {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+  color: black;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
 .home-content::after {
   content: "";
@@ -136,12 +148,41 @@ h1 {
 }
 
 .home-page footer {
-  text-align: center;
-  border-top: 1px solid black;
+  padding: 1.5em;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 85%, rgba(255,255,255,1) 100%);
+  color: white;
+}
+.home-page footer a {
+  color: white;
 }
 
-.home-other-links h2 {
-  margin-top: 0;
+.home-page footer .home-other-links {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-align: center;
+}
+.home-page footer .home-other-links div {
+  margin: 0 20px;
+}
+.home-page footer .home-other-links svg {
+  height: 50px;
+  width: 50px;
+}
+
+.home-page footer small {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.home-page footer small p {
+  margin: 0 10px;
 }
 
 #google_translate_element {
@@ -149,19 +190,6 @@ h1 {
   top: 0;
   left: 0;
   font-size: 12px;
-}
-
-.bi-search {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 1em;
-  height: 1em;
-  font-size: 2em;
-  color: black;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
 }
 
 @media (max-width: 650px) {
