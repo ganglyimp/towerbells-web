@@ -51,8 +51,9 @@ h1 {
   position: sticky;
   top: 0;
   background-color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   list-style-type: none;
   overflow: hidden;
 }
@@ -61,11 +62,11 @@ h1 {
   text-decoration: none;
   font-size: max(1.5vw, 15px);
   color: black;
-  transition: text-decoration ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 .home-page nav li a:hover {
   text-decoration: underline;
-  transition: text-decoration ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .home-content::after {
@@ -83,16 +84,24 @@ h1 {
 .news-card {
   margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   transition: 0.3s;
 }
 .news-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.news-card a {
+  text-decoration: none;
+  color: black;
 }
 .news-card img {
   width: 100%;
 }
 .news-card .news-card-info {
   padding: 2px 16px;
+}
+.news-card .news-card-info h3 {
+  color: darkblue;
 }
 
 .home-explore {
@@ -102,11 +111,37 @@ h1 {
 
 .explore-item {
   margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.explore-item a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: darkblue;
+}
+.explore-item a:hover {
+  text-decoration: underline;
+}
+
+.explore-item h3 {
+  text-align: right;
+  font-size: 2em;
+}
+
+.explore-item p {
+  font-size: 1.5em;
 }
 
 .home-page footer {
   text-align: center;
   border-top: 1px solid black;
+}
+
+.home-other-links h2 {
+  margin-top: 0;
 }
 
 #google_translate_element {
@@ -141,5 +176,13 @@ h1 {
 
   .home-explore {
     width: 100%;
+  }
+
+  .explore-item {
+    display: inline-block;
+  }
+  .explore-item h3 {
+    text-align: left;
+    margin: 0;
   }
 }
