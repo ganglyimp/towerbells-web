@@ -148,11 +148,9 @@ nav .bi-search {
 }
 
 .home-page footer {
-  padding: 1.5em;
-  padding-top: 80px;
+  padding: 50px 25px;
   padding-bottom: 10px;
   background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 85%, rgba(255,255,255,1) 100%);
   color: white;
 }
 .home-page footer a {
@@ -179,7 +177,8 @@ nav .bi-search {
 .home-page footer small {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 30px;
+  font-size: 16px;
 }
 .home-page footer small p {
   margin: 0 10px;
@@ -192,7 +191,7 @@ nav .bi-search {
   font-size: 12px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .home-page header {
     margin: 0 1.5em;
     display: block;
@@ -200,6 +199,11 @@ nav .bi-search {
 
   .home-news {
     width: 100%;
+  }
+  .news-card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
   }
 
   .home-explore {
@@ -212,5 +216,31 @@ nav .bi-search {
   .explore-item h3 {
     text-align: left;
     margin: 0;
+  }
+
+
+  .home-page footer .home-other-links {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    margin: auto;
+    font-size: 1.25em;
+  }
+  .home-page footer .home-other-links svg {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .home-page footer .home-other-links br {
+    display: none;
+  }
+
+  .home-page footer small {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .home-page footer small b {
+    display: none;
   }
 }
