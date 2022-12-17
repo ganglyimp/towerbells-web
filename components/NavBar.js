@@ -25,13 +25,12 @@ class NavBar extends HTMLElement {
 				</div>
 
 				<div class="nav-content collapsed">
-					<li><a href="../pages/Introduction/TowerBells.html">Introduction</a></li>
-					<li><a href="../data/Data_Top.html">Search Carillons</a></li>
-					<li><a href="../pages/BellBooks/BellBooks.html">Books</a></li>
-					<li><a href="../pages/WebsiteMap.html">What's New</a></li>
-					<li><a href="../pages/Subscribe.html">Subscribe</a></li>
-					<li><a href="../pages/WebsiteHistory.html">Website History</a></li>
-					<li><a href="../pages/WebsiteMap.html">Site Map</a></li>
+					<li><a href="./pages/Introduction/TowerBells.html">Introduction</a></li>
+					<li><a href="./data/Data_Top.html">Find Carillons</a></li>
+					<li><a href="./pages/BellBooks/BellBooks.html">Books</a></li>
+					<li><a href="./pages/WebsiteMap.html">What's New</a></li>
+					<li><a href="./pages/Subscribe.html">Subscribe</a></li>
+					<li><a href="./pages/WebsiteHistory.html">Website History</a></li>
 
 					<!-- Search Icon -->
 					<a href="pages/SearchTowerBells.html">
