@@ -2,12 +2,14 @@ class NavBar extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({ mode: 'open' });
+		this.pagePath = this.getAttribute('pagePath');
+		this.active = this.getAttribute('active');
 	}
 
 	connectedCallback() {
 		const { shadowRoot } = this;
 		shadowRoot.innerHTML = 
-			`<nav>
+			`<nav class="nav-bar">
 				<div class="nav-collapsed">
 					<b>Tower Bells</b>
 
@@ -25,12 +27,13 @@ class NavBar extends HTMLElement {
 				</div>
 
 				<div class="nav-content collapsed">
-					<li><a href="./pages/Introduction/TowerBells.html">Introduction</a></li>
-					<li><a href="./data/Data_Top.html">Find Carillons</a></li>
-					<li><a href="./pages/BellBooks/BellBooks.html">Books</a></li>
-					<li><a href="./pages/WebsiteMap.html">What's New</a></li>
-					<li><a href="./pages/Subscribe.html">Subscribe</a></li>
-					<li><a href="./pages/WebsiteHistory.html">Website History</a></li>
+					<li id="home"><a href="${this.pagePath}/../index.html">Home</a></li>
+					<li id="introduction"><a href="${this.pagePath}/Introduction/TowerBells.html">Introduction</a></li>
+					<li id="find-carillons"><a href="./data/Data_Top.html">Find Carillons</a></li>
+					<li id="books"><a href="${this.pagePath}/BellBooks/BellBooks.html">Books</a></li>
+					<li id="whats-new"><a href="${this.pagePath}/WebsiteMap.html">What's New</a></li>
+					<li id="subscribe"><a href="${this.pagePath}/Subscribe.html">Subscribe</a></li>
+					<li id="web-history"><a href="${this.pagePath}/WebsiteHistory.html">Website History</a></li>
 
 					<!-- Search Icon -->
 					<a href="pages/SearchTowerBells.html">
@@ -41,6 +44,7 @@ class NavBar extends HTMLElement {
 				</div>
 			</nav>`;
 
+		// Add event listener to toggle open/close of mobile nav-bar
 		const collapseButton = shadowRoot.querySelector('nav button');
 		const navContent = shadowRoot.querySelector('.nav-content');
 
@@ -52,6 +56,9 @@ class NavBar extends HTMLElement {
 		navContent.addEventListener('collapseToggle', (evt) => {
 			navContent.classList.toggle('collapsed');
 		});
+
+		// Add active class
+		shadowRoot.getElementById(this.active).classList.add('active');
 		
 		let style = document.createElement("style");
 		style.textContent = `
@@ -89,13 +96,16 @@ class NavBar extends HTMLElement {
 					list-style-type: none;
 					transition: display 0.3s;
 				}
-					nav .nav-content li a {
-						padding: 1em;
-						text-decoration: none;
-						font-size: max(1.5vw, 15px);
-						color: black;
-						transition: ease-in-out 0.3s;
+					nav .nav-content li.active {
+						text-decoration: underline;
 					}
+						nav .nav-content li a {
+							padding: 1em;
+							text-decoration: none;
+							font-size: max(1.5vw, 15px);
+							color: black;
+							transition: ease-in-out 0.3s;
+						}
 						nav .nav-content li a:hover {
 							text-decoration: underline;
 							transition: ease-in-out 0.3s;

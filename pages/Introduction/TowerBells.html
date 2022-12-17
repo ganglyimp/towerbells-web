@@ -1,26 +1,29 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-        "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<!DOCTYPE html>
 <HTML>
 <HEAD>
 	<!--This is file "TowerBells.html"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<META HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=iso-8859-1">
-	<title>Tower Bells Supersite</title>
+	<title>TowerBells - Introduction</title>
 	<META name="keywords" content="carillon, tower bells, bells, chime, chimes, rings,
 		bellfounders, bell founders, bellfounder, bell founder,
 		bellfoundries, bell foundries, bellfoundry, bell foundry,
 		tower tubes, tubular chime, tubular carillon">
+
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/introduction.css">
+	
+	<SCRIPT type="text/javascript" src="../../components/NavBar.js" defer></SCRIPT>
+	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
+	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 </HEAD>
 <BODY>
 	<div class="introduction-page">
-		<div class="breadcrumb">
-			<SMALL>
-			Navigation: &nbsp; <A HREF="../../index.html">TowerBells Home</A>&nbsp;
-			 =&gt; Tower Bells Introduction
-			</SMALL>
-			<hr>
-		</div>
-
-		<H1 ALIGN=CENTER>Tower Bells - Introduction</h1>
+		<nav-bar pagePath="../../pages" active="introduction"></nav-bar>
+		
+		<bread-crumb></bread-crumb>
+		
+		<h1>Tower Bells - Introduction</h1>
 
 		<section class="preamble">
 			<p>
@@ -43,7 +46,7 @@
 			</p>
 
 			<p>
-				<i>Do not expect to find completeness here.</i>&nbsp; This is an evolving 
+				<b>Do not expect to find completeness here.</b>&nbsp; This is an evolving 
 				project, which uses links to other Websites to avoid duplication of 
 				information.&nbsp; Nor will you find fancy Webpage formatting here--information 
 				is what is important.&nbsp; (The system on which this Website was originally 
@@ -62,24 +65,62 @@
 		<section class="table-of-contents">
 			<h3>Contents of this page:</h3>
 			<ul>
-				<li><a href="#Carillons">Carillons</a>
-				<li><a href="#Chimes">Chimes</a>
-				<li><a href="#Rings">Rings; change-ringing</a>
-				<li><a href="#Peals">Peals, clock-chimes, zvons, single bells, etc.</a>
-				<li><a href="#Great-Bells">Great bells</a>
-				<li><a href="#Tubular-Bells">Tubular tower bells</a>
-				<li><a href="#Hemispherical-Bells">Hemispherical tower bells</a>
-				<li><a href="#Other-Bells">Other bells</a>
-				<li><a href="#Bellfounders">Bellfounders and bell making</a>
-				<li><a href="#Bell-Weights">Weights of bells</a>
+				<li>
+					<a href="#Carillons" onclick="toggleActiveSection('Carillons')">
+						Carillons
+					</a>
+				</li>
+				<li>
+					<a href="#Chimes" onclick="toggleActiveSection('Chimes')">
+						Chimes
+					</a>
+				</li>
+				<li>
+					<a href="#Rings" onclick="toggleActiveSection('Rings')">
+						Rings; change-ringing
+					</a>
+				</li>
+				<li>
+					<a href="#Peals" onclick="toggleActiveSection('Peals')">
+						Peals, clock-chimes, zvons, single bells, etc.
+					</a>
+				</li>
+				<li>
+					<a href="#Great-Bells" onclick="toggleActiveSection('Great-Bells')">
+						Great bells
+					</a>
+				</li>
+				<li>
+					<a href="#Tubular-Bells" onclick="toggleActiveSection('Tubular-Bells')">
+						Tubular tower bells
+					</a>
+				</li>
+				<li>
+					<a href="#Hemispherical-Bells" onclick="toggleActiveSection('Hemispherical-Bells')">
+						Hemispherical tower bells
+					</a>
+				</li>
+				<li>
+					<a href="#Other-Bells" onclick="toggleActiveSection('Other-Bells')">
+						Other bells
+					</a>
+				</li>
+				<li>
+					<a href="#Bellfounders" onclick="toggleActiveSection('Bellfounders')">
+						Bellfounders and bell making
+					</a>
+				</li>
+				<li>
+					<a href="#Bell-Weights" onclick="toggleActiveSection('Bell-Weights')">
+						Weights of bells
+					</a>
+				</li>
 			</ul>
-			<p>
-				Each of the topics listed above is introduced by a few short paragraphs,
-				which have links to other pages that offer more extensive coverage of the topic.
-			</p>
 		</section>
 
-		<section class="intro-section" id="Carillons">
+		<hr>
+
+		<section class="intro-section active" id="Carillons">
 			<h2>Carillons</h2>
 
 			<p>
@@ -464,32 +505,33 @@
 			</p>
 		</section>
 
-		<footer>
-			<hr>
-			<p>
-				[Tower Bells Introduction]
-				<A HREF="../WebsiteMap.html">[Website Map]</A>
-				<A HREF="CSZ.html">[The builder]</A>
-				<A HREF="../WhatsNew/WhatIsNew.html">[What's New]</A>
-			</p>
-
-			<p>
-				This page was created 2000/03/04 and last revised on 2021/05/16.
-				<br><SMALL>(Before the Website merger in 2012, 
-				there was a revision date in a box near the top of this page,
-				reflecting the most recent change to <U>any</U> page on this Website.)</SMALL>
-			</p>
-
-			<p>
-				Please send comments or questions (either general or about this page) to
-				<A HREF="mailto:csz_stl@swbell.net?subject=Comments%20on%20TowerBells(main)">csz_stl@swbell.net</A>
-				<BR>
-				<SMALL>
-					Use similar links on other pages to send specific comments or questions 
-					about those pages.
-				</SMALL>
-			</p>
-		</footer>
+		<page-footer pagePath="../../pages" 
+					 dateCreated="2000/03/04"
+					 dateModified="2021/05/16"
+					 mailSubject="Comments on TowerBells(main)">
+		</page-footer>
 	</div>
+
+	<SCRIPT>
+		// Send breadcrumb data to component
+		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
+
+		function getBreadcrumbTrail() {
+			return encodeURIComponent(JSON.stringify({
+					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
+					 {name: 'Tower Bells Introduction', path: null}]
+			}));
+		}
+
+		function toggleActiveSection(sectionID) {
+			console.log('Toggle Sections', sectionID);
+
+			// Deactivate currently active section
+			document.querySelector('.intro-section.active').classList.toggle('active');
+
+			// Set sectionID as active
+			document.getElementById(sectionID).classList.toggle('active');
+		}
+	</SCRIPT>
 </BODY>
 </HTML>

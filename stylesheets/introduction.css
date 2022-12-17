@@ -1,0 +1,16 @@
+.introduction-page h1 {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.introduction-page section {
+  margin: 0 0.5em;
+}
+
+.introduction-page section.intro-section {
+  display: none;
+}
+
+.introduction-page section.intro-section.active {
+  display: block;
+}
