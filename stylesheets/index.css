@@ -41,46 +41,6 @@ h1 {
   font-size: max(2vw, 18px);
 }
 
-.home-page nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 15px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  list-style-type: none;
-  overflow: hidden;
-}
-.home-page nav li a {
-  padding: 1em;
-  text-decoration: none;
-  font-size: max(1.5vw, 15px);
-  color: black;
-  transition: ease-in-out 0.3s;
-}
-.home-page nav li a:hover {
-  text-decoration: underline;
-  transition: ease-in-out 0.3s;
-}
-nav .bi-search {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 1em;
-  height: 1em;
-  font-size: 2em;
-  color: black;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
 .home-content::after {
   content: "";
   display: table;
