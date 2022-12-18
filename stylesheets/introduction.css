@@ -14,3 +14,14 @@
 .introduction-page section.intro-section.active {
   display: block;
 }
+
+.introduction-page section.preamble {
+  margin: 0 5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media (max-width: 800px) {
+  .introduction-page section.preamble {
+    margin: 0 1.5em;
+  }
+}

@@ -82,8 +82,8 @@ class PageFooter extends HTMLElement {
 			footer {
 			  padding: 50px 25px;
 			  padding-bottom: 10px;
-			  background: rgb(2,0,36);
-			  color: white;
+			  background: var(--secondary-bg-color);
+			  color: var(--secondary-text-color);
 			}
 				footer a {
 				  color: white;

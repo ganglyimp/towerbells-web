@@ -42,7 +42,7 @@ class Breadcrumb extends HTMLElement {
 				font-size: 15px;
 			}
 			a {
-				color: darkblue;
+				color: var(--accent-color);
 				text-decoration: none;
 			}
 			a:hover {

@@ -47,7 +47,7 @@
 }
 .news-card a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
 .news-card img {
   width: 100%;
@@ -56,7 +56,7 @@
   padding: 2px 16px;
 }
 .news-card .news-card-info h3 {
-  color: darkblue;
+  color: var(--accent-color);
 }
 
 .home-explore {
@@ -69,13 +69,13 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .explore-item a {
   margin-right: 1em;
   text-decoration: none;
-  color: darkblue;
+  color: var(--accent-color);
 }
 .explore-item a:hover {
   text-decoration: underline;
