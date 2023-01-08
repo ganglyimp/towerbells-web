@@ -65,7 +65,7 @@ class PageFooter extends HTMLElement {
 					</p>
 					<b>&#x2022;</b>
 					<p>
-						<a href="${this.pagePath}PrivacyPolicy.html">Privacy Policy</a>
+						<a href="${this.pagePath}/PrivacyPolicy.html">Privacy Policy</a>
 					</p>
 					<b>&#x2022;</b>
 					<p>
