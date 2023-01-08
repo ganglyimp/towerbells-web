@@ -31,7 +31,7 @@ class NavBar extends HTMLElement {
 					<li id="introduction"><a href="${this.pagePath}/Introduction/TowerBells.html">Introduction</a></li>
 					<li id="find-carillons"><a href="./data/Data_Top.html">Find Carillons</a></li>
 					<li id="books"><a href="${this.pagePath}/BellBooks/BellBooks.html">Books</a></li>
-					<li id="whats-new"><a href="${this.pagePath}/WebsiteMap.html">What's New</a></li>
+					<li id="whats-new"><a href="${this.pagePath}/WhatsNew/WhatIsNew.html">What's New</a></li>
 					<li id="subscribe"><a href="${this.pagePath}/Subscribe.html">Subscribe</a></li>
 					<li id="web-history"><a href="${this.pagePath}/WebsiteHistory.html">Website History</a></li>
 
