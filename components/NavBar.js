@@ -58,7 +58,8 @@ class NavBar extends HTMLElement {
 		});
 
 		// Add active class
-		shadowRoot.getElementById(this.active).classList.add('active');
+		if(this.active)
+			shadowRoot.getElementById(this.active).classList.add('active');
 		
 		let style = document.createElement("style");
 		style.textContent = `

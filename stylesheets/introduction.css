@@ -7,21 +7,31 @@
   margin: 0 0.5em;
 }
 
-.introduction-page section.intro-section {
-  display: none;
-}
-
-.introduction-page section.intro-section.active {
-  display: block;
-}
-
 .introduction-page section.preamble {
-  margin: 0 5em;
+  margin: 0 20%;
   border-bottom: 1px solid var(--border-color);
+}
+
+.introduction-page details.intro-section {
+  margin: 1em 20%;
+  padding: 0.5em;
+  border: 1px solid var(--border-color);
+  background-color: #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.introduction-page summary {
+  font-size: 2em;
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
   .introduction-page section.preamble {
     margin: 0 1.5em;
+  }
+
+  .introduction-page details.intro-section {
+    margin: 1em 1.5em;
   }
 }
