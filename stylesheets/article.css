@@ -8,6 +8,31 @@ header h1 {
   text-align: center;
 }
 
+img {
+  display: block;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+tr.section-divide td, tr.section-divide th{
+  border-bottom: 1px solid black;
+}
+th.row-comment {
+  border-bottom: none;
+}
+
 @media (max-width: 800px) {
   header, section {
     margin: 0 1.5em;
