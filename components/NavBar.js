@@ -74,6 +74,7 @@ class NavBar extends HTMLElement {
 				border-bottom: 1px solid lightgrey;
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 				overflow: hidden;
+				z-index: 1000;
 			}
 				nav .bi {
 					display: inline-block;
