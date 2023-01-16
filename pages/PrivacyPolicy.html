@@ -115,10 +115,19 @@
 				on the Service Selector page.
 			</p>
 			<p>
-				If you want to see what cookies (if any) are currently set for you by this Website, click <a href="javascript:showCookies()">here</a>.&nbsp;
 				If you want to change your choices regarding mapping services, you can click on the Service Selector page link in the first paragraph of this section.&nbsp;
 				That page is also accessible from various other places on this Website.
 			</p>
+
+			<h2>Your Cookies</h2>
+			<p id="noCookieText">You do not have any stored cookies.</p>
+			<table id="cookieTable" style="display: none;">
+				<tr>
+					<th>Cookie Name</th>
+					<th>Value</th>
+				</tr>
+
+			</table>
 		</section>
 	</article>
 
@@ -137,6 +146,38 @@
 					crumbs: [{name: 'TowerBells Home', path: '../index.html'},
 					         {name: 'Privacy Policy', path: null}]
 			}));
+		}
+
+		// Populate cookie table
+		parseCookies();
+
+		function parseCookies() {
+			if(!document.cookie) return;
+			
+			// Toggle between the "No Cookies" text and the Cookies Table
+			let noCookieText = document.getElementById('noCookieText');
+			noCookieText.style.display = 'none';
+
+			let cookieTable = document.getElementById('cookieTable');
+			cookieTable.style.display = 'table';
+
+			// Populate the cookie table in a way that's more user friendly
+			// Cookies are in format: KEY=VALUE;
+			let cookieList = document.cookie.split(';').map((item) => item.split('='));
+			for(cookie of cookieList) {
+				let newRow = document.createElement('tr');
+
+				let cookieName = document.createElement('td');
+				cookieName.innerText = cookie[0];
+
+				let cookieValue = document.createElement('td');
+				cookieValue.innerText = cookie[1];
+
+				newRow.appendChild(cookieName);
+				newRow.appendChild(cookieValue);
+
+				cookieTable.appendChild(newRow);
+			}
 		}
     </SCRIPT>
 </BODY>

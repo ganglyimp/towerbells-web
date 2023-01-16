@@ -14,8 +14,9 @@ img {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  margin: 1em;
+  border-collapse: collapse;
 }
 tr:hover {
   background-color: var(--accent-color);

@@ -32,7 +32,7 @@ a:hover {
   text-decoration: underline;
 }
 
-p, ul, ol {
+p, ul, ol, table {
   font-size: 20px;
 }
 
