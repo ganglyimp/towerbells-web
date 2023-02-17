@@ -5,6 +5,8 @@
   --secondary-text-color: white;
   --accent-color: darkblue;
   --border-color: lightgrey;
+  --body-font-size: 20px;
+  --small-font-size: 15px;
 }
 
 html {
@@ -33,7 +35,7 @@ a:hover {
 }
 
 p, ul, ol, table {
-  font-size: 20px;
+  font-size: var(--body-font-size);
 }
 
 li {
@@ -41,5 +43,5 @@ li {
 }
 
 small {
-  font-size: 15px;
+  font-size: var(--small-font-size);
 }
