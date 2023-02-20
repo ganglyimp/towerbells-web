@@ -16,10 +16,14 @@ class BookReview extends HTMLElement {
 	connectedCallback() {
 		const { shadowRoot } = this;
 
-		
-
 		let bookCredits = `by ${this.author}`;
 		bookCredits += (this.illustrator) ? `, illustrated by ${this.illustrator}` : '';
+
+		/* TODO:
+			New Design:
+			Default display only book cover & title
+			When you click on the book cover, it'll open up a modal with the full details.
+		*/
 
 		shadowRoot.innerHTML = 
 			`<article class="book-review">

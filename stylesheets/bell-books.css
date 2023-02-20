@@ -1,0 +1,72 @@
+header, section {
+  margin: 0 20%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  font-size: clamp(40px, 5vw, 70px);
+  text-align: center;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header .section-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  header .section-links > * {
+    margin: 1em;
+  }
+
+header button {
+  position: relative;
+  background-color: transparent;
+  border: 3px var(--text-color) solid;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header button:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+header button:focus {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+}
+
+  header button::before, header button::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 15px;
+    background-color: var(--main-bg-color);
+    transition: all 0.3s ease-in-out;
+  }
+
+  header button::before {
+    top: 100%;
+    left: 15%;
+  }
+  header button:hover::before {
+    left: 75%;
+  }
+
+  header button::after {
+    bottom: 100%;
+    right: 15%;
+  }
+  header button:hover::after {
+    right: 75%;
+  }
+
+@media (max-width: 800px) {
+  header, section {
+    margin: 0 1.5em;
+  }
+}

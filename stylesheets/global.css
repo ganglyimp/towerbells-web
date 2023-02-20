@@ -1,12 +1,15 @@
 :root {
   --main-bg-color: white;
-  --text-color: black;
+  --text-color: #1C1D21;
   --secondary-bg-color: rgb(2,0,36);
   --secondary-text-color: white;
-  --accent-color: darkblue;
+  --accent-color: #5448C8;
+  --accent-secondary: #CF4D6F;
   --border-color: lightgrey;
+  
   --body-font-size: 20px;
   --small-font-size: 15px;
+  --body-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 html {
@@ -17,9 +20,11 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
 }
 
 h1 {
@@ -34,8 +39,12 @@ a:hover {
   text-decoration: underline;
 }
 
-p, ul, ol, table {
+p, ul, ol, table, button {
   font-size: var(--body-font-size);
+}
+
+button {
+  font-family: var(--body-font);
 }
 
 li {

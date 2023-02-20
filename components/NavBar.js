@@ -69,9 +69,9 @@ class NavBar extends HTMLElement {
 				position: -webkit-sticky;
 				position: sticky;
 				top: 0;
-				background-color: white;
-				border-top: 1px solid lightgrey;
-				border-bottom: 1px solid lightgrey;
+				background-color: var(--main-bg-color);
+				border-top: 1px solid var(--border-color);
+				border-bottom: 1px solid var(--border-color);
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 				overflow: hidden;
 				z-index: 1000;
@@ -84,7 +84,7 @@ class NavBar extends HTMLElement {
 					width: 1em;
 					height: 1em;
 					font-size: 2em;
-					color: black;
+					color: var(--text-color);
 					transform: translate(-50%, -50%);
 					cursor: pointer;
 				}
@@ -105,7 +105,7 @@ class NavBar extends HTMLElement {
 							padding: 1em;
 							text-decoration: none;
 							font-size: max(1.5vw, 15px);
-							color: black;
+							color: var(--text-color);
 							transition: ease-in-out 0.3s;
 						}
 						nav .nav-content li a:hover {

@@ -7,7 +7,7 @@
 	<TITLE>TowerBells - Books</TITLE>
 
 	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
-	<link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/bell-books.css">
 
 	<SCRIPT type="text/javascript" src="../../components/NavBar.js" defer></SCRIPT>
 	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
@@ -18,7 +18,7 @@
 	<nav-bar pagePath="../../pages" active="books"></nav-bar>
     <bread-crumb></bread-crumb>
 	
-	<article>
+	<main>
 		<header>
 			<h1>Books about Tower Bells</h1>
 			
@@ -30,26 +30,26 @@
 				either in their entirety or in a significant part.&nbsp; Each entry is accompanied 
 				by either a brief description or a full review.&nbsp;
 			</p>
-			
-			<p><b>Contents:</b> (and number of entries in each section)</p>
-			<ul>
-				<li>
-					<a HREF="#Recent">Recent publications</a> &nbsp; (2)
-				</li>
-				<li>
-					<a HREF="#FoundriesUSA">American bellfounders</a> &nbsp; (2)
-				</li>
-				<li>
-					<a HREF="#Fiction">Fiction</a> &nbsp; (0)
-				</li>
-				<li>
-					<a HREF="#General">General</a> &nbsp; (1)
-				</li>
-			</ul>
-			
+
 			<p>
 				Within each section, entries are presented in reverse chronological order of publication.
 			</p>
+
+			<nav class="section-links">
+				<a href="#Recent">
+					<button>
+						Recent Publications
+					</button>
+				</a>
+				
+				<a href="#FoundriesUSA">
+					<button>American Bellfounders</button>
+				</a>
+				
+				<a href="#General">
+					<button>General</button>
+				</a>
+			</nav>
 		</header>
 
 		<section>
@@ -155,12 +155,6 @@
 		</section>
 
 		<section>
-			<h2 id="Fiction">Fiction</h2>
-
-			<p>(TBD)</p>
-		</section>
-
-		<section>
 			<h2 id="General">General</h2>
 
 			<book-review bookTitle="Bell Ringing - Chimes&mdash;Carillons&mdash;Handbells: the World of the Bell and the Ringer"
@@ -177,7 +171,7 @@
 						appendices, a bibliography and an index, it provides comprehensive coverage of all matters 
 						related to change ringing, with only brief excursions into a few other ways that tower bells 
 						may be rung.&nbsp; Nevertheless, his somewhat casual style of writing, along with his inclusion 
-						of many interesting historial details, makes this a book of very nearly general interest.
+						of many interesting historical details, makes this a book of very nearly general interest.
 					</p>
 					<p>
 						There are two graphical errors&mdash;Figure 2 (p28) fails to include a ground pulley for the bell 
@@ -191,7 +185,7 @@
 				</div>
 			</book-review>
 		</section>
-	</article>
+	</main>
 
 	<page-footer pagePath="../../pages" 
 		 dateCreated="2019/11/18"
