@@ -65,6 +65,15 @@ header button:focus {
     right: 75%;
   }
 
+  section .book-review-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    section .book-review-group > * {
+      flex: 1;
+    }
+
 @media (max-width: 800px) {
   header, section {
     margin: 0 1.5em;

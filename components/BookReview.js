@@ -19,35 +19,48 @@ class BookReview extends HTMLElement {
 		let bookCredits = `by ${this.author}`;
 		bookCredits += (this.illustrator) ? `, illustrated by ${this.illustrator}` : '';
 
-		/* TODO:
-			New Design:
-			Default display only book cover & title
-			When you click on the book cover, it'll open up a modal with the full details.
-		*/
-
 		shadowRoot.innerHTML = 
 			`<article class="book-review">
-				<header></header>
+				<div class="book-toggle">
+					<button class="book-cover-preview" id="bookModalToggle"></button>
+					<h3>${this.bookTitle}</h3>
+				</div>
 
-				<div class="book-review-content">
-					<b class="book-review-title"></b>, 
-					<span>${bookCredits}</span>
-		
-					<p>
-						${this.publisherInfo} <br />
-						ISBN: ${this.isbn} <br />
-						${this.materialInfo} <br />
-					</p>
-		
-					<blockquote>
-						<h4>Review, by CSZ</h4>
+				<dialog id="bookModal">
+					<form method="dialog">
+						<button>
+							<!--X Icon-->
+							<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+  								<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</button>
+					</form>
+
+					<header>
+						<div class="book-cover-preview"></div>
+
+						<div>
+							<h3 class="book-review-title"></h3>
+							<p>${bookCredits}</p>
+
+							<br/>
+
+							<p>${this.publisherInfo}</p>
+							<p>ISBN: ${this.isbn}</p>
+							<p>${this.materialInfo}</p>
+						</div>
+					</header>
+
+					<blockquote class="book-review-content">
 						<slot name="review-text">
 							No review was provided for this book.
 						</slot>
 					</blockquote>
-				</div>
+				</dialog>
 			</article>`;
 		
+		// GENERATING BOOK TITLE
+		const bookTitle = shadowRoot.querySelector(".book-review dialog header .book-review-title");
 		let bookTitleElement;
 		if(this.bookLink) {
 			bookTitleElement = document.createElement("a");
@@ -58,8 +71,10 @@ class BookReview extends HTMLElement {
 			bookTitleElement = document.createElement("span");
 			bookTitleElement.innerText = this.bookTitle;
 		}
-		shadowRoot.querySelector(".book-review .book-review-content b.book-review-title").appendChild(bookTitleElement);
+		bookTitle.appendChild(bookTitleElement);
 
+		// GENERATING BOOK COVERS
+		const bookCoverList = shadowRoot.querySelectorAll(".book-cover-preview");
 		let coverImage;
 		if(this.coverImageSrc) {
 			coverImage = document.createElement("img");
@@ -71,60 +86,126 @@ class BookReview extends HTMLElement {
 			coverImage = document.createElement("div");
 			coverImage.className = "book-cover";
 			coverImage.innerText = this.bookTitle;
-			shadowRoot.querySelector(".book-review header").classList.add("cover-missing");
+			bookCoverList.forEach(elem => elem.classList.add("cover-missing"));
 		}
-		shadowRoot.querySelector(".book-review header").appendChild(coverImage);
+
+		bookCoverList.forEach(elem => elem.appendChild(coverImage.cloneNode(true)));
+		
+		const bookModalButton = shadowRoot.getElementById("bookModalToggle");
+		const bookDialog = shadowRoot.getElementById("bookModal");
+
+		bookModalButton.addEventListener('click', () => { bookDialog.showModal(); });
 
 		let style = document.createElement("style");
 		style.textContent = `
 			article.book-review {
 				width: 100%;
+				min-width: 250px;
 				display: table;
 				border-spacing: 1em;
 				font-size: var(--body-font-size);
 			}
 
-				.book-review header {
-					display: table-cell;
-					height: 100%;
-					width: 20%;
+				.book-review .book-toggle {
 					text-align: center;
-					vertical-align: middle;
-					font-size: 2em;
-				}
-				.book-review header.cover-missing {
-					border: 5px solid var(--accent-color);
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					position: relative;
 				}
 
-					.book-review header > img {
-						height: 100%;
-						width: 100%;
+					#bookModalToggle {
+						width: 50%;
+						margin: auto;
+						padding: 0;
+						background-color: transparent;
+						border: 3px solid var(--text-color);
+						border-radius: 10px;
+						overflow: hidden;
+						cursor: pointer;
+						transition: all 0.1s;
 					}
+					#bookModalToggle:hover {
+						border: 5px solid var(--accent-secondary);
+					}
+					#bookModalToggle.cover-missing {
+						min-height: 350px;
+					}
+
+						#bookModalToggle img {
+							width: 100%;
+							height: 100%;
+						}
+
+						#bookModalToggle div.book-cover {
+							font-size: 2em;
+						}
+
+				#bookModal {
+					height: 90%;
+					width: 90%;
+					border-radius: 10px;
+					overscroll-behavior: none;
+				}
 				
-				.book-review .book-review-content {
-					display: table-cell;
-					height: 100%;
-					width: 80%;
-				}
-					.book-review .book-review-content a {
-						color: var(--accent-color);
-						text-decoration: none;
-					  }
-					.book-review .book-review-content a:hover {
-						text-decoration: underline;
+					#bookModal button {
+						position: absolute;
+						top: 15px;
+						right: 15px;
+						border-radius: 50%;
+						border: 3px solid var(--text-color);
+						background-color: var(--main-bg-color);
+						cursor: pointer;
+						transition: all 0.3s ease-in-out;
+					}
+					#bookModal button:hover {
+						color: var(--accent-secondary);
+						border-color: var(--accent-secondary);
 					}
 
-					.book-review .book-review-content blockquote {
-						margin: 0;
-						padding: 1em;
-						height: 150px;
-						overflow-y: scroll;
-						border-left: 5px solid var(--accent-color);
-						background-color: lightblue;
+						#bookModal button .bi {
+							transition: all 0.3s ease-in-out;
+						}
+						#bookModal button .bi:hover {
+							transform: rotate(90deg);
+						}
+
+					#bookModal header {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						align-items: center;
 					}
 
-					.book-review .book-review-content blockquote h4 {
-						margin: 0;
+						#bookModal header > * {
+							flex: 1;
+							min-width: 350px
+						}
+
+						#bookModal header .book-cover-preview {
+							text-align: center;
+						}
+
+							#bookModal header .book-cover-preview img {
+								width: 50%;
+								border-radius: 10px;
+							}
+					
+					#bookModal blockquote {
+						position: relative;
+						padding: 10px;
+						border: 3px solid var(--text-color);
+						border-radius: 10px;
+					}
+					#bookModal blockquote:before {
+						content: "Review, by CSZ";
+						position: absolute;
+						top: -20px;
+						left: 20px;
+						padding: 5px;
+						background-color: var(--main-bg-color);
+						text-align: center;
+						font-weight: bold;
 					}
 
 		`;
