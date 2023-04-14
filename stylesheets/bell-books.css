@@ -65,6 +65,10 @@ header button:focus {
     right: 75%;
   }
 
+  section h2 {
+    font-size: 40px;
+  }
+
   section .book-review-group {
     display: flex;
     flex-wrap: wrap;
@@ -77,5 +81,9 @@ header button:focus {
 @media (max-width: 800px) {
   header, section {
     margin: 0 1.5em;
+  }
+
+  .spacer-element {
+    display: none;
   }
 }
