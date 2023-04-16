@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<HTML LANG="en">
+<HEAD>
+	<!-- This is file BBEditColorPicker.html -->
+	<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=x-mac-roman">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<TITLE>TowerBells - BBEdit Color Picker for HTML</TITLE>
+
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+
+	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
+	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
+</HEAD>
+<BODY>
+	<bread-crumb></bread-crumb>
+
+	<main>
+		<header>
+			<h1>Web Colors Through HTML</h1>
+			<p>
+				These Webpages are created and maintained with BBEdit, a superb text and HTML editor for 
+				those who want to see and control every detail of their work.&nbsp; In contexts where one 
+				may specify a color (e.g., for the background of a page), a visual color picker is available 
+				to help.&nbsp; Exploring how that color picker is arranged helped me to understand how HTML 
+				controls the colors that Webpage visitors will see.
+			</p>
+		</header>
+
+		<section>
+			<h2>BBEdit Color Picker</h2>
+			<img src="../../images/BBEditColorPicker.jpg" alt="BBEdit Color Picker" />
+
+			<p>
+				The color picker used by BBEdit 6 (available on my Mac 9600 under MacOS 8.1) is shown above in 
+				an image captured from the screen.&nbsp; It consists of 6 blocks arranged left to right, each 
+				composed of 6 rows and 6 columns of color cells.&nbsp; Each color cell corresponds to a 6-digit 
+				hexadecimal code recognized by HTML, shown at lower left of the color chart for whichever cell 
+				has been selected with the cursor.
+			</p>
+			<p>
+				All of the cells in a block have the same first two hexadecimal digits;
+				left to right, they are 00,33,66,99,CC,FF.
+			</p>
+			<p>
+				All of the cells in a row, continuous across blocks, have the same middle two digits;
+				bottom to top, they are 00,33,66,99,CC,FF.
+			</p>
+			<p>
+				All of the cells in a column have the same last two digits;
+				left to right within each block, they are 00,33,66,99,CC,FF.
+			</p>
+			<p>
+				The BBEdit Color Picker gives access to all possible combinations (6 x 6 x 6) of the six code 
+				values listed in the previous three paragraphs.&nbsp; While they are logically organized in terms 
+				of code values, they are not so well organized in terms of visual effect.&nbsp; Pure green is at the 
+				top left corner of the first block, pure black is at the bottom left corner of that block, and pure 
+				blue is at the bottom right corner of that block; the remaining corner of that block is aqua.&nbsp;
+				Pure red is at the bottome left corner of the last block, and pure white is at the top right corner 
+				of the same block; the remaining corners of that block are yellow and magenta.&nbsp; All other cells 
+				in all blocks are gradations between these eight pure or near-pure colors.
+			</p>
+			<p>
+				If you can think three-dimensionally, consider the arrangement of cells if the six blocks were stacked on 
+				top of one another, in order, to form a cube.&nbsp; The eight principal colors would be at the corners of 
+				the cube; white and black would be at diagonally opposite corners, and the cells in a straight line between 
+				them would be the four shades of gray.&nbsp; The three corners nearest the black corner would be the three 
+				primary colors (red, green, blue); the three corners nearest the white corner would be the three secondary 
+				colors (yellow, magenta, aqua).&nbsp; See the first table below.
+			</p>
+		</section>
+
+		<section>
+			<h2>HTML Color Codes</h2>
+
+			<p>
+				Color codes can be used in several places within HTML.&nbsp; The tables below use background colors to 
+				demonstrate how the various code values translate into visible colors on a computer screen.
+			</p>
+			<p>
+				In the following table, the background color of each cell was set using the HTML code shown, and the 
+				resulting visible color is named there.&nbsp; These are the eight corners of the color cube described above.
+			</p>
+
+			<table>
+				<tr>
+					<td style="background-color: #ffffff;">
+						Code: #FFFFFF <br />
+						Color: White
+					</td>
+					<td style="background-color: #000000;">
+						Code: #000000 <br />
+						Color: Black
+					</td>
+					<td>
+						At left:&nbsp; Code: #000000 <br />
+						Color: Black
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #ff0000;">
+						Code: #FF0000 <br />
+						Color: Red
+					</td>
+					<td style="background-color: #00FF00">
+						Code: #00FF00 <br />
+						Color: Green
+					</td>
+					<td style="background-color: #0000FF">
+						Code: #0000FF <br />
+						Color: Blue
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #00FFFF">
+						Code: #00FFFF <br />
+						Color: Aqua
+					</td>
+					<td style="background-color: #FF00FF">
+						Code: #FF00FF <br />
+						Color: Magenta
+					</td>
+					<td style="background-color: #FFFF00">
+						Code: #FFFF00 <br />
+						Color: Yellow
+					</td>
+				</tr>
+			</table>
+
+			<p>
+				Each color has maximum saturation.
+			</p>
+
+			<p>
+				Because colors are additive, reducing the amount of a color tends towards black,
+				not towards white:
+			</p>
+
+			<table>
+				<tr>
+					<td style="background-color: #FF0000">
+						Code: #FF0000 <br />
+						Color: Red
+					</td>
+					<td style="background-color: #00FF00">
+						Code: #00FF00 <br />
+						Color: Green
+					</td>
+					<td style="background-color: #0000FF">
+						Code: #0000FF <br />
+						Color: Blue
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #CC0000">Code: #CC0000</td>
+					<td style="background-color: #00CC00">Code: #00CC00</td>
+					<td style="background-color: #0000CC">Code: #0000CC</td>
+				</tr>
+				<tr>
+					<td style="background-color: #990000">Code: #990000</td>
+					<td style="background-color: #009900">Code: #009900</td>
+					<td style="background-color: #000099">Code: #000099</td>
+				</tr>
+				<tr>
+					<td style="background-color: #660000">Code: #660000</td>
+					<td style="background-color: #006600">Code: #006600</td>
+					<td style="background-color: #000066">Code: #000066</td>
+				</tr>
+				<tr>
+					<td style="background-color: #330000">Code: #330000</td>
+					<td style="background-color: #003300">Code: #003300</td>
+					<td style="background-color: #000033">Code: #000033</td>
+				</tr>
+			</table>
+
+			<p>
+				The next row would be black in all cells (code #000000).
+			</p>
+
+			<p>
+				To get the lighter shades of a primary color, it is necessary to add the other
+				two colors in equal amounts:
+			</p>
+
+			<table>
+				<tr>
+					<td style="background-color: #FF0000">
+						Code: #FF0000 <br />
+						Color: Red
+					</td>
+					<td style="background-color: #00FF00">
+						Code: #00FF00 <br />
+						Color: Green
+					</td>
+					<td style="background-color: #0000FF">
+						Code: #0000FF <Bbr />
+						Color: Blue
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #FF3333">Code: #FF3333</td>
+					<td style="background-color: #33FF33">Code: #33FF33</td>
+					<td style="background-color: #3333FF">Code: #3333FF</td>
+				</tr>
+				<tr>
+					<td style="background-color: #FF6666">Code: #FF6666</td>
+					<td style="background-color: #66FF66">Code: #66FF66</td>
+					<td style="background-color: #6666FF">Code: #6666FF</td>
+				</tr>
+				<tr>
+					<td style="background-color: #FF9999">Code: #FF9999</td>
+					<td style="background-color: #99FF99">Code: #99FF99</td>
+					<td style="background-color: #9999FF">Code: #9999FF</td>
+				</tr>
+				<tr>
+					<td style="background-color: #FFCCCC">Code: #FFCCCC</td>
+					<td style="background-color: #CCFFCC">Code: #CCFFCC</td>
+					<td style="background-color: #CCCCFF">Code: #CCCCFF</td>
+				</tr>
+			</table>
+
+			<p>
+				The next row would be white in all cells (code #FFFFFF).
+			</p>
+			<p>
+				To get the lighter shades of a secondary color, it is necessary to add the third color.
+			</p>
+
+			<table>
+				<tr>
+					<td BGCOLOR="#00FFFF">Code: #00FFFF<BR>Color: Aqua</td>
+					<td BGCOLOR="#FF00FF">Code: #FF00FF<BR>Color: Magenta</td>
+					<td BGCOLOR="#FFFF00">Code: #FFFF00<BR>Color: Yellow</td>
+				</tr>
+				<tr>
+					<td BGCOLOR="#33FFFF">Code: #33FFFF</td>
+					<td BGCOLOR="#FF33FF">Code: #FF33FF</td>
+					<td BGCOLOR="#FFFF33">Code: #FFFF33</td>
+				</tr>
+				<tr>
+					<td BGCOLOR="#66FFFF">Code: #66FFFF</td>
+					<td BGCOLOR="#FF66FF">Code: #FF66FF</td>
+					<td BGCOLOR="#FFFF66">Code: #FFFF66</td>
+				</tr>
+				<tr>
+					<td BGCOLOR="#99FFFF">Code: #99FFFF</td>
+					<td BGCOLOR="#FF99FF">Code: #FF99FF</td>
+					<td BGCOLOR="#FFFF99">Code: #FFFF99</td>
+				</tr>
+				<tr>
+					<td BGCOLOR="#CCFFFF">Code: #CCFFFF</td>
+					<td BGCOLOR="#FFCCFF">Code: #FFCCFF</td>
+					<td BGCOLOR="#FFFFCC">Code: #FFFFCC</td>
+				</tr>
+			</table>
+
+			<p>
+				The next row would be white in all cells (code #FFFFFF).
+			</p>
+			<p>
+				<b>For more information,</b> see the English Wikipedia 
+				<A HREF="http://en.wikipedia.org/wiki/Web_colors">article on Web colors</A>.
+			</p>
+		</section>
+	</main>
+
+	<page-footer pagePath="../../pages" 
+		 dateCreated="2015/02/15"
+		 dateModified="2018/04/20"
+		 mailSubject="Comments on HTMLColors">
+    </page-footer>
+
+	<SCRIPT>
+        // Send breadcrumb data to component
+	    document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
+        
+	    function getBreadcrumbTrail() {
+	        return encodeURIComponent(JSON.stringify({
+	            crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
+	                     {name: 'Unrelated Essays', path: 'UnrelatedEssays.html'},
+						 {name: 'Web Colors Through HTML', path: null}]
+	    	}));
+	    }
+    </SCRIPT>
+</BODY>
+</HTML>

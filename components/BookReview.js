@@ -137,7 +137,7 @@ class BookReview extends HTMLElement {
 						left: -10px;
 						right: -10px;
 						bottom: -10px;
-						border: 5px solid var(--accent-secondary);
+						border: 5px solid var(--accent-color);
 						transition: all 0.5s;
 						animation: bookHover 3s infinite linear;
 						border-radius: 10px;
@@ -189,8 +189,8 @@ class BookReview extends HTMLElement {
 							transition: all 0.3s ease-in-out;
 						}
 						#bookModal .fixed button:hover {
-							color: var(--accent-secondary);
-							border-color: var(--accent-secondary);
+							color: var(--accent-color);
+							border-color: var(--accent-color);
 						}
 
 							#bookModal .fixed button .bi {

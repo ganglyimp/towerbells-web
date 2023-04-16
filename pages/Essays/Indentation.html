@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<HTML LANG="en">
+<HEAD>
+     <!-- This is file Indentation.html -->
+	<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=x-mac-roman">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<TITLE>TowerBells - Indentation Reflects Logic</TITLE>
+
+     <link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+
+	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
+	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
+</HEAD>
+<BODY>
+     <bread-crumb></bread-crumb>
+
+     <main>
+          <header>
+               <h1>On Indentation as a Reflection of Logical Structure</h1>
+               <p>
+                    It is common in many kinds of writing to use varying amounts of indentation to give 
+                    a visual representation of some underlying structure for what is being written.&nbsp;
+                    This is particularly true in many of the specialized languages that are used
+                    to program computers, even when the language processor does not require (or even recognize) 
+                    indentation as having any effect on the interpretation of the language.&nbsp; Arranging the 
+                    pieces of a computer program according to a systematic method of indentation helps the 
+                    programmer to visualize the logical relationships between those pieces.&nbsp; Such a habit is 
+                    so useful that there are even programming tools that can assist a programmer in this effort.&nbsp;
+                    So let's take a look at how this might work in practice.
+               </p>
+          </header>
+
+          <section>
+               <p>
+                    As an example, we might write in English,
+                    "<code>
+                         If a certain condition is true, then do one thing; otherwise do something else.
+                    </code>"
+                    &nbsp; (Of course in reality we would use a lot more words to describe just what the condition was, 
+                    what the "one thing" was, and what the "something else" was.&nbsp; But for the purposes of this example 
+                    we don't need to do that.)&nbsp; Now if we want to use indentation to visualize that logical statement,
+                    we could do it this way:
+               </p>
+               <pre>
+               If a certain condition is true, then
+                    do one thing;
+               otherwise
+                    do something else.
+               </pre>
+               <p>
+                    That's pretty straightforward, and there really isn't any other way to do it.&nbsp; While it is of 
+                    course possible to vary the amount of indentation, consistency of indentation is essential to maintain 
+                    the clarity of the logical structure.
+               </p>
+               <p>
+                    In reality, things don't happen in isolation; some preparation is needed beforehand, and some finishing 
+                    work afterward.&nbsp; Furthermore, now that we're using indentation, we don't really need to follow the 
+                    capitalization and punctuation rules that apply to writing plain text.&nbsp; So perhaps it might look 
+                    like this:
+               </p>
+               <pre>
+               do some preparation
+               if a certain condition is true then
+                    do one thing
+               otherwise
+                    do something else
+               finish with some cleanup work
+               </pre>
+               <p>
+                    We should also mention that the "otherwise" clause is always optional, so it's possible to have just this:
+               </p>
+               <pre>
+               do some preparation
+               if a certain condition is true then
+                    do something
+               finish with some cleanup work
+               </pre>
+               <p>
+                    Either way, this demonstrates one of the characteristics of indentation methods, namely that all the things 
+                    that share a common level of indentation happen sequentially.&nbsp; In the longer example above, that means 
+                    first (#1) do some preparation, next (#2) do either one thing or another thing, and finally (#3) finish. 
+               </p>
+               <p>
+                    Actually, we've also just demonstrated a common characteristic of many programming languages - each line is 
+                    a separate statement.&nbsp; So if the two logical branches involved more extensive work, we might have this:
+               </p>
+               <pre>
+               do some preparation
+               if a certain condition is true then
+                    do one thing
+                    do a second thing
+               otherwise
+                    do another thing
+                    do yet another thing
+               finish with some cleanup work
+               </pre>
+               <p>
+                    This illustrates that within the mainline sequence set out above, each of the logical alternatives is a 
+                    subordinate sequence, and only one of those subordinate sequences will be performed.
+               </p>
+               <p>
+                    But while that makes logical sense to you, dear reader, it wouldn't make sense in a programming language 
+                    unless that language explicitly recognized indentation as our eyes do.&nbsp; I know of only one such language 
+                    (JOVIAL); the vast majority of programming languages require either keywords or special punctuation to delineate 
+                    the logical structure of a program.
+               </p>
+               <p>
+                    In a keyword language (such as FORTRAN), the same assertion of logical alternatives might look something like this:
+               </p>
+               <pre>
+               IF condition THEN statement_1 ELSE statement_2
+               </pre>
+               <p>
+                    and if you needed to do more complicated work, then a statement could be replaced with a block of statements 
+                    like this:
+               </p>
+               <pre>
+               IF condition THEN BEGIN
+                    statement_1
+                    statement_2
+                    END
+               ELSE statement_3
+               </pre>
+               <p>
+                    (If you don't like the indentation on that END statement, just take a deep breath and keep going - we'll get 
+                    back to that in a moment.)
+               </p>
+               <p>
+                    In a punctuated language (such as Pascal or Javascript), the same logical assertion  might look something 
+                    like this:
+               </p>
+               <pre>
+               IF (condition) {statement1} ELSE {statement2}
+               </pre>
+               <p>
+                    and if you needed to do more complicated work, then multiple statements could be placed within the curly 
+                    brackets like this:
+               </p>
+               <pre>
+               IF (condition) {statement_1;statement_2} ELSE {statement_3}
+               </pre>
+               <p> 
+                    It's when we consider how to convert such logical assertions into indented displays that we encounter
+                    the dichotomy that prompted the writing of this essay.&nbsp; It was hinted at in the parenthesized sentence 
+                    just above, and it has to do with how far the terminating keyword or punctuation of a block of
+                    statements should be indented.&nbsp; There are two possibilities, as follows:
+               </p>
+               <pre>
+               IF (condition) {
+                    statement_1;statement_2
+                    }
+               ELSE {
+                    statement_3
+                    }
+               </pre>
+               <p>or</p>
+               <pre>
+               IF (condition) {
+                    statement_1;statement_2
+               }
+               ELSE {
+                    statement_3
+               }
+               </pre>
+               <p>
+                    Not surprisingly, there are two schools of thought about this in the world of programmers, one holding 
+                    that the first form is the only one that makes sense, and the other making the same claim about the 
+                    second form.&nbsp; Let's restate these possibilities in a keyword language and add some context:
+               </p>
+               <pre>
+               preceding statements
+               IF condition THEN BEGIN
+                    statement_1
+                    statement_2
+                    END
+               ELSE statement_3
+               following statements
+               </pre>
+               <p>or</p>
+               <pre>
+               preceding statements
+               IF condition THEN BEGIN
+                    statement_1
+                    statement_2
+               END
+               ELSE statement_3
+               following statements
+               </pre>
+               <p>
+                    For those who favor the second form, perhaps they would argue that the END isn't part of the 
+                    conditional block, but rather part of the frame for the executable statements that make up the block.
+               </p>
+               <p>
+                    But to my mind, the un-indented END in the second form is just getting in the way, pretending to be an 
+                    executable statement following the IF while obscuring the presence of the optional ELSE clause.&nbsp;
+                    After all, the END isn't needed by the human reader; it's needed by the computer language processor, 
+                    which doesn't care about indentation.&nbsp; For the human reader, the indentation pattern itself carries 
+                    all the necessary information about the logical structure, and it's important to see immediately that the 
+                    optional ELSE clause is indeed present.&nbsp; Therefore it's better to present the END as being the last 
+                    line of block which it terminates.
+               </p>
+               <p>
+               Similar logic applies to the question of how to indent the closure of a repetition block:
+               </p>
+               <pre>
+               preliminary work
+               loop under some control
+                    work inside the loop
+                    end marker for the loop
+               next thing after the loop
+               </pre>
+               <p>not this:</p>
+               <pre>
+               preliminary work
+               loop under some control
+                    work inside the loop
+               end marker for the loop
+               next thing after the loop
+               </pre>
+               <p>
+                    So now you know my opinion on the subject.&nbsp; If you disagree, please use the email link at the bottom of 
+                    this page to tell me your reason(s).
+               </p>
+               <p>
+                    By the way, this is NOT a trivial matter, because it significantly affects the readability, and therefore the 
+                    maintainability, of computer programs and Webpages.
+               </p>
+          </section>
+     </main>
+
+     <page-footer pagePath="../../pages" 
+		 dateCreated="2015/02/17"
+		 dateModified="2018/04/20"
+		 mailSubject="Comments on Indentation">
+    </page-footer>
+
+	<SCRIPT>
+        // Send breadcrumb data to component
+	    document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
+        
+	    function getBreadcrumbTrail() {
+	        return encodeURIComponent(JSON.stringify({
+	            crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
+	                     {name: 'Unrelated Essays', path: 'UnrelatedEssays.html'},
+					 {name: 'Indentation', path: null}]
+	    	}));
+	    }
+    </SCRIPT>
+</BODY>
+</HTML>

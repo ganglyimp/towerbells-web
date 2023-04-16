@@ -8,6 +8,17 @@ header h1 {
   text-align: center;
 }
 
+header h2 {
+  font-size: clamp(20px, 2.5vw, 50px);
+  text-align: center;
+}
+
+header h3 {
+  font-size: clamp(15px, 2vw, 30px);
+  text-align: center;
+  margin: 0;
+}
+
 img {
   width: 100%;
   display: block;
