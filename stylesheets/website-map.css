@@ -1,0 +1,39 @@
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+  .button-group > * {
+    margin: 1em;
+  }
+
+.site-map .nested {
+  position: relative;
+  list-style: none;
+}
+
+.site-map .toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.site-map .nested > .toggle::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  position: absolute;
+  left: -25px;
+  transition: all 0.3s;
+}
+
+.site-map .nested.active > .toggle::before {
+  transform: rotate(90deg);
+}
+
+.site-map .nested > ul {
+  display: none;
+}
+
+.site-map .nested.active > ul {
+  display: block;
+}
