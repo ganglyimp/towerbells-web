@@ -45,9 +45,9 @@
 
 		<section class="site-map">
 			<ul class="nested">
-				<li class="toggle" onclick="toggleAccordion(this)">
+				<label class="toggle" onclick="toggleAccordion(this)">
 					<a href="../index.html"><b>Home page</b></a>
-				</li>
+				</label>
 			
 				<ul>
 					<li class="nested">
@@ -60,47 +60,54 @@
 							<!--BELL FOUNDRIES-->
 							<li class="nested">
 								<label class="toggle" onclick="toggleAccordion(this)">
-									<a href="BellFoundries/BellFoundries.html">Bell Foundries</a><br/>
-									Besides the following, many other bellfoundries are covered, both here and in the Data 
-									section (see Data Top, below).
+									<a href="BellFoundries/BellFoundries.html">Bell Foundries</a>
 								</label>
-
-								<ul>
-									<li>
-										<A HREF="BellFoundries/HolbrookFoundry.html">Holbrook</A>
-									</li>
-									<li>
-										<A HREF="BellFoundries/RevereFoundry.html">Revere</A>
-									</li>
-									<li>
-										<A HREF="BellFoundries/HillsboroFoundry.html">C.S.Bell</A>, Hillsboro, O. (steel)
-									</li>
-									<li class="nested">
-										<label class="toggle" onclick="toggleAccordion(this)">
-											<A HREF="BellFoundries/StLouisBellFoundries.html">Saint Louis, Missouri, USA</A>
-										</label>
-
-										<ul>
-											<li>
-												<A HREF="BellFoundries/Caughlan.html">Caughlan</A>
-												<ul>
-													<li>
-														<A HREF="BellFoundries/WestportPhotos.html" TARGET=BELL_W>Westport photos</A>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<A HREF="BellFoundries/NVinNA.html">Naylor Vickers in North America</A>
-										<!-- includes BostonData.html -->
-									</li>
-								</ul>
+								
+								<div>
+									<span>
+										Besides the following, many other bellfoundries are covered, both here and in the Data 
+										section (see Data Top, below).
+									</span>
+									
+									<ul>
+										<li>
+											<A HREF="BellFoundries/HolbrookFoundry.html">Holbrook</A>
+										</li>
+										<li>
+											<A HREF="BellFoundries/RevereFoundry.html">Revere</A>
+										</li>
+										<li>
+											<A HREF="BellFoundries/HillsboroFoundry.html">C.S.Bell</A>, Hillsboro, O. (steel)
+										</li>
+										<li class="nested">
+											<label class="toggle" onclick="toggleAccordion(this)">
+												<A HREF="BellFoundries/StLouisBellFoundries.html">Saint Louis, Missouri, USA</A>
+											</label>
+											
+											<ul>
+												<li>
+													<A HREF="BellFoundries/Caughlan.html">Caughlan</A>
+													<ul>
+														<li>
+															<A HREF="BellFoundries/WestportPhotos.html" TARGET=BELL_W>Westport photos</A>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<A HREF="BellFoundries/NVinNA.html">Naylor Vickers in North America</A>
+											<!-- includes BostonData.html -->
+										</li>
+									</ul>
+								</div>
 							</li>
 
 							<!--TUBULAR BELLS-->
 							<li class="nested">
-								<A HREF="TubularBells/TubularBells.html">Tubular Bells</A> - history, makers, installations
+								<label class="toggle" onclick="toggleAccordion(this)">
+									<A HREF="TubularBells/TubularBells.html">Tubular Bells</A> - History, Makers, Installations
+								</label>
 								<ul>
 									<li>
 										<A HREF="TubularBells/TubularBellsComparison.html">Comparison of tubular tower bells</A>
@@ -151,80 +158,97 @@
 					</li>
 
 					<!--DATA TOP-->	
-					<li>
-						<A HREF="data/Data_Top.html">Data Top page</A> (original main page for data section 
-						of www.GCNA.org from 1997 to 2012) <br/>
-						= Introduction to, and Contents of, site data pages about carillons, chimes,
-						rings, etc., together with index pages and regional locator maps to find them.&nbsp;
-						All known instruments or collections of 8 or more tower bells (whether conventional,
-						hemispherical, tubular or porcelain) are included, except as otherwise noted.&nbsp;
-						Over 3500 pages are directly or indirectly dependent from this one.&nbsp;
-						<!-- As of 25 Jul 2012: 2376 site data + 280 index + 50 index lists + ? others -->
-						<!-- As of 20 Nov 2018: 2616 site data + 296 index + 49 index lists + 60+ others -->
-						<!-- As of 30 Jul 2020: 3186 site data + 296 index + 49 index lists + 60+ others -->
-						These are hierarchically arranged as follows:
-						<OL>
-							<li>
-								Index lists, linked from the Data Top page:<br/>
-								<ul>
+					<li class="nested">
+						<label class="toggle" onclick="toggleAccordion(this)">
+							<A HREF="data/Data_Top.html">Data Top page</A> 
+							(original main page for data section of www.GCNA.org from 1997 to 2012)
+						</label>
+
+						<div>
+							<p>
+								Introduction to, and Contents of, site data pages about carillons, chimes,
+								rings, etc., together with index pages and regional locator maps to find them.&nbsp;
+								All known instruments or collections of 8 or more tower bells (whether conventional,
+								hemispherical, tubular or porcelain) are included, except as otherwise noted.&nbsp;
+								Over 3500 pages are directly or indirectly dependent from this one.&nbsp;
+								<!-- As of 25 Jul 2012: 2376 site data + 280 index + 50 index lists + ? others -->
+								<!-- As of 20 Nov 2018: 2616 site data + 296 index + 49 index lists + 60+ others -->
+								<!-- As of 30 Jul 2020: 3186 site data + 296 index + 49 index lists + 60+ others -->
+								These are hierarchically arranged as follows:
+							</p>
+							
+							<OL>
+								<li>
+									Index lists, linked from the Data Top page:<br/>
+									<ul>
+										<li>
+											Five area index lists each present a group of type index lists
+											for one particular continental region
+											plus a group of area indexes, maps and lists for that region.
+										</li>
+										<li>
+											Four type index lists each present all of the area index lists
+											for one particular type of instrument (such as traditional carillons);
+											each area may cover a single country or an entire continental region.
+										</li>
+										<li>
+											Each area or type index list presents a group of index pages
+											for a specific geographic area of the world (a continent or a country)
+											and/or for a specific type of instrument (such as traditional carillons).
+										</li>
+									</ul>
 									<li>
-										Five area index lists each present a group of type index lists
-										for one particular continental region
-										plus a group of area indexes, maps and lists for that region.
+										Each index page under any index list points into a set of site data pages, 
+										each describing one of the tower bell instruments which are known or presumed 
+										to be extant within the scope of that index.&nbsp; Under any particular index list, 
+										each of the index pages lists that set of site data pages in a different sequence,
+										depending on the nature of the index.
 									</li>
 									<li>
-										Four type index lists each present all of the area index lists
-										for one particular type of instrument (such as traditional carillons);
-										each area may cover a single country or an entire continental region.
+										From each such site data page the following can be reached:
+										<ul>
+											<li>
+												a description of the <A HREF="data/Std_format.html">standard format</A>
+												of such pages
+											</li>
+											<li>
+												an explanation of how we present <A HREF="data/KeybdRange.html">keyboard range</A>
+											</li>
+										</ul>
 									</li>
 									<li>
-										Each area or type index list presents a group of index pages
-										for a specific geographic area of the world (a continent or a country)
-										and/or for a specific type of instrument (such as traditional carillons).
-									</li>
-								</ul>
-							<li>
-								Each index page under any index list points into a set of site data pages, 
-								each describing one of the tower bell instruments which are known or presumed 
-								to be extant within the scope of that index.&nbsp; Under any particular index list, 
-								each of the index pages lists that set of site data pages in a different sequence,
-								depending on the nature of the index.
-							</li>
-							<li>
-								From each such site data page the following can be reached:
-								<ul>
-									<li>
-										a description of the <A HREF="data/Std_format.html">standard format</A>
-										of such pages
+										Foundry index pages not only point to site data pages but also point into regional 
+										lists of great bells as well as into regional pages about sites that are no more.
 									</li>
 									<li>
-										an explanation of how we present <A HREF="data/KeybdRange.html">keyboard range</A>
+										Site data pages also have reverse links to the places within index pages from which 
+										they are forward-linked.
 									</li>
-								</ul>
-							</li>
-							<li>
-								Foundry index pages not only point to site data pages but also point into regional 
-								lists of great bells as well as into regional pages about sites that are no more.
-							</li>
-							<li>
-								Site data pages also have reverse links to the places within index pages from which 
-								they are forward-linked.
-							</li>
-						</OL>
-						Great bells that are not part of listed tower bell instruments (i.e., that are "independent") 
-						do not have site data pages; instead, each one has a numbered section in a page for its geographic region.
-						<br/>
-						Supporting pages on various topics are listed in the <A HREF="data/Data_Top.html#contents">Contents section</A> 
-						of the Data Top page.
+								</li>
+							</OL>
+								
+							<p>
+								Great bells that are not part of listed tower bell instruments (i.e., that are "independent") 
+								do not have site data pages; instead, each one has a numbered section in a page for its geographic region.
+							</p>
+							<p>
+								Supporting pages on various topics are listed in the <A HREF="data/Data_Top.html#contents">Contents section</A> 
+								of the Data Top page.
+							</p>
+						</div>
 					</li>
 
-					<li>
-						<A HREF="BellBooks/BellBooks.html">Books about bells</A><br/>
-						A selective bibliography, with brief descriptions or full reviews
+					<li class="nested">
+						<label class="toggle" onclick="toggleAccordion(this)">
+							<A HREF="BellBooks/BellBooks.html">Books about bells</A>
+							(A selective bibliography, with brief descriptions or full reviews)
+						</label>
+
 						<ul>
 							<li>
 								<A HREF="BellBooks/GoeppingerBook.html">Announcement</A> of Neil Goeppinger's 2016 book,
-								"Large Bells in America;" includes publicity material, reviews, errata, commentary from 
+								"Large Bells in America" <br />
+								Includes publicity material, reviews, errata, commentary from 
 								the Webmaster and additions based on subsequent research.
 							</li>
 						</ul>
@@ -247,8 +271,7 @@
 						<A HREF="Essays/UnrelatedEssays.html">Essays</A> on subjects unrelated to the rest of this Website
 					</li>
 					<li>
-						Website Map: the page that you are now reading <!-- WebsiteMap.html --> <br/>
-						(which does not cover what was originally at www.GCNA.org - see the Data Top bullet above)
+						Website Map (the page that you are now reading) <!-- WebsiteMap.html -->
 					</li>
 				</ul>
 			</ul>
