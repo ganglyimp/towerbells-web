@@ -1,219 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<TITLE>	Hundredweights, Quarters and Pounds Calculator</TITLE>
-<!-- devised and written by Frank Tapson August 2001 to handle Pounds and Ounces;
-	 last modified by him in November 2003;
-	 extensively revised by Carl Scott Zimmerman, Dec.2003-May.2004, to serve the present functions. -->
-<SCRIPT LANGUAGE=JAVASCRIPT1.2 TYPE="text/javascript">
-<!--
-var StandardVal,NoOfSF,InputIs,OutputIs,ErrorIs,CountEnts,TypeIs,Msg,NumUnits=10;
-	InValArray=new Array;OutArray=new Array;OutValArray=new Array;OrigsArray=new Array;CFacts=new Array;
-function LoadFacts()
-	{CFacts[1]=1.0160469088e+3;CFacts[2]=5.080234544e+1;CFacts[3]=1.270058636e+1;CFacts[4]=4.5359237e-1;
-	 CFacts[5]=1.0160469088e+3;CFacts[6]=9.0718474e+2;CFacts[7]=4.5359237e-1;CFacts[8]=1;CFacts[9]=1e-3;}
-function GetInputs()
-	{var OrigIs="";CountEnts=0;TypeIs=0;
-	InputIs=document.UniForm.Unit1.value;InputIs=CutSpaces(InputIs);InputIs=InputIs*1;
-	if(TestInput(InputIs)=="N"){return "N"}
-	else
-		{OrigIs=InputIs;
-		if(InputIs>0)
-			{InputIs=Math.floor(InputIs)}
-		if(InputIs>0 && InputIs<1){ErrorIs=" Use second line for this ton value. ";return "N"}
-		if(InputIs>0){InValArray[1]=InputIs;OrigsArray[1]=InputIs;CountEnts++;TypeIs=TypeIs+1};
-		if(InputIs==0){InValArray[1]=0;OrigsArray[1]=""}}
-	InputIs=document.UniForm.Unit2.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}
-	else{if(InputIs<20 || InValArray[1]==0){var OK="Y"}else{var OK="N"}
-		if (OK=="N"){ErrorIs=" Cwt must be less than 20 when tons not zero. ";return "N"}
-		if(InputIs>0){InValArray[2]=InputIs;OrigsArray[2]=OrigIs;CountEnts++;TypeIs=TypeIs+2}}
-	InputIs=document.UniForm.Unit3.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}
-	else{if(InputIs<4){var OK="Y"}else{var OK="N"}
-		if (OK=="N"){ErrorIs=" Qtrs must be less than 4. ";return "N"}
-		if(InputIs>0){InValArray[3]=InputIs;OrigsArray[3]=OrigIs;CountEnts++;TypeIs=TypeIs+4}}
-	InputIs=document.UniForm.Unit4.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}
-	else
-		{if(InputIs<28){var OK="Y"}else{var OK="N"}
-		if (OK=="N"){ErrorIs=" Lbs must be less than 28. ";return "N"}
-		if(InputIs>0){InValArray[4]=InputIs;OrigsArray[4]=OrigIs;CountEnts++;TypeIs=TypeIs+8}}
-	InputIs=document.UniForm.Unit5.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}else{if(InputIs>0){InValArray[5]=InputIs;OrigsArray[5]=OrigIs;CountEnts++;TypeIs=TypeIs+16}}
-	InputIs=document.UniForm.Unit6.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}else{if(InputIs>0){InValArray[6]=InputIs;OrigsArray[6]=OrigIs;CountEnts++;TypeIs=TypeIs+32}}
-	InputIs=document.UniForm.Unit7.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}else{if(InputIs>0){InValArray[7]=InputIs;OrigsArray[7]=OrigIs;CountEnts++;TypeIs=TypeIs+64}}
-	InputIs=document.UniForm.Unit8.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}else{if(InputIs>0){InValArray[8]=InputIs;OrigsArray[8]=OrigIs;CountEnts++;TypeIs=TypeIs+128}}
-	InputIs=document.UniForm.Unit9.value;OrigIs=InputIs;InputIs=CutSpaces(InputIs);
-	if(TestInput(InputIs)=="N"){return "N"}else{if(InputIs>0){InValArray[9]=InputIs;OrigsArray[9]=OrigIs;CountEnts++;TypeIs=TypeIs+256}}
-	if(CountEnts>1 && !(TypeIs<16)){ErrorIs=" Entries on too many lines. ";return "N"}
-	if(CountEnts<1){ErrorIs=" At least ONE entry must be made ";return "N"}
-	return "Y"}
-function MakeStandardValue()
-	{switch(TypeIs)
-		{case 1:;StandardVal=InValArray[1]*CFacts[1];break;
-		case 2:;StandardVal=InValArray[2]*CFacts[2];break;
-		case 3:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[2]*CFacts[2]);break;
-		case 4:;StandardVal=InValArray[3]*CFacts[3];break;
-		case 5:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[3]*CFacts[3]);break;
-		case 6:;StandardVal=eval(InValArray[2]*CFacts[2])+eval(InValArray[3]*CFacts[3]);break;
-		case 7:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[2]*CFacts[2])+eval(InValArray[3]*CFacts[3]);break;
-		case 8:;StandardVal=InValArray[4]*CFacts[4];break;
-		case 9:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[4]*CFacts[4]);break;
-		case 10:;StandardVal=eval(InValArray[2]*CFacts[2])+eval(InValArray[4]*CFacts[4]);break;
-		case 11:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[2]*CFacts[2])+eval(InValArray[4]*CFacts[4]);break;
-		case 12:;StandardVal=eval(InValArray[3]*CFacts[3])+eval(InValArray[4]*CFacts[4]);break;
-		case 13:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[3]*CFacts[3])+eval(InValArray[4]*CFacts[4]);break;
-		case 14:;StandardVal=eval(InValArray[2]*CFacts[2])+eval(InValArray[3]*CFacts[3])+eval(InValArray[4]*CFacts[4]);break;
-		case 15:;StandardVal=eval(InValArray[1]*CFacts[1])+eval(InValArray[2]*CFacts[2])+eval(InValArray[3]*CFacts[3])+eval(InValArray[4]*CFacts[4]);break;
-		case 16:;StandardVal=InValArray[5]*CFacts[5];break;
-		case 32:;StandardVal=InValArray[6]*CFacts[6];break;
-		case 64:;StandardVal=InValArray[7]*CFacts[7];break;
-		case 128:;StandardVal=InValArray[8]/CFacts[8];break;
-		case 256:;StandardVal=InValArray[9]/CFacts[9];break;
-		default:;ErrorIs=" Requested conversion is unidentified ";return "N";}
-	return "Y"}
-function MakeOutputValues()
-	{var Tonls=Math.floor(StandardVal/CFacts[1]);
-	var Cwtls=Math.floor(StandardVal/CFacts[2])-20*Tonls;
-	if(eval(Cwtls)<0){Cwtls=0};
-	var Qtrls=Math.floor(StandardVal/CFacts[3])-80*Tonls-4*Cwtls;
-	if(eval(Qtrls)==4){Qtrls=0;Cwtls=eval(Cwtls)+1};
-	var Lbsls=StandardVal/CFacts[4]-2240*Tonls-112*Cwtls-28*Qtrls;
-	var Cwtmax=Cwtls+20*Tonls;
-	if(Math.abs(28-Lbsls)<1e-10){Qtrls=eval(Qtrls)+1;Lbsls=eval(Lbsls)-28};
-	if(eval(Tonls)==0){OutArray[1]=""}else{OutArray[1]=Tonls};
-	if(eval(Cwtls)==0){OutArray[2]=""}else{OutArray[2]=Cwtls};
-	if(eval(Qtrls)==0){OutArray[3]=""}else{OutArray[3]=Qtrls};
-	if(eval(Lbsls)==0){OutArray[4]=""}else{OutArray[4]=Lbsls};
-	OutArray[5]=StandardVal/CFacts[5];OutArray[6]=StandardVal/CFacts[6];OutArray[7]=StandardVal/CFacts[7];
-	OutArray[8]=StandardVal*CFacts[8];OutArray[9]=StandardVal*CFacts[9];OutArray[10]=Cwtmax}
-function LoadOutputValues()
-	{document.UniForm.Message.value="Adjust significant figures OR click on [Clear All]";
-	document.UniForm.Unit1.value=OutValArray[1];document.UniForm.Unit2.value=OutValArray[2];
-	document.UniForm.Unit3.value=OutValArray[3];document.UniForm.Unit4.value=OutValArray[4];
-	document.UniForm.Unit5.value=OutValArray[5];document.UniForm.Unit6.value=OutValArray[6];
-	document.UniForm.Unit7.value=OutValArray[7];document.UniForm.Unit8.value=OutValArray[8];
-	document.UniForm.Unit9.value=OutValArray[9];document.UniForm.UnitMix.value=UnitMx;ValuesIn="Y"}
-function RestoreOriginals()
-	{switch(TypeIs)
-		{case 1:;document.UniForm.Unit1.value=OrigsArray[1];document.UniForm.Unit2.value="";document.UniForm.Unit3.value="";document.UniForm.Unit4.value="";return;
-		case 2:;document.UniForm.Unit2.value=OrigsArray[2];document.UniForm.Unit1.value="";document.UniForm.Unit3.value="";document.UniForm.Unit4.value="";return;
-		case 3:;document.UniForm.Unit1.value=OrigsArray[1];document.UniForm.Unit2.value=OrigsArray[2];document.UniForm.Unit3.value="";document.UniForm.Unit4.value="";return;
-		case 4:;document.UniForm.Unit3.value=OrigsArray[3];document.UniForm.Unit1.value="";document.UniForm.Unit2.value="";document.UniForm.Unit4.value="";return;
-		case 8:;document.UniForm.Unit4.value=OrigsArray[4];document.UniForm.Unit1.value="";document.UniForm.Unit2.value="";document.UniForm.Unit3.value="";return;
-		case 16:;document.UniForm.Unit5.value=OrigsArray[5];return;
-		case 32:;document.UniForm.Unit6.value=OrigsArray[6];return;
-		case 64:;document.UniForm.Unit7.value=OrigsArray[7];return;
-		case 128:;document.UniForm.Unit8.value=OrigsArray[8];return;
-		case 256:;document.UniForm.Unit9.value=OrigsArray[9];return;}}
-function CutSpaces(ThisInput)
-	{var ThisInput= ""+ThisInput;var Temp="";SplitString=ThisInput.split(" ");
-	for (var i=0;i<SplitString.length;i++){Temp += SplitString[i];}
-	while (Temp.charAt(0)=="0"){Temp=Temp.substring(1)}
-	return Temp}
-function TestInput(ToTest)
-	{var TestThis=""+ToTest,Allow="1234567890-.",IsAt;
-	if (TestThis == "N"){ErrorIs=" All inputs MUST be numbers ";return "N"}
-	for (var i=0;i<TestThis.length; i++)
-		{var CharIs=TestThis.charAt(i);IsAt=Allow.indexOf(CharIs);
-		if (IsAt==-1){ErrorIs="One input NOT a valid number. ";return "N"}}
-	var TestThis=Number(ToTest);if(isNaN(TestThis)){ErrorIs=" One input NOT a valid number. ";return "N"}
-	if(TestThis>9e5){ErrorIs=" One input TOO BIG! (> 900 000) ";return "N"}
-	if ((TestThis<1e-5)&&(TestThis>0)){ErrorIs=" One input TOO SMALL! (< 0.000 01) ";return "N"}
-	if (TestThis < 0){ErrorIs=" No input can be NEGATIVE! ";return "N"}
-	return "Y";}
-function ControlFormat(NumIs)
-	{var NumIs=Number(NumIs);if(Math.abs(NumIs)<1e-10){NumIs=0}if(NumIs == 0){return "0"}
-	if(NumIs<0){NumIs=Math.abs(NumIs);var SignIs = "-";}else{var SignIs=""}
-	if(NumIs>1e15 ||  NumIs<1e-7){var Output1=MakeEnumber(NumIs);return SignIs + Output1;}
-	else{var Output1=MakeSF(NumIs);var Output2=Format(Output1);return SignIs + Output2}}
-function MakeEnumber(UseNum)
-	{var BaseIs,ExpIs,Shift,SignIs,IsE="N";var UseNum=""+UseNum;
-	for(var i=0;i<UseNum.length;i++)
-		{var CharIs=UseNum.charAt(i);if(CharIs=="e" || CharIs=="E"){IsE="Y";break}}
-	if(IsE=="Y")
-		{BreakUp=UseNum.split("e");ExpIs=BreakUp[1];if(eval(ExpIs)<0){SignIs="-"}else{SignIs="+"}
-		ExpIs=Math.abs(Number(ExpIs));BaseIs=MakeSF(BreakUp[0]);
-		if(eval(BaseIs)==10){BaseIs="1";if(SignIs=="-"){ExpIs=ExpIs-1}else{ExpIs=ExpIs+1}}
-		ExpIs=SignIs+ExpIs;UseNum=BaseIs+"  "+"e"+ExpIs;}
-	else
-		{ExpIs=0;
-		while(UseNum>10){UseNum=UseNum/10;ExpIs++;Shift="e+"}
-		while(UseNum<1){UseNum=UseNum*10;ExpIs++;Shift="e-"}
-		BaseIs=MakeSF(UseNum);
-		if(eval(BaseIs)==10){BaseIs="1";ExpIs=ExpIs+1}
-		UseNum=BaseIs+"  "+Shift+ExpIs}
-	return UseNum}
-function MakeSF(UseNum)
-	{var CountE=0,Shift="";var UseNum=Number(UseNum);var AllowError=1e-10;if(Math.abs(UseNum)<AllowError){return 0}if(Math.abs(UseNum-1)<AllowError){return 1}
-	if(Math.abs(UseNum-10)<AllowError){return 10}
-	if(Math.abs(UseNum-100)<AllowError){return 100}if(Math.abs(UseNum-1000)<AllowError){return 1000}
-	if(UseNum>1 && UseNum<10){CountE=0;Shift="N"}while(UseNum>10){UseNum=UseNum/10;CountE++;Shift="L"}while(UseNum<1){UseNum=UseNum*10;CountE++;Shift="R"}
-	for(var i=0;i<NoOfSF-1; i++){UseNum=UseNum*10}UseNum=Math.round(UseNum);UseNum=""+UseNum;var NumLength=UseNum.length;
-	if(NumLength>NoOfSF){CountE=CountE+1;if(Shift=="R"){Shift="X"}}
-	var BuildNumber="",NextDigit="";
-	if(Shift=="N"){for(var i=0; i<NumLength;i++){NextDigit=UseNum.charAt(i);BuildNumber=BuildNumber+NextDigit;if(i==CountE){BuildNumber=BuildNumber + "."}}}
-	if(Shift=="L"){for(var i=0;i<NumLength;i++){NextDigit=UseNum.charAt(i);BuildNumber=BuildNumber+NextDigit;if(i==CountE){BuildNumber=BuildNumber+"."}}while(i<CountE+1){BuildNumber=BuildNumber+"0";i++}}
-	if(Shift=="R" && CountE<13){BuildNumber="0.";for(var i=0;i<CountE-1;i++){BuildNumber=BuildNumber+"0"}BuildNumber=BuildNumber+UseNum.charAt(0);for(var i=1;i<NumLength;i++){BuildNumber=BuildNumber+UseNum.charAt(i)}}
-	if(Shift=="X" && CountE<13){if(CountE==2){BuildNumber="1"}else{BuildNumber="0.";for(var i=3;i<CountE;i++){BuildNumber=BuildNumber+"0"}BuildNumber=BuildNumber+"1"}}
-	var DPisAt=BuildNumber.indexOf(".");
-	if(DPisAt>0){while(BuildNumber.length>DPisAt){if(BuildNumber.charAt(BuildNumber.length-1)=="0"){BuildNumber=BuildNumber.substring(0,BuildNumber.length-1)}else{break}}}
-	if(BuildNumber.charAt(BuildNumber.length-1)=="."){BuildNumber=BuildNumber.substring(0,BuildNumber.length-1)}
-	return BuildNumber}
-function Format(NumToDo)
-	{NumToDo=""+NumToDo;TestForSize=Number(NumToDo);if(TestForSize>1e15 || TestForSize<1e-10){return NumToDo}
-	var DPisAt=NumToDo.indexOf(".");
-	if(DPisAt>0)
-		{while(NumToDo.length>DPisAt)
-			{if (NumToDo.charAt(NumToDo.length-1)=="0"){NumToDo=NumToDo.substring(0,NumToDo.length-1) }else{break}}}
-	if (NumToDo.charAt(NumToDo.length-1)=="."){NumToDo=NumToDo.substring(0,NumToDo.length-1)}
-	var DPisAt=NumToDo.indexOf(".");
-	if (DPisAt==-1){DPisAt=999}
-	var NumLength=NumToDo.length;
-	if(DPisAt<NumLength){var LenLeft=DPisAt;var LenRight=NumLength-DPisAt}
-	else{var LenLeft=NumLength;var LenRight=0}
-	var LeftStr=NumToDo.substring(0, LenLeft);var RightStr=NumToDo.substring(LenLeft+1);var Separator=" ";var NewLeft="";var Count=0;
-	for(var i=LenLeft-1;i >= 0; i--)
-		{NextDigit=LeftStr.charAt(i);NewLeft=""+NextDigit+NewLeft;Count++;if(Count>0 && Count % 3 == 0 && !(Count==LenLeft)){NewLeft=Separator+NewLeft}}
-	var NewRight="";var Count=0;
-	for(var i=0;i<LenRight;i++)
-		{NextDigit=RightStr.charAt(i);NewRight=NewRight+NextDigit;Count++;
-		if(Count>0 && Count % 3 == 0 && !(Count==LenRight-1)){NewRight=NewRight+Separator}}
-	if(LenRight==0){return NewLeft}
-	if(LenLeft==0){return "0."+NewRight}
-	return NewLeft+"."+NewRight;}
-function StartUp()
-	{ClearAll();LoadFacts();document.UniForm.Message.value="Enter value (or values) on any ONE line, then click on [Calculate It]";return}
-function ClearAll()
-	{for(var i=0;i < NumUnits+1;i++){OutValArray[i]=""}
-	 for(var i=0;i < NumUnits+1;i++){OrigsArray[i]=""}UnitMx="0-0-0";
-	LoadOutputValues();ValuesIn="N";return}
-function AdjustOutputValues()
-	{NoOfSF=document.UniForm.SigFigs.selectedIndex;NoOfSF=NoOfSF+3;
-	if(NoOfSF<3){NoOfSF=3}
-	if(NoOfSF>9){NoOfSF=9}
-	for (var i=0; i < NumUnits+1;i++){var Output=ControlFormat(OutArray[i]);OutValArray[i] = Output;}
-	UnitMx=OutValArray[10]+"-"+OutValArray[3]+"-"+OutValArray[4];LoadOutputValues();RestoreOriginals();return}
-function CalculateIt()
-	{if(ValuesIn=="Y"){AdjustOutputValues(); return}
-	if(GetInputs()=="N"){document.UniForm.Message.value=ErrorIs+" Click on [Clear All]";return}
-	if(MakeStandardValue()=="N"){document.UniForm.Message.value=ErrorIs+" Click on [Clear All]";return}
-	MakeOutputValues();AdjustOutputValues(); return}
-// End of JavaScript -->
-	</SCRIPT> 
+	<!-- 
+		Devised and written by Frank Tapson August 2001 to handle Pounds and Ounces;
+	 	last modified by him in November 2003; extensively revised by Carl Scott Zimmerman, 
+		Dec.2003-May.2004, to serve the present functions.
+	 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<TITLE>TowerBells - Hundredweights, Quarters and Pounds Calculator</TITLE>
+
+	<link rel="stylesheet" type="text/css" href="../stylesheets/global.css">
 </HEAD>
-<BODY BGCOLOR="#000000" TEXT="#000000" ONLOAD="StartUp()">
+<BODY ONLOAD="StartUp()">
 <FORM NAME="UniForm">
 	<CENTER>
 		<TABLE BGCOLOR="#CCFFFF" CELLSPACING=10>
 			<TR ALIGN=CENTER>
 				<TD>
-<!-- DISPLAY title, variable message and controls -->
+					<!-- DISPLAY title, variable message and controls -->
 					<TABLE WIDTH=600 BORDER=0>
 						<TR ALIGN=CENTER>
 							<TD COLSPAN=3>
@@ -521,5 +325,693 @@ function CalculateIt()
 	</TABLE>
 	</CENTER>
 </FORM>
+
+<SCRIPT>
+	var StandardVal, NoOfSF, InputIs, OutputIs, ErrorIs, CountEnts, TypeIs, Msg, NumUnits = 10;
+	InValArray = new Array;
+	OutArray = new Array;
+	OutValArray = new Array;
+	OrigsArray = new Array;
+	CFacts = new Array;
+
+	function LoadFacts() {
+		CFacts[1] = 1.0160469088e+3;
+		CFacts[2] = 5.080234544e+1;
+		CFacts[3] = 1.270058636e+1;
+		CFacts[4] = 4.5359237e-1;
+		CFacts[5] = 1.0160469088e+3;
+		CFacts[6] = 9.0718474e+2;
+		CFacts[7] = 4.5359237e-1;
+		CFacts[8] = 1;
+		CFacts[9] = 1e-3;
+	}
+
+	function GetInputs(){
+		var OrigIs = ""; 
+		CountEnts = 0;
+		TypeIs = 0;
+		InputIs = document.UniForm.Unit1.value;
+		InputIs = CutSpaces(InputIs);
+		InputIs = InputIs*1;
+
+		if (TestInput(InputIs) == "N") return "N"
+
+		OrigIs = InputIs;
+		if (InputIs > 0)
+			InputIs = Math.floor(InputIs)
+
+		if(InputIs > 0 && InputIs < 1) {
+			ErrorIs = " Use second line for this ton value. ";
+			return "N"
+		}
+
+		if(InputIs > 0) {
+			InValArray[1] = InputIs;
+			OrigsArray[1] = InputIs;
+			CountEnts++;
+			TypeIs = TypeIs + 1;
+		}
+
+		if(InputIs == 0) {
+			InValArray[1] = 0;
+			OrigsArray[1] = "";
+		}
+
+		InputIs = document.UniForm.Unit2.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N";
+
+		if (InputIs < 20 || InValArray[1] == 0)	{ var OK="Y"; }
+		else	{ var OK="N"; }
+
+		if (OK == "N") {
+			ErrorIs= " Cwt must be less than 20 when tons not zero. ";
+			return "N";
+		}
+
+		if (InputIs > 0) {
+			InValArray[2] = InputIs;
+			OrigsArray[2] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 2;
+		}
+
+		InputIs = document.UniForm.Unit3.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N";
+
+		if(InputIs < 4) { var OK = "Y"; }
+		else { var OK = "N"; }
+
+		if (OK=="N") {
+			ErrorIs = " Qtrs must be less than 4. ";
+			return "N"
+		}
+
+		if (InputIs > 0) {
+			InValArray[3] = InputIs;
+			OrigsArray[3] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 4;
+		}
+
+		InputIs = document.UniForm.Unit4.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N";
+
+		if (InputIs < 28) { var OK="Y"; }
+		else { var OK="N"; }
+
+		if (OK == "N") {
+			ErrorIs = " Lbs must be less than 28. ";
+			return "N"
+		}
+
+		if (InputIs > 0) {
+			InValArray[4] = InputIs;
+			OrigsArray[4] = OrigIs;
+			CountEnts++; 
+			TypeIs = TypeIs + 8
+		}
+
+		InputIs = document.UniForm.Unit5.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N"; 
+
+		if (InputIs > 0) {
+			InValArray[5] = InputIs;
+			OrigsArray[5] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs+16
+		}
+
+		InputIs = document.UniForm.Unit6.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N"; 
+
+		if(InputIs > 0) {
+			InValArray[6] = InputIs;
+			OrigsArray[6] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 32
+		}
+
+		InputIs = document.UniForm.Unit7.value; 
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N";
+		if (InputIs > 0) {
+			InValArray[7] = InputIs;
+			OrigsArray[7] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 64
+		}
+
+		InputIs = document.UniForm.Unit8.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N"; 
+		if (InputIs > 0) {
+			InValArray[8] = InputIs;
+			OrigsArray[8] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 128;
+		}
+
+		InputIs = document.UniForm.Unit9.value;
+		OrigIs = InputIs;
+		InputIs = CutSpaces(InputIs);
+
+		if (TestInput(InputIs) == "N") return "N"; 
+
+		if(InputIs > 0) {
+			InValArray[9] = InputIs;
+			OrigsArray[9] = OrigIs;
+			CountEnts++;
+			TypeIs = TypeIs + 256;
+		}
+
+		if (CountEnts > 1 && !(TypeIs < 16)) {
+			ErrorIs=" Entries on too many lines. ";
+			return "N";
+		}
+
+		if( CountEnts < 1) {
+			ErrorIs=" At least ONE entry must be made ";
+			return "N";
+		}
+
+		return "Y"
+	}
+
+	function MakeStandardValue(){ 
+		switch(TypeIs) {
+			case 1:		StandardVal = InValArray[1] * CFacts[1]; 
+						break;
+			case 2:		StandardVal = InValArray[2] * CFacts[2]; 
+						break;
+			case 3:		StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[2] * CFacts[2]); 
+						break;
+			case 4:		StandardVal = InValArray[3] * CFacts[3]; 
+						break;
+			case 5:		StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[3] * CFacts[3]); 
+						break;
+			case 6:		StandardVal = eval(InValArray[2] * CFacts[2]) + eval(InValArray[3] * CFacts[3]);
+						break;
+			case 7:		StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[2] * CFacts[2]) + eval(InValArray[3] * CFacts[3]);
+						break;
+			case 8:		StandardVal = InValArray[4] * CFacts[4];
+						break;
+			case 9:		StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 10:	StandardVal = eval(InValArray[2] * CFacts[2]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 11:	StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[2] * CFacts[2]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 12:	StandardVal = eval(InValArray[3] * CFacts[3]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 13:	StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[3] * CFacts[3]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 14:	StandardVal = eval(InValArray[2] * CFacts[2]) + eval(InValArray[3] * CFacts[3]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 15:	StandardVal = eval(InValArray[1] * CFacts[1]) + eval(InValArray[2] * CFacts[2]) + eval(InValArray[3] * CFacts[3]) + eval(InValArray[4] * CFacts[4]);
+						break;
+			case 16:	StandardVal = InValArray[5] * CFacts[5];
+						break;
+			case 32:	StandardVal = InValArray[6] * CFacts[6]; 
+						break;
+			case 64:	StandardVal = InValArray[7] * CFacts[7];
+						break;
+			case 128:	StandardVal = InValArray[8] / CFacts[8];
+						break;
+			case 256:	StandardVal = InValArray[9] / CFacts[9];
+						break;
+			default:	ErrorIs = " Requested conversion is unidentified ";
+						return "N";
+		}
+
+		return "Y"
+	}
+
+	function MakeOutputValues() {
+		var Tonls = Math.floor(StandardVal / CFacts[1]);
+		var Cwtls = Math.floor(StandardVal / CFacts[2]) - 20 * Tonls;
+
+		if (eval(Cwtls)<0) { Cwtls = 0; }
+
+		var Qtrls = Math.floor(StandardVal / CFacts[3]) - 80 * Tonls - 4 * Cwtls;
+		if (eval(Qtrls) == 4) {
+			Qtrls = 0;
+			Cwtls = eval(Cwtls) + 1;
+		}
+
+		var Lbsls = StandardVal / CFacts[4] - 2240 * Tonls - 112 * Cwtls - 28 * Qtrls;
+		var Cwtmax = Cwtls + 20 * Tonls;
+
+		if (Math.abs(28 - Lbsls) < 1e-10) {
+			Qtrls = eval(Qtrls) + 1;
+			Lbsls = eval(Lbsls) - 28;
+		}
+
+		OutArray[1] = (eval(Tonls) == 0) ? "" : Tonls;
+		OutArray[2] = (eval(Cwtls) == 0) ? "" : Cwtls;
+		OutArray[3] = (eval(Qtrls) == 0) ? "" : Qtrls;
+		OutArray[4] = (eval(Lbsls) == 0) ? "" : Lbsls;
+		OutArray[5] = StandardVal / CFacts[5];
+		OutArray[6] = StandardVal / CFacts[6];
+		OutArray[7] = StandardVal / CFacts[7];
+		OutArray[8] = StandardVal * CFacts[8]; 
+		OutArray[9] = StandardVal * CFacts[9];
+		OutArray[10] = Cwtmax;
+	}
+
+	function LoadOutputValues() {
+		document.UniForm.Message.value = "Adjust significant figures OR click on [Clear All]";
+		document.UniForm.Unit1.value = OutValArray[1];
+		document.UniForm.Unit2.value = OutValArray[2];
+		document.UniForm.Unit3.value = OutValArray[3];
+		document.UniForm.Unit4.value = OutValArray[4];
+		document.UniForm.Unit5.value = OutValArray[5];
+		document.UniForm.Unit6.value = OutValArray[6];
+		document.UniForm.Unit7.value = OutValArray[7];
+		document.UniForm.Unit8.value = OutValArray[8];
+		document.UniForm.Unit9.value = OutValArray[9];
+		document.UniForm.UnitMix.value = UnitMx;
+		ValuesIn="Y"
+	}
+
+	function RestoreOriginals() {
+		switch(TypeIs) {
+			case 1:		document.UniForm.Unit1.value = OrigsArray[1];
+						document.UniForm.Unit2.value = "";
+						document.UniForm.Unit3.value = "";
+						document.UniForm.Unit4.value = "";
+						return;
+			case 2:		document.UniForm.Unit2.value = OrigsArray[2];
+						document.UniForm.Unit1.value = "";
+						document.UniForm.Unit3.value = "";
+						document.UniForm.Unit4.value = "";
+						return;
+			case 3:		document.UniForm.Unit1.value = OrigsArray[1];
+						document.UniForm.Unit2.value = OrigsArray[2];
+						document.UniForm.Unit3.value = "";
+						document.UniForm.Unit4.value = "";
+						return;
+			case 4:		document.UniForm.Unit3.value = OrigsArray[3];
+						document.UniForm.Unit1.value = "";
+						document.UniForm.Unit2.value = "";
+						document.UniForm.Unit4.value = "";
+						return;
+			case 8:		document.UniForm.Unit4.value = OrigsArray[4];
+						document.UniForm.Unit1.value = "";
+						document.UniForm.Unit2.value = "";
+						document.UniForm.Unit3.value = "";
+						return;
+			case 16:	document.UniForm.Unit5.value = OrigsArray[5];
+						return;
+			case 32:	document.UniForm.Unit6.value = OrigsArray[6];
+						return;
+			case 64:	document.UniForm.Unit7.value = OrigsArray[7];
+						return;
+			case 128:	document.UniForm.Unit8.value = OrigsArray[8];
+						return;
+			case 256:	document.UniForm.Unit9.value = OrigsArray[9];
+						return;
+		}
+	}
+
+	function CutSpaces(ThisInput) {
+		var ThisInput = "" + ThisInput;
+		var Temp = ""; 
+		SplitString = ThisInput.split(" ");
+
+		for (var i = 0; i < SplitString.length; i++) 
+			Temp += SplitString[i];
+
+		while (Temp.charAt(0) == "0") 
+			Temp=Temp.substring(1);
+
+		return Temp;
+	}
+
+	function TestInput(ToTest) {
+		//TODO: change return value to bool, remove redundant tests
+		var TestThis = "" + ToTest, Allow = "1234567890-.", IsAt;
+
+		if (TestThis == "N") {
+			ErrorIs = " All inputs MUST be numbers ";
+			return "N"
+		}
+
+		for (var i=0;i<TestThis.length; i++) {
+			var CharIs = TestThis.charAt(i);
+			IsAt = Allow.indexOf(CharIs);
+
+			if (IsAt == -1) {
+				ErrorIs = "One input NOT a valid number. ";
+				return "N"
+			}
+		}
+
+		var TestThis = Number(ToTest);
+		if (isNaN(TestThis)) {
+			ErrorIs = " One input NOT a valid number. ";
+			return "N"
+		}
+
+		if (TestThis > 9e5) {
+			ErrorIs = " One input TOO BIG! (> 900 000) ";
+			return "N"
+		}
+
+		if ((TestThis < 1e-5) && (TestThis > 0)) {
+			ErrorIs = " One input TOO SMALL! (< 0.000 01) ";
+			return "N"
+		}
+
+		if (TestThis < 0) {
+			ErrorIs = " No input can be NEGATIVE! ";
+			return "N"
+		}
+
+		return "Y";
+	}
+
+	function ControlFormat(NumIs) {
+		var NumIs = Number(NumIs);
+
+		if (Math.abs(NumIs) < 1e-10) 
+			NumIs = 0
+		
+		if (NumIs == 0)
+			return "0";
+
+		if (NumIs < 0) {
+			NumIs = Math.abs(NumIs);
+			var SignIs = "-";
+		}
+		else {
+			var SignIs = "";
+		}
+
+		if (NumIs > 1e15 || NumIs < 1e-7) { 
+			var Output1 = MakeEnumber(NumIs);
+			return SignIs + Output1;
+		}
+		var Output1 = MakeSF(NumIs);
+		var Output2 = Format(Output1);
+		return SignIs + Output2;
+	}
+
+	function MakeEnumber(UseNum) {
+		var BaseIs, ExpIs, Shift, SignIs, IsE = "N";
+		var UseNum = "" + UseNum;
+
+		for (var i = 0; i < UseNum.length; i++) {
+			var CharIs = UseNum.charAt(i);
+			if (CharIs == "e" || CharIs == "E") {
+				IsE="Y";
+				break;
+			}
+		}
+
+		if (IsE=="Y") {
+			BreakUp = UseNum.split("e");
+			ExpIs = BreakUp[1];
+			
+			SignIs = (eval(ExpIs) < 0) ? "-" : "+";
+
+			ExpIs = Math.abs(Number(ExpIs));
+			BaseIs = MakeSF(BreakUp[0]);
+
+			if (eval(BaseIs) == 10) {
+				BaseIs = "1"; 
+				ExpIs = (SignIs == "-") ? ExpIs - 1 : ExpIs + 1;
+			}
+
+			ExpIs = SignIs + ExpIs;
+			UseNum = BaseIs + "  " + "e" + ExpIs;
+		}
+		else {
+			ExpIs = 0;
+			while (UseNum > 10) {
+				UseNum = UseNum / 10;
+				ExpIs++;
+				Shift = "e+";
+			}
+
+			while (UseNum < 1) {
+				UseNum = UseNum * 10;
+				ExpIs++;
+				Shift = "e-";
+			}
+
+			BaseIs = MakeSF(UseNum);
+			if (eval(BaseIs) == 10) {
+				BaseIs="1";
+				ExpIs = ExpIs + 1;
+			}
+
+			UseNum = BaseIs + "  " + Shift + ExpIs;
+		}
+
+		return UseNum
+	}
+
+	function MakeSF(UseNum) {
+		var CountE = 0, Shift = ""; 
+		var UseNum = Number(UseNum);
+		var AllowError = 1e-10;
+		
+		if (Math.abs(UseNum) < AllowError) return 0;
+		if (Math.abs(UseNum - 1) < AllowError) return 1;
+		if (Math.abs(UseNum - 10) < AllowError) return 10;
+		if (Math.abs(UseNum - 100) < AllowError) return 100;
+		if (Math.abs(UseNum - 1000) < AllowError) return 1000;
+
+		if (UseNum > 1 && UseNum < 10) {
+			CountE = 0;
+			Shift = "N";
+		}
+		
+		while (UseNum > 10) {
+			UseNum = UseNum / 10;
+			CountE++;
+			Shift = "L";
+		}
+		
+		while (UseNum < 1) {
+			UseNum = UseNum * 10;
+			CountE++;
+			Shift="R";
+		}
+
+		for (var i = 0; i < NoOfSF - 1; i++) {
+			UseNum = UseNum * 10;
+		}
+		
+		UseNum = Math.round(UseNum);
+		UseNum = "" + UseNum;
+		var NumLength = UseNum.length;
+
+		if (NumLength > NoOfSF) {
+			CountE = CountE + 1;
+			if (Shift=="R") { Shift = "X"; }
+		}
+
+		var BuildNumber = "", NextDigit = "";
+
+		if (Shift=="N") {
+			for(var i = 0; i < NumLength; i++) {
+				NextDigit = UseNum.charAt(i);
+				BuildNumber = BuildNumber + NextDigit;
+				if (i == CountE) { BuildNumber = BuildNumber + "."; }
+			}
+		}
+
+		if (Shift == "L") {
+			for (var i = 0; i < NumLength; i++) {
+				NextDigit = UseNum.charAt(i);
+				BuildNumber = BuildNumber + NextDigit;
+				if (i == CountE) { BuildNumber = BuildNumber + "." }
+			}
+			
+			while (i < CountE + 1) {
+				BuildNumber = BuildNumber + "0";
+				i++;
+			}
+		}
+
+		if (Shift == "R" && CountE < 13) {
+			BuildNumber = "0.";
+			for (var i = 0;i < CountE - 1; i++) {
+				BuildNumber = BuildNumber + "0"
+			}
+
+			BuildNumber = BuildNumber + UseNum.charAt(0);
+			for (var i = 1; i < NumLength; i++) {
+				BuildNumber = BuildNumber + UseNum.charAt(i)
+			}
+		}
+
+		if (Shift == "X" && CountE < 13) {
+			if (CountE == 2) {
+				BuildNumber = "1"
+			}
+			else {
+				BuildNumber = "0.";
+				for (var i = 3; i < CountE; i++) {
+					BuildNumber = BuildNumber + "0";
+				} 
+				BuildNumber = BuildNumber + "1";
+			}
+		}
+
+		var DPisAt = BuildNumber.indexOf(".");
+		if (DPisAt > 0) {
+			while (BuildNumber.length > DPisAt) {
+				if (BuildNumber.charAt(BuildNumber.length - 1) == "0") {
+					BuildNumber = BuildNumber.substring(0, BuildNumber.length - 1);
+				}
+				else {
+					break;
+				}
+			}
+		}
+
+		if (BuildNumber.charAt(BuildNumber.length - 1) == ".") {
+			BuildNumber = BuildNumber.substring(0, BuildNumber.length - 1)
+		}
+
+		return BuildNumber;
+	}
+
+	function Format(NumToDo) {
+		NumToDo = "" + NumToDo;
+
+		TestForSize = Number(NumToDo);
+		if (TestForSize > 1e15 || TestForSize < 1e-10) return NumToDo;
+
+		var DPisAt = NumToDo.indexOf(".");
+		if (DPisAt>0) {
+			while (NumToDo.length > DPisAt) {
+				if (NumToDo.charAt(NumToDo.length - 1) == "0") 
+					NumToDo = NumToDo.substring(0, NumToDo.length - 1);
+				else 
+					break;
+			}
+		}
+
+		if (NumToDo.charAt(NumToDo.length - 1) == ".") 
+			NumToDo = NumToDo.substring(0, NumToDo.length - 1)
+
+		var DPisAt = NumToDo.indexOf(".");
+		if (DPisAt == -1) DPisAt=999;
+
+		var NumLength = NumToDo.length;
+		if (DPisAt < NumLength) { 
+			var LenLeft = DPisAt;
+			var LenRight = NumLength - DPisAt;
+		}
+		else {
+			var LenLeft = NumLength;
+			var LenRight = 0;
+		}
+
+		var LeftStr = NumToDo.substring(0, LenLeft);
+		var RightStr = NumToDo.substring(LenLeft + 1);
+		var Separator = " ";
+		var NewLeft = "";
+		var Count = 0;
+		for (var i = LenLeft - 1;i >= 0; i--) {
+			NextDigit = LeftStr.charAt(i);
+			NewLeft="" + NextDigit + NewLeft;
+			Count++;
+
+			if (Count > 0 && Count % 3 == 0 && !(Count == LenLeft)) 
+				NewLeft = Separator + NewLeft
+		}
+
+		var NewRight = "";
+		var Count = 0;
+		for (var i = 0;i < LenRight; i++) {
+			NextDigit = RightStr.charAt(i);
+			NewRight = NewRight + NextDigit;
+			Count++;
+
+			if (Count > 0 && Count % 3 == 0 && !(Count == LenRight-1))
+				NewRight=NewRight+Separator
+		}
+
+		if (LenRight == 0) return NewLeft;
+		if (LenLeft == 0) return "0." + NewRight;
+		return NewLeft + "." + NewRight;
+	}
+
+	function StartUp() {
+		ClearAll();
+		LoadFacts();
+		document.UniForm.Message.value = "Enter value (or values) on any ONE line, then click on [Calculate It]";
+	}
+
+	function ClearAll() {
+		for (var i = 0; i < NumUnits + 1; i++) { OutValArray[i] = ""; }
+		for (var i = 0; i < NumUnits + 1; i++) { OrigsArray[i] = ""; }
+
+		UnitMx = "0-0-0";
+		LoadOutputValues();
+		ValuesIn = "N";
+	}
+
+	function AdjustOutputValues() {
+		NoOfSF = document.UniForm.SigFigs.selectedIndex;
+		NoOfSF = NoOfSF + 3;
+
+		if (NoOfSF < 3) NoOfSF = 3;
+		if (NoOfSF > 9) NoOfSF = 9;
+
+		for (var i = 0; i < NumUnits + 1; i++) {
+			var Output = ControlFormat(OutArray[i]);
+			OutValArray[i] = Output;
+		}
+
+		UnitMx = OutValArray[10] + "-" + OutValArray[3] + "-" + OutValArray[4];
+		LoadOutputValues();
+		RestoreOriginals();
+		return;
+	}
+
+	function CalculateIt() {
+		if (ValuesIn == "Y") {
+			AdjustOutputValues(); 
+			return;
+		}
+
+		if (GetInputs() == "N") {
+			document.UniForm.Message.value = ErrorIs + " Click on [Clear All]";
+			return;
+		}
+
+		if (MakeStandardValue() == "N") { 
+			document.UniForm.Message.value = ErrorIs + " Click on [Clear All]";
+			return;
+		}
+
+		MakeOutputValues();
+		AdjustOutputValues();
+	}
+	</SCRIPT> 
 </BODY>
 </HTML>
