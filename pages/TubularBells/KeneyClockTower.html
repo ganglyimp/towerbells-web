@@ -1,57 +1,68 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"
-        "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
-<!-- HTML 3.2 except for added list headings (recognized by Netscape) -->
+<!DOCTYPE HTML>
 <HTML>
-<HEAD><!--This is file "KeneyClockTower.html"-->
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-<TITLE>Keney Clock Tower</TITLE>
-<META name="keywords" content="tubular bells, tubular chimes, tubular clock chime">
+<HEAD>
+	<!--This is file "KeneyClockTower.html"-->
+	<TITLE>TowerBells - Keney Clock Tower</TITLE>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<META name="keywords" content="tubular bells, tubular chimes, tubular clock chime">
+
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+
+    <SCRIPT type="text/javascript" src="../../components/NavBar.js" defer></SCRIPT>
+    <SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
+    <SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 </HEAD>
 <BODY>
-<SMALL>
-Navigation: &nbsp; <A HREF="../../index.html">TowerBells Home</A>&nbsp;
-	=&gt; <A HREF="../Introduction/TowerBells.html">Tower Bells Introduction</A>&nbsp; 
-	=&gt; <A HREF="TubularBells.html">Tubular Bells</A>
-	=&gt; Keney Clock Tower
-</SMALL>
-<hr>
+	<nav-bar pagePath="../../pages" active=""></nav-bar>
+    <bread-crumb></bread-crumb>
 
-<H1 ALIGN=CENTER>The Keney Clock Tower</H1>
+	<main>
+		<header>
+			<h1>The Keney Clock Tower</h1>
+		</header>
 
-<B>What:</B><br>
-The Keney Clock Tower contains a 5-note clock chime.&nbsp;
-The clock was manufactured by ?
-while the five tubular bells, their frame and striking action were
-all made by Walter H. Durfee &amp; Co., of Providence, Rhode Island, USA.
+		<section>
+			<h2>What:</h2>
+			<p>
+				The Keney Clock Tower contains a 5-note clock chime.&nbsp; The clock was manufactured by ? while the five 
+				tubular bells, their frame and striking action were all made by Walter H. Durfee &amp; Co., of Providence, 
+				Rhode Island, USA.
+			</p>
 
-<p>
-<B>Where:</B><br>
-Hartford, Connecticut, USA
+			<h2>Where:</h2>
+			<p>Hartford, Connecticut, USA</p>
 
-<p>
-<B>When:</B>&nbsp; 1899
+			<h2>When:</h2>
+			<p>1899</p>
 
-<p>
-<B>Details:</B><br>
+			<h2>Details:</h2>
 
-<p>
-<B>Photos:</B><br>
+			<h2>Photos:</h2>
 
-<p>
-<B>Links:</B><br>
+			<h2>Links:</h2>
+		</section>
+	</main>
 
-<p>
-<hr>
-<p>
-<A HREF="../Introduction/TowerBells.html">[Tower Bells Introduction]</A>
-<A HREF="../WebsiteMap.html">[Website Map]</A>
-<A HREF="../Introduction/CSZ.html">[The builder]</A>
-<A HREF="../WhatsNew/WhatIsNew.html">[What's New]</A>
-<p>
-This page was created 2006/03/13 and last revised 2006/03/20.<!-- 2018/05/18 -->
-<p>
-Please send comments or questions to
-<A HREF="mailto:csz_stl@swbell.net?subject=Comments%20on%20KeneyClockTower">csz_stl@swbell.net</A>
-<p>
+	<page-footer pagePath="../../pages" 
+				 dateCreated="2006/03/13"
+				 dateModified="2006/03/20"
+				 mailSubject="Comments on KeneyClockTower">
+	</page-footer>
+
+	<SCRIPT>
+		// Send breadcrumb data to component
+		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
+
+		function getBreadcrumbTrail() {
+			return encodeURIComponent(JSON.stringify({
+					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
+					         {name: 'Tower Bells Introduction', path: '../Introduction/TowerBells.html'},
+							 {name: 'Tubular Bells', path: './TubularBells.html'},
+							 {name: 'Keney Clock Tower', path: null}]
+			}));
+		}
+    </SCRIPT>
 </BODY>
 </HTML>
