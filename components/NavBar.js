@@ -2,12 +2,19 @@ class NavBar extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({ mode: 'open' });
+
 		this.pagePath = this.getAttribute('pagePath');
 		this.active = this.getAttribute('active');
+		this.languageData = [];
 	}
 
-	connectedCallback() {
+	async connectedCallback() {
 		const { shadowRoot } = this;
+
+		// Grab external JSON data
+		let jsonResponse = await fetch(`${this.pagePath}/../data/languages.json`);
+		this.languageData = await jsonResponse.json();
+
 		shadowRoot.innerHTML = 
 			`<nav class="nav-bar">
 				<div class="nav-collapsed">
@@ -35,6 +42,9 @@ class NavBar extends HTMLElement {
 					<li id="subscribe"><a href="${this.pagePath}/Subscribe.html">Subscribe</a></li>
 					<li id="web-history"><a href="${this.pagePath}/WebsiteHistory.html">Website History</a></li>
 
+					<select id="googleTranslate">
+					</select>
+
 					<!-- Search Icon -->
 					<a href="${this.pagePath}/SearchTowerBells.html">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -43,6 +53,23 @@ class NavBar extends HTMLElement {
 					</a>
 				</div>
 			</nav>`;
+
+		const googleTranslate = shadowRoot.getElementById('googleTranslate');
+
+		// Dynamically add all language options from JSON
+		this.languageData.forEach(lang => {
+			let langOption = document.createElement('option');
+			langOption.value = lang.code;
+			langOption.innerText = `${lang.englishName} / ${lang.nativeName}`;
+
+			// Preselecting English
+			if(lang.code === 'en') langOption.selected = true;
+
+			googleTranslate.appendChild(langOption);
+		});
+
+		// Append onChange event to Google Translate dropdown
+		googleTranslate.addEventListener('change', (value) => this.openGoogleTranslate(value));
 
 		// Add event listener to toggle open/close of mobile nav-bar
 		const collapseButton = shadowRoot.querySelector('nav button');
@@ -164,6 +191,19 @@ class NavBar extends HTMLElement {
 
 		shadowRoot.appendChild(style);
 	}
+
+	openGoogleTranslate(langCode) {
+		console.log('clicked');
+		let currLang = 'en';
+		let currPage = window.location.href;
+
+		let googleTranslateLink = (langCode === 'en') 
+			? currPage 
+			: `https://translate.google.com/translate?sl=${currLang}&tl=${langCode}&u=${currPage}?${langCode}`;
+
+		window.open(googleTranslateLink);
+	}
 }
 
 customElements.define('nav-bar', NavBar);
+export default NavBar;

@@ -1,0 +1,5186 @@
+[
+  {
+    "state": "AL",
+    "city": "Andalusia",
+    "institution": "First United Methodist Church",
+    "tones": "32",
+    "year": "1946",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#ALAND",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "AL",
+    "city": "Dothan",
+    "institution": "Foster Street United Methodist Church",
+    "tones": "<i>?</i><br/><i>16</i>",
+    "year": "<i>19??</i><br/><i>1926</i>",
+    "by": "<i>?</i><br/><i>CJG</i>",
+    "status": {
+      "href": "data/ALDOTHAN.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "AL",
+    "city": "Mobile",
+    "institution": "St.Mary's <i>Catholic</i>",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#MBLE",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "AL",
+    "city": "Tuscaloosa",
+    "institution": "University of Alabama",
+    "tones": "18",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#TSCL",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "AR",
+    "city": "El Dorado",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ARELDRFP.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "AR",
+    "city": "Fort Smith",
+    "institution": "First United Methodist Church",
+    "tones": "25",
+    "year": "1947",
+    "by": "CJG",
+    "status": {
+      "href": "data/ARFTSMFM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "AZ",
+    "city": "Phoenix",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/AZPHXFPC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "AZ",
+    "city": "Tucson",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "1931",
+    "by": "RL",
+    "status": {
+      "href": "data/AZTCSNFM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Avalon",
+    "institution": "Santa Catalina Island Company",
+    "tones": "20",
+    "year": "1926",
+    "by": "CJL",
+    "status": {
+      "href": "data/CAAVALON.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Beverly Hills",
+    "institution": "Community Presbyterian Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/CABVHLCP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Burlingame *",
+    "institution": "St.Paul's Episcopal Church",
+    "tones": "20",
+    "year": "1939",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CABRLGSP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "\"Colouma\" <i>(Colma;  Daly City)</i>",
+    "institution": "Cypress Lawn Memorial Park",
+    "tones": "11",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CADLCYCL.HTM",
+      "text": "<i>Stored</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Daly City",
+    "institution": "<i>Our Lady of</i> Perpetual Help Church",
+    "tones": "10",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/CADLCYPH.HTM",
+      "text": "<i>Gone?</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Death Valley",
+    "institution": "Scotty's Castle (was Johnson's Ranch, Bonnie Clare, NV)",
+    "tones": "25",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/CADTHVLY.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Fresno",
+    "institution": "Belmont Memorial Park",
+    "tones": "18",
+    "year": "<i>1934</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/CAFRSNBM.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Glendale",
+    "institution": "Glendale Presbyterian Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/data/TU_no_more.html#GLND",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Hollywood",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/CAHLWDFP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Hollywood",
+    "institution": "First United Methodist Church",
+    "tones": "32",
+    "year": "1946",
+    "by": "CJG",
+    "status": {
+      "href": "data/CAHLWDFM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Kingsburg",
+    "institution": "Kingsburg United Methodist Church",
+    "tones": "10",
+    "year": "<i>1946</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/CAKNGSUM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "La Crescenta",
+    "institution": "St.Luke's of the Mountains Episcopal Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CALCRSSL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "La Jolla",
+    "institution": "St.James By The Sea Episcopal Church",
+    "tones": "16",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CALJLLSJ.HTM",
+      "text": "<i>Extant/altered</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Long Beach",
+    "institution": "First United Methodist Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#LGBF",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Long Beach",
+    "institution": "Sunnyside Mausoleum",
+    "tones": "16",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#LGBS",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Los Angeles",
+    "institution": "Angelus Temple",
+    "tones": "20",
+    "year": "1935",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#LNAT",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Los Angeles",
+    "institution": "Los Angeles High School",
+    "tones": "16",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CALANGHS",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Los Angeles",
+    "institution": "Pico-Arlington Christian Church <i>(now Ethiopian Christian Fellowship Church)</i>",
+    "tones": "19",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/CALANPAC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Los Angeles",
+    "institution": "St.Vincent's <i>Catholic</i> Church",
+    "tones": "25",
+    "year": "1947",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#LNSV",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "<i>CA</i>",
+    "city": "<i>Los Angeles</i>",
+    "institution": "<i>University of Southern California</i>",
+    "tones": "<i>20</i>",
+    "year": "<i>1929</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CALANUSC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Los Angeles",
+    "institution": "Wilshire Blvd Christian Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CALANWBC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Oakland",
+    "institution": "Elks Hall <i>(later Carillon Hotel)</i>",
+    "tones": "12",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#OKLN",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "<i>CA</i>",
+    "city": "<i>Oakland</i>",
+    "institution": "<i>Chapel of the Chimes</i>",
+    "tones": "<i>12</i>",
+    "year": "<i>1929</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CAOKLDCC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Pasadena",
+    "institution": "St.Andrew's <i>Catholic</i> Church",
+    "tones": "25",
+    "year": "1935",
+    "by": "RL",
+    "status": {
+      "href": "data/CAPASDSA.HTM",
+      "text": "<i>Dead/altered</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Pomona",
+    "institution": "Pilgrim Congregational Church",
+    "tones": "12",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#PMNA",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Redlands",
+    "institution": "First United Methodist Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#RDLN",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Riverside",
+    "institution": "The Mission Inn",
+    "tones": "25",
+    "year": "1944",
+    "by": "CJG",
+    "status": {
+      "href": "data/CARIVEM2.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Sacramento",
+    "institution": "First United Methodist Church",
+    "tones": "16",
+    "year": "1946",
+    "by": "CJG",
+    "status": {
+      "href": "data/CACZDRJG.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Sacramento",
+    "institution": "Sacramento Municipal Auditorium",
+    "tones": "16",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/CASCRMMA.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "San Francisco",
+    "institution": "Glide Memorial Methodist Church",
+    "tones": "10",
+    "year": "(unknown)",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CAWEIMRW.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "San Francisco",
+    "institution": "Palace of the Legion of Honor",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/CASFOPLH.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "San Francisco",
+    "institution": "St.Peter & Paul's Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#SFSP",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "<i>CA</i>",
+    "city": "<i>San Mateo</i>",
+    "institution": "<i>San Mateo Union High School</i>",
+    "tones": "<i>20</i>",
+    "year": "<i>1927</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CABRLGSP.HTM",
+      "text": "<i>Relocated *</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Santa Monica",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#SMFP",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "South Pasadena",
+    "institution": "St.James Episcopal Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/CASPASSJ.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Stockton",
+    "institution": "Trinity Lutheran Church",
+    "tones": "10",
+    "year": "<i>1924</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CASTCTTL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CA",
+    "city": "Ventura",
+    "institution": "Community Presbyterian Church",
+    "tones": "16",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/CAVNTRCP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CO",
+    "city": "Boulder",
+    "institution": "Sacred Heart Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#BLDR",
+      "text": "<i>Relocated; scrapped</i>"
+    }
+  },
+  {
+    "state": "CO",
+    "city": "Colorado Springs",
+    "institution": "<i>First Presbyterian Church</i>",
+    "tones": "10",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#CLSP",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "CT",
+    "city": "Ansonia",
+    "institution": "Christ <i>Episcopal</i> Church",
+    "tones": "10",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": "data/CTANSNCE.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "CT",
+    "city": "Hartford",
+    "institution": "St.Peter's Roman Catholic Church",
+    "tones": "20",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/CTHFDSTP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "CT",
+    "city": "New London",
+    "institution": "St.James Episcopal Church",
+    "tones": "25",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#NLDN",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "CT",
+    "city": "Southington",
+    "institution": "First Congregational Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#STHN",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "DC",
+    "city": "Washington",
+    "institution": "All Souls Memorial <i>Episcopal</i> Church",
+    "tones": "10",
+    "year": "1922",
+    "by": "CJL & FBL",
+    "status": {
+      "href": "data/TU_no_more.html#DCWS",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "DC",
+    "city": "Washington",
+    "institution": "National City Christian Church",
+    "tones": "25",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/DCWASNCC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "DC",
+    "city": "Washington",
+    "institution": "Shrine of the Most Blessed Sacrament",
+    "tones": "16",
+    "year": "1935",
+    "by": "CJG",
+    "status": {
+      "href": "data/DCWASSBS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "DE",
+    "city": "Dover",
+    "institution": "People's Christian Church",
+    "tones": "18",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/DEDVRPCC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Clearwater",
+    "institution": "Estate of Robert S. Brown",
+    "tones": "<i>18</i><br/><i>25</i><br/><i>32</i>",
+    "year": "<i>1925</i><br/><i>1935</i><br/><i>1940</i>",
+    "by": "<i>?</i><br/><i>CJG</i><br/><i>CJG</i>",
+    "status": {
+      "href": "data/WISPRGHR.HTM",
+      "text": "<i>Relocated; dead</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Daytona Beach",
+    "institution": "Community United Methodist Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/FLDTNBCC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Fort Pierce",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "<i>1925</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#FPRC",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Miami",
+    "institution": "First United Methodist Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/FLMIAMFM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Miami Beach",
+    "institution": "St.Patrick's <i>Catholic</i> Church",
+    "tones": "32",
+    "year": "1943",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#MBCH",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "St.Petersburg",
+    "institution": "St.Peter's Episcopal <i>Cathedral</i>",
+    "tones": "20",
+    "year": "1926",
+    "by": "<i>FBL</i>",
+    "status": {
+      "href": "data/FLSTPTSP.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Tampa",
+    "institution": "First Baptist Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/FLTMPFBC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "White Springs",
+    "institution": "Stephen Foster State Folk Cultural Center <small>(97 tubes in 3 sets of 32 tones + extra treble)</small>",
+    "tones": "32",
+    "year": "1958",
+    "by": "CJG",
+    "status": {
+      "href": "data/FLWHSPGS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "FL",
+    "city": "Winter Haven",
+    "institution": "First Presbyterian Church",
+    "tones": "20",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/FLWNTRHV.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "GA",
+    "city": "Atlanta",
+    "institution": "Peachtree Christian Church",
+    "tones": "21",
+    "year": "<i>1928</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/GAATLPCC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "GA",
+    "city": "Macon",
+    "institution": "Christ Episcopal Church",
+    "tones": "12",
+    "year": "<i>1923</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/GAMCNCEC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "HI",
+    "city": "Honolulu",
+    "institution": "Central Union Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/HIHNLLCU.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Davenport",
+    "institution": "Davenport Memorial <strike>Bank</strike> <i>Park</i>",
+    "tones": "10",
+    "year": "1931",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#DVPD",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Davenport",
+    "institution": "Palmer School of Chiropractic",
+    "tones": "16",
+    "year": "1921",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#DVPP",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Des Moines",
+    "institution": "First Christian Church",
+    "tones": "??<br/>30",
+    "year": "19??<br/>1939",
+    "by": "<i>?</i><br/>RL",
+    "status": {
+      "href": "data/IADSMUCC.HTM",
+      "text": "<i>Replaced<br/><i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Oskaloosa",
+    "institution": "Central United Methodist Church",
+    "tones": "16",
+    "year": "1941",
+    "by": "RL",
+    "status": {
+      "href": "data/IAOSKLCM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Ottumwa",
+    "institution": "First Evangelical Lutheran Church",
+    "tones": "13",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/IAOTTMWL.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IA",
+    "city": "Storm Lake",
+    "institution": "Lakeside United Presbyterian Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/IASTRMLP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "ID",
+    "city": "Boise",
+    "institution": "St.Michael's Episcopal <i>Cathedral</i>",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/IDBOISEM.HTM",
+      "text": "<i>Dead/altered</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Canton",
+    "institution": "First United Methodist Church",
+    "tones": "18",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILCANTFM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "Blessed Sacrament <i>Catholic</i> Church",
+    "tones": "4",
+    "year": "<i>1937</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": null,
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "Boston Store <i>(now 1 North Dearborn Building)</i>",
+    "tones": "5",
+    "year": "1921",
+    "by": "<i>?</i>",
+    "status": {
+      "href": null,
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "<i>IL</i>",
+    "city": "<i>Chicago</i>",
+    "institution": "<i>Century of Progress World's Fair</i>",
+    "tones": "<i>?</i>",
+    "year": "<i>1933</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CHIF",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "Chicago Methodist Temple <small>(Two 20 tone systems)</small>",
+    "tones": "20 + 20",
+    "year": "1935",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#CHIC",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "<i>IL</i>",
+    "city": "<i>Chicago</i>",
+    "institution": "<i>Chicago Stadium (organ)</i>",
+    "tones": "<i>20</i>",
+    "year": "<i>1928</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/NVLSVGPM.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "<i>IL</i>",
+    "city": "<i>Chicago</i>",
+    "institution": "<i>Deagan Building</i>",
+    "tones": "<i>25?</i>",
+    "year": "<i>19??</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILCHICDB.HTM",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "First Presbyterian Church",
+    "tones": "<i>?</i><br/>16",
+    "year": "<i>1928</i><br/>1941",
+    "by": "<i>?</i><br/><i>CJG</i>",
+    "status": {
+      "href": "data/ILCHIFPC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "Lincoln Park Fieldhouse",
+    "tones": "25",
+    "year": "1938 (?)",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILCHICFH.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "Municipal Pier, for Pageant of Progress Exposition",
+    "tones": "16",
+    "year": "1932",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#CHIM",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "North Austin Evangelical Lutheran Church",
+    "tones": "18",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CHIN",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Francis Xavier <i>Catholic</i> Church",
+    "tones": "32",
+    "year": "1947",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILBRRHLS.HTM",
+      "text": "<i>Relocated; operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Ignatius <i>Catholic</i> Church",
+    "tones": "<i>15</i><br/>25",
+    "year": "<i>1917</i><br/>1938",
+    "by": "<i>?</i><br/><i>CJG</i>",
+    "status": {
+      "href": "data/ILCHISTI.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.James United Methodist Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/WIMILWOT.HTM",
+      "text": "<i>Relocated; extant</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Jerome <i>Catholic</i> Church",
+    "tones": "25",
+    "year": "1941",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILCHISJR.HTM",
+      "text": "<i>Extant/altered</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Malachy's <i>Catholic</i> Church",
+    "tones": "18",
+    "year": "1930",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CHSM",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Michael <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILCHISML.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Paul's Lutheran Church <small><i>(now Progressive True Vine MB Church #111)</i><small>",
+    "tones": "25",
+    "year": "<i>1943</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILCHISPL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Peter & Paul Church",
+    "tones": "4",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": null,
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Chicago",
+    "institution": "St.Raphael's Church",
+    "tones": "5",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": null,
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "<i>Chicago</i>",
+    "institution": "<i>St.Stephen's Catholic Church</i>",
+    "tones": "<i>10</i>",
+    "year": "<i>1931</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CHST",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Danville",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#DNVL",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Elsah",
+    "institution": "Principia College",
+    "tones": "<i>5</i><br/>10",
+    "year": "<i>1932</i><br/>1936",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#ELSH",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Evanston",
+    "institution": "Levere Memorial Chapel, <i>Sigma Alpha Epsilon Hq</i>",
+    "tones": "25",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILEVNSLT.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Forest Park",
+    "institution": "Concordia Cemetery",
+    "tones": "10",
+    "year": "1931",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILFRSPCC.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Galesburg",
+    "institution": "First Christian Church",
+    "tones": "20",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/ILGLSBFC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Hoopeston",
+    "institution": "Hoopeston Universalist Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#HPST",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Jacksonville",
+    "institution": "First Congregational Church",
+    "tones": "10",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILJCKVCC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Joliet",
+    "institution": "St.John's Universalist Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#JLTJ",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Joliet",
+    "institution": "Woodlawn Memorial Park",
+    "tones": "10",
+    "year": "1931",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#JLTW",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Lake Forest",
+    "institution": "Church of the Holy Spirit",
+    "tones": "10",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILLKFRHS.HTM",
+      "text": "<i>Extant/altered</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Mooseheart",
+    "institution": "House of God <small><i>(presumed to be two sets of 32)</i></small>",
+    "tones": "64",
+    "year": "<i>1950</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#MHRT",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Oak Park",
+    "institution": "First Baptist Church",
+    "tones": "10",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILOKPKFB.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Pekin",
+    "institution": "St.Paul's Evangelical Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#PKIN",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Rockford",
+    "institution": "Bethesda <i>Evangelical</i> Covenant Church",
+    "tones": "20",
+    "year": "1928",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#RKFD",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Rockford",
+    "institution": "Court Street United Methodist Church",
+    "tones": "18",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#RKFD",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IL",
+    "city": "Springfield",
+    "institution": "First Christian Church",
+    "tones": "14",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILSPFLFC.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Evansville",
+    "institution": "Trinity United Methodist Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/INEVNSVT.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Franklin",
+    "institution": "First United Presbyterian Church",
+    "tones": "16",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": "data/INFRNKFP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Grandview",
+    "institution": "St.Mark's Lutheran Church",
+    "tones": "10",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#GRDV",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Greensburg",
+    "institution": "Greensburg United Methodist Church",
+    "tones": "10",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#GRBG",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Indianapolis",
+    "institution": "Broadway United Methodist Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/ININDIBM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Indianapolis",
+    "institution": "Second Presbyterian Church",
+    "tones": "20",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#IPLS",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Indianapolis",
+    "institution": "St.Patrick's Church <small><i>(originally installed in KS in 1926 by RL)</i></small>",
+    "tones": "10",
+    "year": "1936-R",
+    "by": "RL",
+    "status": {
+      "href": "data/ININDSTP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Indianapolis",
+    "institution": "Zion Evangelical UCC",
+    "tones": "16",
+    "year": "1925",
+    "by": "CJG",
+    "status": {
+      "href": "data/ININDZEV.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Kokomo",
+    "institution": "St.Joan of Arc <i>Catholic</i> Church",
+    "tones": "<i>5</i>",
+    "year": "1950",
+    "by": "CJG",
+    "status": {
+      "href": null,
+      "text": "<i>Stored</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Lafayette",
+    "institution": "First Baptist Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/INLFYTFB.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Michigan City",
+    "institution": "Trinity Episcopal Church",
+    "tones": "12",
+    "year": "1930",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/INMCHCYT.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "<i>IN</i>",
+    "city": "<i>New Albany</i>",
+    "institution": "<i>St.Mark UCC Church</i>",
+    "tones": "<i>16</i>",
+    "year": "<i>1926</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/INNALBSM.HTM",
+      "text": "<i>Stored</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "New Castle (<i>Newcastle</i>)",
+    "institution": "First Christian Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/INNWCSFC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Plainfield",
+    "institution": "Indiana Boys' School <small><i>(now Plainfield Juvenile Correction Facility)</i></small>",
+    "tones": "<i>12</i><br/>14",
+    "year": "<i>1927</i><br/><i>1928</i>",
+    "by": "<i>RL</i><br/><i>RL</i>",
+    "status": {
+      "href": "data/TU_no_more.html#PLNF",
+      "text": "<i>Stolen</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Rochester",
+    "institution": "Grace United Methodist Church",
+    "tones": "12",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#RCHS",
+      "text": "<i>Stolen</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Seymour",
+    "institution": "Trinity United Methodist Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/INSYMRTM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Shelbyville",
+    "institution": "First Baptist Church",
+    "tones": "10",
+    "year": "1931",
+    "by": "RL",
+    "status": {
+      "href": "data/INSHVLFB.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Terre Haute",
+    "institution": "Indiana State Normal School",
+    "tones": "20",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#TRHT",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Vincennes",
+    "institution": "St.Francis Xavier <i>Catholic</i> Church (<i>Basilica</i>)",
+    "tones": "10",
+    "year": "1947",
+    "by": "CJG",
+    "status": {
+      "href": "data/INVNCSFX.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "IN",
+    "city": "Wabash",
+    "institution": "First United Presbyterian Church",
+    "tones": "<i>18</i>",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/INWBSHFP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Abilene",
+    "institution": "Brown Memorial Home",
+    "tones": "16",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/KSABILBM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Fredonia",
+    "institution": "First United Methodist Church",
+    "tones": "11",
+    "year": "1928",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/KSFRDNFM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Hutchinson",
+    "institution": "First Presbyterian Church",
+    "tones": "10<br/><i>14</i>",
+    "year": "1927<br/><i>1996</i>",
+    "by": "<i>RL</i><br/><i>?</i>",
+    "status": {
+      "href": "data/KSHTCHFP.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Lawrence",
+    "institution": "Trinity Lutheran Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#LWRT",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Smolan",
+    "institution": "Salemsborg Evangelical Lutheran Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/KSSMOLAN.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Topeka",
+    "institution": "Assumption <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#TPKA",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Topeka",
+    "institution": "Grace Episcopal Cathedral",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/KSTOPKGC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Topeka",
+    "institution": "Topeka High School",
+    "tones": "18",
+    "year": "1931",
+    "by": "CJG",
+    "status": {
+      "href": "data/KSTOPKHS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "KS",
+    "city": "Wichita",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/KSWICHFP.HTM",
+      "text": "<i>Relocated; partial</i>"
+    }
+  },
+  {
+    "state": "KY",
+    "city": "Anchorage",
+    "institution": "St.Luke's Episcopal Church",
+    "tones": "16",
+    "year": "1941",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#KYAB",
+      "text": "<i>Sold</i>"
+    }
+  },
+  {
+    "state": "KY",
+    "city": "Campbellsville",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CMPV",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "KY",
+    "city": "Mount Sterling",
+    "institution": "First Baptist Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/KYMTSTFB.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "KY",
+    "city": "Owensboro",
+    "institution": "St.Stephan's <i>Cathedral (Catholic)</i>",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/KYOWNBSS.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "KY",
+    "city": "Wilmore",
+    "institution": "Asbury College",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#WLMR",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "LA",
+    "city": "Baton Rouge",
+    "institution": "Louisiana State University",
+    "tones": "18",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#BTRG",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "LA",
+    "city": "New Orleans",
+    "institution": "Sacred Heart <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#NOSH",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Bedford",
+    "institution": "First Church of Christ",
+    "tones": "10",
+    "year": "1935",
+    "by": "RL",
+    "status": {
+      "href": "data/MABEDFFC.HTM",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Brookline",
+    "institution": "St.Aidan's <i>Catholic</i> Church <i>[closed]</i>",
+    "tones": "16",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/MABROKSA.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Dalton",
+    "institution": "First Congregational Church",
+    "tones": "12",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/MADLTNFC.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Holyoke",
+    "institution": "St.Jerome's <i>Catholic</i> Church",
+    "tones": "18",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/MAHOLYSJ.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "North Adams",
+    "institution": "St.John's Episcopal Church",
+    "tones": "20",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/MANADMSJ.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Palmer",
+    "institution": "Second Congregational Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/MAPLMRSC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Swampscott",
+    "institution": "The First Congregational Church",
+    "tones": "25",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#SWMP",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Taunton",
+    "institution": "St.Mary's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/MATNTNSM.HTM",
+      "text": "<i>Dead/altered</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Wakefield",
+    "institution": "First Congregational Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/MAWKFDFC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MA",
+    "city": "Winchester",
+    "institution": "First Baptist Church",
+    "tones": "16",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/MAWINCFB.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MD",
+    "city": "Baltimore",
+    "institution": "Epiphany Lutheran Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/MDBALTEL.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MD",
+    "city": "Baltimore",
+    "institution": "Grace Reformed Church <small><i>(now Grace UCC)</i></small>",
+    "tones": "16",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/MDBALTGR.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MD",
+    "city": "Hagerstown",
+    "institution": "Trinity Lutheran Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/MDHAGRT2.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "ME",
+    "city": "Bar Harbor",
+    "institution": "Holy Redeemer R. C. Church",
+    "tones": "3",
+    "year": "1936",
+    "by": "RL",
+    "status": {
+      "href": null,
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Bay City",
+    "institution": "Trinity Episcopal Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/MIBYCTYT.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit <i>(Beverly Hills)</i>",
+    "institution": "Acacia Park Cemetery",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/MIDETAPC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "Duns Scotus College",
+    "tones": "20",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/MIDETDSC.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "Michigan Mutual Liability Co <i>Building</i> <small><i>(now GVSU Detroit Center)</i></small>",
+    "tones": "25",
+    "year": "1935",
+    "by": "RL",
+    "status": {
+      "href": "data/MIDETMML.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "Our Lady of Sorrows <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#DTRL",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "Our Lady of the Rosary <i>Catholic</i> Church",
+    "tones": "18 <i>-1</i>",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/MIDETOLR.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "Park View Memorial Cemetery",
+    "tones": "10",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHTOLECM.HTM",
+      "text": "<i>Relocated *</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "St.Hedwig's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/MIDETSTH.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Detroit",
+    "institution": "<i>St.Theresa of Avila Catholic</i> Church",
+    "tones": "10",
+    "year": "1937",
+    "by": "CJG",
+    "status": {
+      "href": "data/MIDETSTT.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Escanaba",
+    "institution": "Swedish Evangelical Lutheran Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MIESCNSL.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Flint",
+    "institution": "Sunset Hills Mausoleum",
+    "tones": "10",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/MIFLNTSH.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Grand Rapids",
+    "institution": "Fountain Street Baptist Church",
+    "tones": "14",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#GRDR",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Highland Park",
+    "institution": "Trinity United Methodist Church",
+    "tones": "20",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MIHLDPTM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Holland",
+    "institution": "Hope College",
+    "tones": "20",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/MIHLNDHC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Jackson",
+    "institution": "First United Methodist Church",
+    "tones": "18",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MIJCKSFM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Kalamazoo",
+    "institution": "St.Luke's Episcopal Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/MIKALASL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Lansing",
+    "institution": "Plymouth Congregational Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#LNSG",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Muskegon",
+    "institution": "Bethany Christian Reformed Church",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/MIMSKGBC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Pontiac",
+    "institution": "All Saints Episcopal Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/MIPONTAS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MI",
+    "city": "Wyandotte",
+    "institution": "First Congregational Church",
+    "tones": "16",
+    "year": "1936",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MIWYNDTF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MN",
+    "city": "Faribault",
+    "institution": "Thomas Scott Buckham Memorial Library",
+    "tones": "1",
+    "year": "1931",
+    "by": "RL",
+    "status": {
+      "href": null,
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MN",
+    "city": "Minneapolis",
+    "institution": "Norwegian Lutheran Memorial Church",
+    "tones": "12",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/MNMPLSNL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "<i>MN</i>",
+    "city": "<i>Minneapolis</i>",
+    "institution": "<i>Sunset Memorial Park</i>",
+    "tones": "<i>25</i>",
+    "year": "<i>1925</i>",
+    "by": "<i>CJG & RL</i>",
+    "status": {
+      "href": "data/MNMPLSSP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MN",
+    "city": "St.Paul",
+    "institution": "Fort Snelling Chapel, Fort Snelling State Park",
+    "tones": "10",
+    "year": "1930",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MNSTPAFS.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MN",
+    "city": "Waseca",
+    "institution": "First United Methodist Church <small><i>(now county museum)</i></small>",
+    "tones": "10",
+    "year": "<i>1923</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#WSCA",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Cape Girardeau",
+    "institution": "Cape County Memorial Park <i>Cemetery</i>",
+    "tones": "(unknown)",
+    "year": "1934",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#CPGR",
+      "text": "<i>Never installed?</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Country Club Christian Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#KCMC",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Holy Cross Catholic Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#KCMH",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Indian Village",
+    "tones": "10",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#KCMC",
+      "text": "<i>Relocated *</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Linwood Presbyterian Church",
+    "tones": "16",
+    "year": "<i>1923</i>",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MOKANCLP.HTM",
+      "text": "<i>Vandalized</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Second Presbyterian Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/MOKANCSP.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "St.James Catholic Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/MOKANSTJ.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "St.Paul's Episcopal Church",
+    "tones": "16",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MOKANSTP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Trinity United Methodist Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "<i>RL & FBL</i>",
+    "status": {
+      "href": "data/MOKANCTM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Kansas City",
+    "institution": "Westminster Congregational Church",
+    "tones": "16",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#KCWC",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Moberly",
+    "institution": "First Baptist Church",
+    "tones": "18",
+    "year": "1948",
+    "by": "CJG",
+    "status": {
+      "href": "data/MOMBRLFB.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Point Lookout",
+    "institution": "School of the Ozarks <small><i>(96 tubes in 3 sets of 32 tones)</i></small>",
+    "tones": "<i>32</i>",
+    "year": "1958",
+    "by": "CJG",
+    "status": {
+      "href": "data/MOPTLKTS.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "St.Louis",
+    "institution": "Grace United Methodist Church",
+    "tones": "25",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MOSTLGMC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "St.Louis",
+    "institution": "St.John's United Church of Christ",
+    "tones": "10",
+    "year": "1923",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MOSTLSJU.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "St.Louis",
+    "institution": "St.John's United Methodist Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/MOSTLSJM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "St.Louis",
+    "institution": "St.Margaret of Scotland <i>RC</i> Church",
+    "tones": "20",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/MOSTLSTM.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "MO",
+    "city": "Springfield",
+    "institution": "St.Joseph <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#SPSJ",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "MS",
+    "city": "McComb",
+    "institution": "J.J.White Memorial Presbyterian Church",
+    "tones": "10",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/MSMCMBWM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "MS",
+    "city": "Meridian",
+    "institution": "Central United Methodist Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/MSMRDNCM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "MT",
+    "city": "Deer Lodge",
+    "institution": "Immaculate Conception <i>Catholic</i> Church",
+    "tones": "12",
+    "year": "1935",
+    "by": "RL & CJG",
+    "status": {
+      "href": "data/MTDRLDGI.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Asheville",
+    "institution": "City Building Tower",
+    "tones": "10",
+    "year": "1932",
+    "by": "RL",
+    "status": {
+      "href": "data/NCASHVLL.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Charlotte",
+    "institution": "First United Methodist Church",
+    "tones": "20",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/NCCHARFM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Concord",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/NCCONCFM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "<i>NC</i>",
+    "city": "<i>Concord</i>",
+    "institution": "<i>First Presbyterian Church</i>",
+    "tones": "<i>10</i>",
+    "year": "<i>1927</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/NCCONCFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "<i>NC</i>",
+    "city": "<i>Gastonia</i>",
+    "institution": "<i>First Baptist Church</i>",
+    "tones": "<i>16</i>",
+    "year": "<i>1927</i>",
+    "by": "CJL",
+    "status": {
+      "href": "data/NCGASTFB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "<i>NC</i>",
+    "city": "<i>Goldsboro</i>",
+    "institution": "<i>St.Paul Methodist Episcopal Church</i>",
+    "tones": "<i>10</i>",
+    "year": "<i>1923</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#GLDS",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Laurinburg",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/NCLRNBGF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Lexington",
+    "institution": "First Evangelical & Reformed Church",
+    "tones": "16",
+    "year": "1942",
+    "by": "CJG",
+    "status": {
+      "href": "data/NCLXNGFR.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "<i>NC</i>",
+    "city": "<i>Raleigh</i>",
+    "institution": "<i>Edenton St. Methodist Church</i>",
+    "tones": "<i>10</i>",
+    "year": "<i>1924</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#RLGH",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Reidsville",
+    "institution": "Chinqua Penn Plantation",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/NCRDSVLP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Salisbury",
+    "institution": "St.John's Lutheran Church",
+    "tones": "16",
+    "year": "1931",
+    "by": "CJG",
+    "status": {
+      "href": "data/NCSLSBSJ.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Sanford",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1941",
+    "by": "RL",
+    "status": {
+      "href": "data/NCSANFDF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Statesville",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/NCSTVLFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Wilmington",
+    "institution": "Church of the Covenant",
+    "tones": "16",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/NCWLMNCC.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Winston-Salem",
+    "institution": "Brown Memorial Baptist Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/NCWNSLMB.HTM",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "NC",
+    "city": "Winston-Salem",
+    "institution": "Home Moravian Church",
+    "tones": "20",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/NCWNSLMH.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NE",
+    "city": "Seward",
+    "institution": "Seward County Courthouse",
+    "tones": "20",
+    "year": "1933",
+    "by": "CJG",
+    "status": {
+      "href": "data/NESWRDCH.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "NH",
+    "city": "Lancaster",
+    "institution": "Methodist Episcopal Church",
+    "tones": "10",
+    "year": "<i>1926</i>",
+    "by": "CJL",
+    "status": {
+      "href": "data/NHLNCSFM.HTM",
+      "text": "<strong><i>Relocated;</i></strong><br><strong><i>FOR SALE</i></strong>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Asbury Park",
+    "institution": "Mayfair Theater",
+    "tones": "10",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#ABPK",
+      "text": "<i>Demolished</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Atlantic City",
+    "institution": "St.Paul's Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1922",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#ACSP",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Camden",
+    "institution": "Victor Talking Machine Company",
+    "tones": "18",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/NJMRSTTE.HTM",
+      "text": "<i>Relocated *</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Collingswood",
+    "institution": "Collingswood Presbyterian Church",
+    "tones": "16",
+    "year": "1930",
+    "by": "CJL",
+    "status": {
+      "href": "data/NJCLGWDP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Haddonfield",
+    "institution": "Haddonfield United Methodist Church",
+    "tones": "16",
+    "year": "1938",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#HDNF",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Lawrenceville",
+    "institution": "Lawrenceville School",
+    "tones": "1325",
+    "year": "19391940",
+    "by": "CJG",
+    "status": {
+      "href": "data/NJLAWRVL.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Merchantville",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/NJMRCVFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Moorestown",
+    "institution": "Trinity Episcopal Church",
+    "tones": "18",
+    "year": "1929-R",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/NJMRSTTE.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "Ocean City",
+    "institution": "First United Methodist Church",
+    "tones": "18",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#OCFM",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "NJ",
+    "city": "West Orange",
+    "institution": "St.Mark's <i>Episcopal</i> Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/NJWORNSM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Albany",
+    "institution": "St.Mary's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1922",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYALBASM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Albion",
+    "institution": "St.Joseph's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1920",
+    "by": "<i>CJL & FBL</i>",
+    "status": {
+      "href": "data/NYALBION.HTM",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Binghamton",
+    "institution": "High Street Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYBINGHH.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "Holy Innocents Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYBRKLHI.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "Flatbush Presbyterian Church",
+    "tones": "20",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYBRKLFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "St.Augustine's Church",
+    "tones": "18",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYBRKLSG.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "St.Francis of Assisi Church",
+    "tones": "18",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYBRKLFA.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "St.Francis Xavier <i>Catholic</i> Church",
+    "tones": "25",
+    "year": "1932",
+    "by": "RL",
+    "status": {
+      "href": "data/NYBRKLFX.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Brooklyn",
+    "institution": "St.<i>Rosalia's Catholic</i> Church",
+    "tones": "10",
+    "year": "1929",
+    "by": "(N/R)",
+    "status": {
+      "href": "data/NYBRKLSR.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Chazy",
+    "institution": "Chazy Central Rural School",
+    "tones": "20",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYCHZYCS.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Cooperstown",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1935",
+    "by": "RL",
+    "status": {
+      "href": "data/NYCPRSTF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Croton-on-Hudson",
+    "institution": "Holy Name of Mary Church",
+    "tones": "10",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/NYCRTNHN.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Elmira",
+    "institution": "Park Congregational Church",
+    "tones": "18",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/NYELMRPC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Flushing (L.I.)",
+    "institution": "First Congregational Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#NYFL",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Hewlett (L.I.)",
+    "institution": "St.Joseph's <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1931",
+    "by": "CJG",
+    "status": {
+      "href": "data/NYHWLTSJ.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Hudson Falls",
+    "institution": "St.Mary's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1941",
+    "by": "CJG",
+    "status": {
+      "href": "data/NYHDSFSM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Ilion",
+    "institution": "First Presbyterian Church",
+    "tones": "<i>10</i></br>16",
+    "year": "<i>1936</i><br/>1938",
+    "by": "<i>RL</i><br/><i>RL</i>",
+    "status": {
+      "href": "data/NYILIONF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Lakewood",
+    "institution": "Lakewood M.E. Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#LKWD",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Larchmont",
+    "institution": "St.Augustine's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/NYLARCHA.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "LeRoy",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYLEROYF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Mount Vernon",
+    "institution": "First Methodist Episcopal Church <small><i>(now The Bible Church of Christ)</i></small>",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/NYMTVRNF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City",
+    "institution": "Our Lady of Pompeii <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1930",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYNYOLPC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City",
+    "institution": "Roxy Theater",
+    "tones": "20",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#NYRX",
+      "text": "<i>Demolished</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City <i>(Bronx)</i>",
+    "institution": "St.Anselm's <i>Catholic</i> Church",
+    "tones": "10",
+    "year": "1927<i>?</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/NYBRNXSA.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City",
+    "institution": "St.Joseph's Roman Catholic Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYNYSTJH.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City",
+    "institution": "St.Peter's Lutheran Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#NYSP",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "New York City <i>(Bronx)</i>",
+    "institution": "St.Peter's Evangelical Lutheran Church",
+    "tones": "12",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/NYBRNXPL.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Newburgh",
+    "institution": "First United Methodist Church <small><i>(was Trinity Methodist Episcopal Church)</i></small>",
+    "tones": "20",
+    "year": "1932",
+    "by": "RL",
+    "status": {
+      "href": "data/NYNWBRGT.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Olean",
+    "institution": "St.Mary of the Angels <i>Catholic</i> Church",
+    "tones": "25",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/NYOLEANM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Oneida",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "12",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/NYONIDFM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Port Washington (L.I.)",
+    "institution": "Nassau Knolls Cemetery",
+    "tones": "18",
+    "year": "1942-R",
+    "by": "CJG",
+    "status": {
+      "href": "data/NYPTWNNK.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Poughkeepsie",
+    "institution": "Reformed Dutch Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYPGHKDR.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rochester",
+    "institution": "Lake Avenue Baptist Church",
+    "tones": "?<br/>16",
+    "year": "1920<br/>1921",
+    "by": "?<br/>CJL <i>or</i>ELR & CJG",
+    "status": {
+      "href": "data/TU_no_more.html#RCLB",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rochester",
+    "institution": "Salem Evangelical Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYROCSEC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rochester",
+    "institution": "St.Mary's <i>Catholic</i> Church",
+    "tones": "10<br/>16",
+    "year": "1939<br/>1940",
+    "by": "RL<br/>RL",
+    "status": {
+      "href": "data/NYROCSMY.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rochester",
+    "institution": "St.Matthew's Evangelical Lutheran Church",
+    "tones": "5",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": null,
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rockville Centre (L.I.)",
+    "institution": "St.Mark's Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYRCTRSM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rome",
+    "institution": "St.Peter's Roman Catholic Church",
+    "tones": "20<br/>22",
+    "year": "1926<br/>1936",
+    "by": "CJL<br/>RL",
+    "status": {
+      "href": "data/NYROMESP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Rosedale",
+    "institution": "St.Clare's Church",
+    "tones": "4",
+    "year": "1931",
+    "by": "CJG",
+    "status": {
+      "href": null,
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Roslyn (L.I.)",
+    "institution": "Residence of Arthur Williams",
+    "tones": "18",
+    "year": "1926",
+    "by": "(N/R)",
+    "status": {
+      "href": "data/NYPTWNNK.HTM",
+      "text": "<i>Relocated *</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Schenectady",
+    "institution": "St.John the Evangelist <i>Catholic</i> Church",
+    "tones": "20<br/>25",
+    "year": "1925<br/>1936",
+    "by": "<i>CJL</i><br/><i>& RL</i>",
+    "status": {
+      "href": "data/NYSCHNSJ.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "St.Johnsville",
+    "institution": "St.John's Reformed Church",
+    "tones": "25",
+    "year": "1937",
+    "by": "RL",
+    "status": {
+      "href": "data/NYSJNSVF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Syracuse",
+    "institution": "Chimes Building",
+    "tones": "10",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#SYCB",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Tarrytown",
+    "institution": "Sleepy Hollow Cemetery",
+    "tones": "10",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/NYTRTNSH.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "NY",
+    "city": "Utica",
+    "institution": "Utica Mutual Insurance Company",
+    "tones": "25",
+    "year": "1936",
+    "by": "RL",
+    "status": {
+      "href": "data/NYUTIFNB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Bellefontaine",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/OHBLFNTF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Canton",
+    "institution": "First Evangelical Church / Calvary Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/OHCANTNF.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Canton",
+    "institution": "Grace Reformed Church <small><i>(now Grace UCC)</i></small>",
+    "tones": "10",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/OHCANTNG.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Cincinnati",
+    "institution": "Hyde Park Community Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHCINHPM.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Cincinnati",
+    "institution": "Clifton Presbyterian Church <small><i>(now Immanuel Presbyterian Church)</i></small>",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHCINIPC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Cincinnati <i>(Walnut Hills)</i>",
+    "institution": "Seventh Presbyterian Church",
+    "tones": "15",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#WNHL",
+      "text": "<i>Relocated; operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Cleveland",
+    "institution": "Baptist Church of the Master",
+    "tones": "16",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#CLCM",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Cleveland",
+    "institution": "Old Stone Church <i>(Presbyterian)</i>",
+    "tones": "32",
+    "year": "1946",
+    "by": "RGH",
+    "status": {
+      "href": "data/OHCLEVOS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Columbus <i>(Bexley)</i>",
+    "institution": "Trinity Lutheran Seminary <small>Capital University</small>",
+    "tones": "12",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHCOLTLS.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "East Liverpool",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "<i>10</i>",
+    "year": "1922",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#ELFM",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Elyria",
+    "institution": "St.Andrew's Episcopal Church",
+    "tones": "12",
+    "year": "1938",
+    "by": "RL",
+    "status": {
+      "href": "data/OHELYRSA.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Findlay",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "10",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHFNDLFM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Galion",
+    "institution": "Peace Lutheran Church",
+    "tones": "32",
+    "year": "1947",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHGALNFA.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Jackson",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1941",
+    "by": "<i>RL & CJG</i>",
+    "status": {
+      "href": "data/OHJACKSF.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Lancaster",
+    "institution": "First Methodist Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/OHLNCSTF.HTM",
+      "text": "<i>Relocated; stored</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Lima",
+    "institution": "Trinity Methodist Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/OHLIMATM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Maumee",
+    "institution": "St.Paul's Episcopal Church",
+    "tones": "25",
+    "year": "1938",
+    "by": "RL",
+    "status": {
+      "href": "data/OHMAUMSP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "New Philadelphia",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/OHNPHLDF.HTM",
+      "text": "<i>Stored</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Newark",
+    "institution": "Faith United Methodist Church <i>(was First United Brethren)</i>",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/OHNWRKFA.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Newark",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "<i>20</i>",
+    "year": "<i>1941</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/OHNWRKFI.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Piqua",
+    "institution": "Greene Street Methodist Episcopal Church",
+    "tones": "14",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/OHPIQUAG.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Sandusky",
+    "institution": "Grace Episcopal Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/OHSNDSGE.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Springfield",
+    "institution": "Central Methodist Episcopal Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/OHSPFLDC.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Steubenville",
+    "institution": "St.Paul's Episcopal Church",
+    "tones": "16",
+    "year": "1929",
+    "by": "RL",
+    "status": {
+      "href": "data/OHSTBNSP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Steubenville",
+    "institution": "<i>First</i> Westminster Presbyterian Church",
+    "tones": "10",
+    "year": "1922",
+    "by": "FBL",
+    "status": {
+      "href": "data/OHSTBNFW.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Tiffin",
+    "institution": "National Orphans Home <small><i>(now Tiffin Developmental Center)</i></small>",
+    "tones": "25",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/OHTFFNTD.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Toledo",
+    "institution": "St.Matthew's English Lutheran Church <small><i>(now Corinth Missionary Baptist Church)</i></small>",
+    "tones": "10",
+    "year": "1935",
+    "by": "(own)",
+    "status": {
+      "href": "data/OHTOLECM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Toledo",
+    "institution": "St.Mark's Lutheran Church",
+    "tones": "10",
+    "year": "1934-R",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHTOLESM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Warren",
+    "institution": "Christ Episcopal Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#WRRN",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Wooster",
+    "institution": "Zion Lutheran Church",
+    "tones": "12",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/OHWOOSTR.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Zanesville",
+    "institution": "Central Presbyterian Church",
+    "tones": "12",
+    "year": "1922",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#ZVCP",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "OH",
+    "city": "Zanesville",
+    "institution": "Forest Avenue Presbyterian Church",
+    "tones": "16",
+    "year": "1922",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#ZVFA",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "OK",
+    "city": "Norman",
+    "institution": "McFarlin Memorial United Methodist Church",
+    "tones": "18",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/OKNORMNM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OK",
+    "city": "Oklahoma City",
+    "institution": "Oklahoma City Cemetery <small><i>(Memorial Park Cemetery)</i></small>",
+    "tones": "20",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TU_no_more.html#OKOC",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "OK",
+    "city": "Tulsa",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/KSMNHTFC.HTM",
+      "text": "<i>Relocated; operable</i>"
+    }
+  },
+  {
+    "state": "OK",
+    "city": "Tulsa",
+    "institution": "Holy Family RC <i>Cathedral</i>",
+    "tones": "18",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/OKTLSAHF.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "OK",
+    "city": "Tulsa",
+    "institution": "Memorial Park Cemetery",
+    "tones": "20",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/OKTLSAMP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "OR",
+    "city": "Eugene",
+    "institution": "First Christian Church",
+    "tones": "16",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/OREUGNFC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Altoona",
+    "institution": "2nd Church United Brethren in Christ <small><i>(now 2nd Avenue UMC)</i></small>",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAALTNSA.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Annville",
+    "institution": "United Brethren Church <small><i>(now First United Methodist Church)</i></small>",
+    "tones": "16",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/PAANNVLM.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Berwick",
+    "institution": "Holy Trinity Lutheran Church",
+    "tones": "12",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#BRWK",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Brookville",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/PABROKVL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Brownsville",
+    "institution": "Christ Episcopal Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/PABRNSVC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Butler",
+    "institution": "St.Mark's Evangelical Lutheran Church",
+    "tones": "18",
+    "year": "1931",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#BTLR",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Catasauqua",
+    "institution": "St.Paul's Evangelical Lutheran Church",
+    "tones": "16",
+    "year": "1920",
+    "by": "FBL",
+    "status": {
+      "href": "data/PACATSQP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Clearfield",
+    "institution": "Trinity Methodist Church",
+    "tones": "20",
+    "year": "1933",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#CLRF",
+      "text": "<i>Destroyed</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Erie",
+    "institution": "<i>Episcopal</i> Cathedral of St.Paul",
+    "tones": "10",
+    "year": "1936",
+    "by": "RL",
+    "status": {
+      "href": "data/PAERISPA.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Everett",
+    "institution": "Barndollar Methodist Episcopal Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAEVERTT.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Frackville",
+    "institution": "Zion Lutheran Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/PAFRKVZL.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Grove City",
+    "institution": "First Presbyterian Church <small><i>(now Tower Presbyterian Church)</i></small>",
+    "tones": "18",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/PAGRVCYT.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Harrisburg",
+    "institution": "Christ Lutheran Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/PAHRBGCL.HTM",
+      "text": "<i>Relocated; stored</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "<i>Hazleton</i>",
+    "institution": "Christ Lutheran Church",
+    "tones": "10",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/PAHZLTNC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Kennett Square",
+    "institution": "Longwood Gardens",
+    "tones": "25",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#KSQR",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Lancaster",
+    "institution": "First United Methodist Church",
+    "tones": "<i>10?</i><br/>16",
+    "year": "<i>1916</i><br/>1922",
+    "by": "<i>?</i><br/>CJL",
+    "status": {
+      "href": "data/TU_no_more.html#LNCF",
+      "text": "<i>Burned/scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Lewistown",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/PALEWSTN.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Lock Haven",
+    "institution": "Trinity Methodist Church <small><i>(now House of the Lord Fellowship)</i></small>",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/PALCKHVC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Meadville",
+    "institution": "Allegheny College",
+    "tones": "14",
+    "year": "1918",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAMDVLAC.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Mohnton",
+    "institution": "Zion Evangelical Congregational Church",
+    "tones": "16",
+    "year": "1929",
+    "by": "CJG",
+    "status": {
+      "href": "data/PAMHNTZC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "New Bethlehem",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "-",
+    "status": {
+      "href": null,
+      "text": "<i>Probably anerroneous report</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "New Bethlehem",
+    "institution": "First Presbyterian Church",
+    "tones": "12",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/PANBTHLP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "New Castle",
+    "institution": "First Methodist Episcopal Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#NCST",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "New Kensington",
+    "institution": "St.Joseph's Church",
+    "tones": "5",
+    "year": "1947",
+    "by": "RGH",
+    "status": {
+      "href": null,
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Orwigsburg",
+    "institution": "St.John's Reformed Church",
+    "tones": "16",
+    "year": "1934",
+    "by": "RL",
+    "status": {
+      "href": "data/PAORWGSB.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Palmerton",
+    "institution": "Holy Trinity Evangelical Lutheran Church",
+    "tones": "18",
+    "year": "1947",
+    "by": "RGH",
+    "status": {
+      "href": "data/PAPLMNHT.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Church of the Transfiguration of Our Lord",
+    "tones": "16",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#PHTR",
+      "text": "<i>Stolen/vandalized</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Philadelphia Lodge #2, B.P.O.E. [Elks]",
+    "tones": "10",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#PHLK",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "First African Baptist Church",
+    "tones": "10",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAPHLFAB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Fletcher Methodist Episcopal Church",
+    "tones": "12",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#PHLF",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Holy Name Church",
+    "tones": "16",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAPHLHNC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Immaculate Conception <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "<i>1929</i>",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#PHIC",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Memorial Church of Our Redeemer",
+    "tones": "12",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/PAPHLMOR.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Mount Hermon Reformed Church",
+    "tones": "10",
+    "year": "1921",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#PHMH",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Oak Lane Methodist Episcopal Church",
+    "tones": "20",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/PAPHLOLM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Philadelphia Quartermaster's Depot <small><i>(now Defense Personnel Support Center)</i></small>",
+    "tones": "6",
+    "year": "1941",
+    "by": "CJG",
+    "status": {
+      "href": null,
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Reformed Episcopal Church of the Atonement",
+    "tones": "10",
+    "year": "1930",
+    "by": "CJG",
+    "status": {
+      "href": "data/PAPHLREA.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "St.Donato's Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAPHLSTD.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "St.James Methodist Episcopal Church",
+    "tones": "20",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/PAPHLSJM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "The Berry [Long] Memorial Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1936",
+    "by": "HGS",
+    "status": {
+      "href": "data/PAPHLBLM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Wanamaker Department Store <i>(later Lord & Taylor, now Macy's; in the Wanamaker organ)</i>",
+    "tones": "<i>37</i>",
+    "year": "<i>1917</i>",
+    "by": "<small><i>Installed by Wanamaker organ shop crew, with locally-designed action</i></small>",
+    "status": {
+      "href": "data/PAPHLWDS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Philadelphia",
+    "institution": "Wanamaker Mausoleum",
+    "tones": "19",
+    "year": "1921",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAPHLJL2.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Pittsburgh",
+    "institution": "Pilgrim Evangelical Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#PTSP",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Pittsburgh",
+    "institution": "St.Michael's Church",
+    "tones": "5",
+    "year": "1948",
+    "by": "CJG",
+    "status": {
+      "href": null,
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Pittsburgh",
+    "institution": "St.Rosalia's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/PAPITSTR.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Reading",
+    "institution": "Laureldale Cemetery",
+    "tones": "25",
+    "year": "1931",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/ILCHISJC.HTM",
+      "text": "<i>Relocated; operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Red Lion",
+    "institution": "St.Paul's Evangelical Church",
+    "tones": "32",
+    "year": "1946",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#RDLN",
+      "text": "<i>Removed</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Ridgway",
+    "institution": "Grace Episcopal Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/PARDGWYG.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Scranton",
+    "institution": "L. A. Watres residence",
+    "tones": "16",
+    "year": "1928",
+    "by": "CJG",
+    "status": {
+      "href": "data/PASCRNLW.HTM",
+      "text": "<i>Relocated; partial</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Shamokin",
+    "institution": "St.John's Reformed Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/PASHMKNJ.HTM",
+      "text": "<i>Stored</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Shippensburg",
+    "institution": "Grace Reformed Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/PASHPNSG.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Sunbury",
+    "institution": "Zion Lutheran Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "CJL",
+    "status": {
+      "href": "data/PASNBRYZ.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Tarentum",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1931",
+    "by": "RL",
+    "status": {
+      "href": "data/PATRNMFP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Troy",
+    "institution": "First Presbyterian Church",
+    "tones": "18",
+    "year": "1937",
+    "by": "RL",
+    "status": {
+      "href": "data/PATROYFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Wilkes-Barre",
+    "institution": "First Baptist Church",
+    "tones": "20",
+    "year": "1932",
+    "by": "(N/R)",
+    "status": {
+      "href": "data/PAWLKBFB.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Wilkes-Barre",
+    "institution": "Memorial Presbyterian Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/PAWLKBMP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Wilkes-Barre",
+    "institution": "Westminster Presbyterian Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAWLKBWP.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Wilkinsburg",
+    "institution": "Mifflin Avenue Methodist Episcopal Church",
+    "tones": "16",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#WKBG",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "PA",
+    "city": "Williamsport",
+    "institution": "First Presbyterian Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/PAWMSPFP.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "RI",
+    "city": "Pawtucket",
+    "institution": "Church of Our Lady of Consolation",
+    "tones": "16",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/RIPAWTOL.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "RI",
+    "city": "Woonsocket",
+    "institution": "St.Charles Borromeo's <i>RC</i> Church",
+    "tones": "16",
+    "year": "<i>1925</i>",
+    "by": "CJL",
+    "status": {
+      "href": "data/RIWNSSCB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "SC",
+    "city": "Columbia",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/SCCLMBFP.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "SC",
+    "city": "Greenville",
+    "institution": "Second Presbyterian Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/SCGRNVSP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "SC",
+    "city": "Rock Hill",
+    "institution": "Winthrop College <small><i>(now University)</i></small>",
+    "tones": "16",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#RKHL",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "SD",
+    "city": "Brookings",
+    "institution": "South Dakota State University",
+    "tones": "18",
+    "year": "1929",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/SDBRKNSU.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "SD",
+    "city": "Deadwood",
+    "institution": "Adams Memorial Museum",
+    "tones": "10",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/SDDDWDMM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "TN",
+    "city": "Franklin",
+    "institution": "St.Paul's Episcopal Church <i>[not 18 in 1948]</i>",
+    "tones": "3",
+    "year": "1922",
+    "by": "FBL",
+    "status": {
+      "href": "data/TNFRNKSP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TN",
+    "city": "Kingsport",
+    "institution": "First Baptist Church",
+    "tones": "18",
+    "year": "1948",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#KNPT",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "TN",
+    "city": "Knoxville",
+    "institution": "Magnolia Avenue United Methodist Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/TNKNXVMM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "TN",
+    "city": "Memphis",
+    "institution": "Memphis Memorial Chimes Association <small><i>(for Columbian Mutual Tower, now Lincoln American Tower)</i></small>",
+    "tones": "18",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#MMPC",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Abilene",
+    "institution": "First <i>Central</i> Presbyterian Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TXABILFP.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Amarillo",
+    "institution": "Central Presbyterian Church <i>(now First Presbyterian Church)</i>",
+    "tones": "18",
+    "year": "1927",
+    "by": "CJG",
+    "status": {
+      "href": "data/TXAMARCP.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Atlanta",
+    "institution": "First United Methodist Church",
+    "tones": "12",
+    "year": "1938",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#TXAT",
+      "text": "<i>Disappeared</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Corpus Christi",
+    "institution": "Corpus Christi Cathedral",
+    "tones": "32",
+    "year": "1946",
+    "by": "CJG",
+    "status": {
+      "href": "data/TXCRPCCC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Dallas",
+    "institution": "Gaston Avenue Baptist Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TXDALGAB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Dallas",
+    "institution": "Highland Park United Methodist Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#DLSH",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Dallas",
+    "institution": "St.Matthew's <i>Episcopal</i> Cathedral",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TXDALSTM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "El Paso",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TXELPSFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Fort Worth",
+    "institution": "First United Methodist Church",
+    "tones": "16",
+    "year": "1930",
+    "by": "RL",
+    "status": {
+      "href": "data/TXFTWFME.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Houston",
+    "institution": "Neils Esperson Building",
+    "tones": "5",
+    "year": "<i>1926</i>",
+    "by": "RL",
+    "status": {
+      "href": null,
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Huntsville",
+    "institution": "First United Methodist Church",
+    "tones": "10",
+    "year": "1933",
+    "by": "RL",
+    "status": {
+      "href": "data/TXHNTSVF.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "San Antonio",
+    "institution": "St.Mark's Episcopal Church",
+    "tones": "18",
+    "year": "1949",
+    "by": "CJG",
+    "status": {
+      "href": "data/TXSANTMK.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "San Antonio",
+    "institution": "St.Mary's <i>Catholic</i> Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TXSANTMY.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "San Antonio",
+    "institution": "Woodmen of the World Chapel (now Sunset Ridge Church of Christ)",
+    "tones": "25",
+    "year": "1927",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/TXSANTWF.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Tyler",
+    "institution": "Marvin United Methodist Church",
+    "tones": "16",
+    "year": "1942",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#TYMM",
+      "text": "<i>Relocated</i>"
+    }
+  },
+  {
+    "state": "TX",
+    "city": "Waco",
+    "institution": "Baylor University",
+    "tones": "25",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": "data/OHUNTWNK.HTM",
+      "text": "<i>Relocated; operable</i>"
+    }
+  },
+  {
+    "state": "<i>TX</i>",
+    "city": "<i>Wichita Falls</i>",
+    "institution": "<i>First Methodist Episcopal Church</i>",
+    "tones": "<i>16</i>",
+    "year": "<i>1928</i>",
+    "by": "RL",
+    "status": {
+      "href": "data/TXWICHFM.HTM",
+      "text": "<i>Operable/altered</i>"
+    }
+  },
+  {
+    "state": "UT",
+    "city": "Ogden",
+    "institution": "First Baptist Church",
+    "tones": "10",
+    "year": "1926",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/UTOGDNFB.HTM",
+      "text": "<i>Partial</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Alexandria",
+    "institution": "George Washington Masonic Memorial",
+    "tones": "20",
+    "year": "1930",
+    "by": "ELR",
+    "status": {
+      "href": "data/TU_no_more.html#VAGW",
+      "text": "<i>Replaced</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Bedford",
+    "institution": "St.John's <i>Episcopal</i> Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "CJL",
+    "status": {
+      "href": "data/VABEDFSJ.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Covington",
+    "institution": "Emmanuel Episcopal Church",
+    "tones": "12",
+    "year": "1925",
+    "by": "FBL",
+    "status": {
+      "href": "data/VACOVNEE.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Harrisonburg",
+    "institution": "Otterbein United Methodist Church <small><i>(was First Church United Brethren in Christ)</i></small>",
+    "tones": "20",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/VAHRSNOM.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Hot Springs",
+    "institution": "St.Luke's <i>Episcopal</i> Church",
+    "tones": "10",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/VAHSPGSL.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Newport News",
+    "institution": "Chestnut Avenue Methodist Church",
+    "tones": "16",
+    "year": "1949",
+    "by": "CJG",
+    "status": {
+      "href": "data/VANNWSCA.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Newport News",
+    "institution": "Grace United Methodist Church",
+    "tones": "16",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": "data/TU_no_more.html#VANG",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Newport News",
+    "institution": "Peninsula Memorial Park",
+    "tones": "10",
+    "year": "1932",
+    "by": "RL",
+    "status": {
+      "href": "data/VANNWSPM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Norfolk",
+    "institution": "Christian Temple",
+    "tones": "12",
+    "year": "1924",
+    "by": "CJL",
+    "status": {
+      "href": "data/TU_no_more.html#CTNV",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Pulaski",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1939",
+    "by": "CJG",
+    "status": {
+      "href": "data/VAPLSKFP.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Richmond",
+    "institution": "St.James Episcopal Church",
+    "tones": "16<br/>16",
+    "year": "<i>1926</i><br/><i>1938</i>",
+    "by": "RL<br/>RL",
+    "status": {
+      "href": "data/VARICHSJ.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "VA",
+    "city": "Rocky Mount",
+    "institution": "Rocky Mount M.E. Church",
+    "tones": "10",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/VARKYMTM.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "VT",
+    "city": "Springfield",
+    "institution": "First M.E. Church",
+    "tones": "25",
+    "year": "1928",
+    "by": "CJL",
+    "status": {
+      "href": "data/VTSPFLFM.HTM",
+      "text": "<i>Extant</i>"
+    }
+  },
+  {
+    "state": "WA",
+    "city": "Spokane",
+    "institution": "Westminster Congregational Church",
+    "tones": "16",
+    "year": "1928",
+    "by": "RL",
+    "status": {
+      "href": "data/WASPOKWC.HTM",
+      "text": "<i>Dead</i>"
+    }
+  },
+  {
+    "state": "WA",
+    "city": "Tacoma",
+    "institution": "First Baptist Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/WATACMFB.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "WA",
+    "city": "Tacoma",
+    "institution": "First Presbyterian Church",
+    "tones": "16",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/WATACMFP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "WA",
+    "city": "Yakima",
+    "institution": "First Baptist Church",
+    "tones": "10",
+    "year": "1922",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/WAYKMFBC.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "Green Bay",
+    "institution": "St.Patrick's <i>Catholic</i> Church",
+    "tones": "12",
+    "year": "1920",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/WIGRNBSP.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "LaCrosse",
+    "institution": "Our Savior's Lutheran Church",
+    "tones": "14",
+    "year": "1926",
+    "by": "CJG",
+    "status": {
+      "href": "data/WILCRSOS.HTM",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "Milwaukee",
+    "institution": "St.John's Cathedral",
+    "tones": "16",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/WIMILSJO.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "Oconomowoc",
+    "institution": "Redemptorist Fathers Monastery",
+    "tones": "18",
+    "year": "1924",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#OCNW",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "Racine",
+    "institution": "Greater Atonement Church <i>?</i> <small><i>(was English Evangelical Lutheran Church)</i></small>",
+    "tones": "10",
+    "year": "1927",
+    "by": "RL",
+    "status": {
+      "href": "data/WIRACNEE.HTM",
+      "text": "<i>Gone</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "Stevens Point",
+    "institution": "St.<i>Stephen's Catholic</i> Church",
+    "tones": "10",
+    "year": "1923",
+    "by": "RL",
+    "status": {
+      "href": "data/WISTVPSS.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "WI",
+    "city": "West Allis",
+    "institution": "Holy Assumption Church",
+    "tones": "8",
+    "year": "1924",
+    "by": "<i>?</i>",
+    "status": {
+      "href": "data/WIWALSHA.HTM",
+      "text": "<i>?</i>"
+    }
+  },
+  {
+    "state": "WV",
+    "city": "Fairmont",
+    "institution": "First Presbyterian Church",
+    "tones": "10",
+    "year": "1925",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#FRMT",
+      "text": "<i>Scrapped</i>"
+    }
+  },
+  {
+    "state": "WV",
+    "city": "Martinsburg",
+    "institution": "St.John's Evangelical Lutheran Church",
+    "tones": "16",
+    "year": "1927",
+    "by": "CJL",
+    "status": {
+      "href": "data/WVMRTBSJ.HTM",
+      "text": "<i>Operable</i>"
+    }
+  },
+  {
+    "state": "WV",
+    "city": "Wheeling",
+    "institution": "St.Mark's Ev. Lutheran Church",
+    "tones": "16",
+    "year": "1940",
+    "by": "RL",
+    "status": {
+      "href": "data/TU_no_more.html#WHLG",
+      "text": "<i>Removed</i>"
+    }
+  }
+]
