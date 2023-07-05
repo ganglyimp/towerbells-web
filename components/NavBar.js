@@ -60,22 +60,28 @@ class NavBar extends HTMLElement {
 				</div>
 			</nav>`;
 
-		const googleTranslate = shadowRoot.getElementById('googleTranslate');
+		// Only show Translate Widget if we're still on TowerBells.org
+		if(window.location.href.includes('translate.goog')) {
+			shadowRoot.querySelector('.translate-widget').style.display = 'none';
+		}
+		else {
+			const googleTranslate = shadowRoot.getElementById('googleTranslate');
 
-		// Dynamically add all language options from JSON
-		this.languageData.forEach(lang => {
-			let langOption = document.createElement('option');
-			langOption.value = lang.code;
-			langOption.innerText = lang.nativeName;
-
-			// Preselecting English
-			if(lang.code === 'en') langOption.selected = true;
-
-			googleTranslate.appendChild(langOption);
-		});
-
-		// Append onChange event to Google Translate dropdown
-		googleTranslate.addEventListener('change', (value) => this.openGoogleTranslate(value));
+			// Dynamically add all language options from JSON
+			this.languageData.forEach(lang => {
+				let langOption = document.createElement('option');
+				langOption.value = lang.code;
+				langOption.innerText = lang.nativeName;
+				
+				// Preselecting English
+				if(lang.code === 'en') langOption.selected = true;
+				
+				googleTranslate.appendChild(langOption);
+			});
+			
+			// Append onChange event to Google Translate dropdown
+			googleTranslate.addEventListener('change', (value) => this.openGoogleTranslate(value));
+		}
 
 		// Add event listener to toggle open/close of mobile nav-bar
 		const collapseButton = shadowRoot.querySelector('nav button');
