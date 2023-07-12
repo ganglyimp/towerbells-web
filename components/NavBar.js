@@ -157,6 +157,7 @@ class NavBar extends HTMLElement {
 
 						nav .nav-content ul li {
 							display: inline-block;
+							margin: 10px 0;
 						}
 
 						nav .nav-content ul li.active, nav .nav-content ul li a:hover {
@@ -259,18 +260,29 @@ class NavBar extends HTMLElement {
 							padding-left: 0;
 						}
 
-						nav .nav-content ul li {
-							display: block;
-							margin: 30px 0;
+							nav .nav-content ul li {
+								display: block;
+								margin: 30px 0;
+							}
+
+								nav .nav-content ul li a {
+									font-size: 1.5em;
+								}
+						
+						nav .nav-content .nav-actions {
+							padding-top: 15px;
+							justify-content: space-around;
+							border-top: 1px solid var(--border-color);
 						}
 
-							nav .nav-content ul li a {
+							nav .nav-content .nav-actions .translate-widget select {
 								font-size: 1.5em;
 							}
 
-						nav .nav-content .bi-search {
-							display: none;
-						}
+							nav .nav-content .nav-actions .translate-widget .bi.bi-globe2 {
+								width: 1em;
+								height: 1em;
+							}
 			}`;
 
 		shadowRoot.appendChild(style);
