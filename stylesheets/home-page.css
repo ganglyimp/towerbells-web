@@ -27,25 +27,37 @@
   color: var(--accent-color);
 }
 
-.home-content {
+.home-content .home-main-links {
+  margin: 1em;
   display: flex;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
-  .home-content .home-explore {
-    flex: 1 1 70%;
+  .home-content .home-main-links .main-links-item {
+    flex: 1;
+    padding: 0 2em;
+  }
+
+    .home-content .home-main-links .main-links-item h3 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+
+    .home-content .home-main-links .main-links-item p {
+      font-size: 1.5em;
+    }
+
+  .home-content .home-explore .explore-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
     .home-content .home-explore .explore-item {
-      margin: 1em;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      align-items: center;
+      margin: 0 1em;
       border-bottom: 1px solid var(--border-color);
     }
 
       .home-content .home-explore .explore-item a {
-        margin-right: 1em;
         text-decoration: none;
       }
       .home-content .home-explore .explore-item a:hover {
@@ -53,7 +65,6 @@
       }
 
       .home-content .home-explore .explore-item h3 {
-        text-align: right;
         font-size: 2em;
       }
 
@@ -62,14 +73,19 @@
       }
 
   .home-content .home-news {
-    flex: 1 1 30%;
-    min-width: 40ch;
+    margin: 1em;
   }
 
+    .home-content .home-news .news-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .home-content .home-news .news-card {
-      width: min(90%, 600px);
-      margin: 10px auto;
+      width: min(90%, 350px);
+      margin: 1em;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
       cursor: pointer;
       transition: 0.3s;
     }
@@ -84,6 +100,7 @@
 
       .home-content .home-news .news-card img {
         width: 100%;
+        border-radius: 10px 10px 0 0;
       }
 
       .home-content .home-news .news-card .news-card-info {
@@ -94,24 +111,30 @@
           color: var(--accent-color);
         }
 
-#google_translate_element {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 12px;
-}
-
 @media (max-width: 800px) {
   .home-page header {
     margin: 0 1.5em;
     display: block;
   }
 
+  .home-content .home-main-links {
+    display: block;
+  }
+
+    .home-content .home-main-links .main-links-item {
+      padding: 0;
+    }
+
   .home-content .home-news .news-card {
     margin: 15px auto;
   }
 
+  .home-content .home-explore .explore-group {
+    display: block;
+  }
+
   .home-content .home-explore .explore-item {
+    margin: 1em;
     display: inline-block;
   }
   .home-content .home-explore .explore-item h3 {
