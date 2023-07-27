@@ -19,6 +19,26 @@ header h3 {
   margin: 0;
 }
 
+blockquote {
+  position: relative;
+  padding: 1em;
+  box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+  border-radius: 10px;
+  background: hsl(0 0% 97%) no-repeat left / 140px;
+}
+blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: inset -2px -2px 1px hsl(0 0% 100%), inset 2px 2px 4px hsl(0 0% 0% / 20%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 img {
   width: 100%;
   display: block;
@@ -52,5 +72,9 @@ th.row-comment {
 @media (max-width: 800px) {
   header, section {
     margin: 0 1.5em;
+  }
+
+  blockquote {
+    margin: 16px;
   }
 }

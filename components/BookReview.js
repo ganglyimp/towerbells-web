@@ -124,10 +124,14 @@ class BookReview extends HTMLElement {
 						margin: auto;
 						padding: 0;
 						background-color: transparent;
-						border: 2px solid var(--text-color);
+						border: none;
+						box-shadow: 2px 3px 5px 1px var(--border-color);
 						border-radius: 10px;
 						cursor: pointer;
 						transition: all 0.5s;
+					}
+					#bookModalToggle:active {
+						box-shadow: unset;
 					}
 
 					#bookModalToggle:hover::before, #bookModalToggle:hover::after {
