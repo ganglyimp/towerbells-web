@@ -12,7 +12,8 @@
   position: relative;
   padding: 1em;
   list-style: none;
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: rgba(var(--secondary-bg-color-rgb), 0.8);
+  border: 3px dotted var(--border-color);
   border-radius: 10px;
 }
 

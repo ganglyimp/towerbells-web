@@ -24,7 +24,7 @@ blockquote {
   padding: 1em;
   box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
   border-radius: 10px;
-  background: hsl(0 0% 97%) no-repeat left / 140px;
+  background: var(--secondary-bg-color) no-repeat left / 140px;
 }
 blockquote::before {
   content: "";
@@ -50,12 +50,18 @@ table {
   margin: 1em;
   border-collapse: collapse;
 }
+tr a {
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
 tr:hover {
   background-color: var(--accent-color);
   color: white;
 }
   tr:hover a {
-    color: var(--accent-secondary);
+    color: white;
+    background-color: black;
+    padding: 3px;
   }
 th, td {
   padding: 8px;

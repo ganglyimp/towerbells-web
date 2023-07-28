@@ -1,10 +1,11 @@
 :root {
   --main-bg-color: white;
   --text-color: #1C1D21;
-  --secondary-bg-color: rgb(2,0,36);
-  --secondary-text-color: white;
+  --text-color-on-dark: white;
+  --secondary-bg-color: #f9f7f3;
+  --secondary-bg-color-rgb: 249, 247, 243;
   --accent-color: #3161CE;
-  --accent-secondary: #F0803C;
+  --accent-secondary: #CF30B2;
   --border-color: lightgrey;
   
   --body-font-size: 20px;
@@ -66,11 +67,10 @@ button.action-button {
 }
 button.action-button:hover {
   background-color: var(--accent-color);
-  color: var(--secondary-text-color);
+  color: var(--text-color-on-dark);
 }
 button.action-button:focus {
-  background-color: var(--secondary-bg-color);
-  color: var(--secondary-text-color);
+  filter: brightness(1.5);
 }
 
   button.action-button::before, button.action-button::after {
