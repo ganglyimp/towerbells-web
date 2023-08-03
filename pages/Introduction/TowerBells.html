@@ -22,9 +22,61 @@
 	<bread-crumb></bread-crumb>
 
 	<main class="introduction-page">
-		<h1>Tower Bells - Introduction</h1>
+		<aside>
+			<button class="sidebar-toggle closed" id="sidebarToggle" onclick="toggleSidebar()">
+				<span>Sections</span>
 
-		<section class="preamble">
+				<!--List Icon-->
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+
+				<!--X Icon-->
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+					<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+				</svg>
+			</button>
+
+			<nav id="sectionList" class="hidden">
+				<button class="active" onclick="toggleSection(event, 'Introduction')">
+					Introduction
+				</button>
+				<button onclick="toggleSection(event, 'Carillons')">
+					Carillons
+				</button>
+				<button onclick="toggleSection(event, 'Chimes')">
+					Chimes
+				</button>
+				<button onclick="toggleSection(event, 'Rings')"
+					>Rings; Change-Ringing
+				</button>
+				<button onclick="toggleSection(event, 'Peals')">
+					Peals, Clock-Chimes, Zvons, Single Bells, Etc.
+				</button>
+				<button onclick="toggleSection(event, 'Great-Bells')">
+					Great Bells
+				</button>
+				<button onclick="toggleSection(event, 'Tubular-Bells')">
+					Tubular Tower Bells
+				</button>
+				<button onclick="toggleSection(event, 'Hemispherical-Bells')">
+					Hemispherical Tower Bells
+				</button>
+				<button onclick="toggleSection(event, 'Other-Bells')">
+					Other Bells
+				</button>
+				<button onclick="toggleSection(event, 'Bellfounders')">
+					Bellfounders and Bell Making
+				</button>
+				<button onclick="toggleSection(event, 'Bell-Weights')">
+					Weights of Bells
+				</button>
+			</nav>
+		</aside>
+
+		
+		<section class="intro-section active" id="Introduction">
+			<h1>Tower Bells - Introduction</h1>
 			<p>
 				For more than a thousand years, tower bells have spoken to the people with
 				wordless voices.&nbsp; They have shouted in warning, wept in mourning and 
@@ -61,8 +113,8 @@
 			</p>
 		</section>
 
-		<details class="intro-section" id="Carillons">
-			<summary>Carillons</summary>
+		<section class="intro-section" id="Carillons">
+			<h1>Carillons</h1>
 
 			<p>
 				Carillons are musical instruments made of at least 23 conventional tower bells 
@@ -118,10 +170,10 @@
 				for your carillon and its tower will get you a free extract 
 				from the database "Carillons and Chimes of the World."
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Chimes">
-			<summary>Chimes</summary>
+		<section class="intro-section" id="Chimes">
+			<h1>Chimes</h1>
 
 			<p>
 				Chimes are smaller musical instruments (8 to 22 conventional tower bells, hung 
@@ -158,10 +210,10 @@
 				Filling out the <A HREF="data/SurveyForms.html">survey forms</A> for your chime and its tower
 				will get you a free extract from the database "Carillons and Chimes of the World."
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Rings">
-			<summary>Rings; change-ringing</summary>
+		<section class="intro-section" id="Rings">
+			<h1>Rings; Change-Ringing</h1>
 
 			<p>
 				Rings are chime-sized sets of tower bells (commonly 5 to 12 in number) tuned to 
@@ -201,10 +253,10 @@
 				Filling out the <a href="data/SurveyForms.html">chime survey forms</a> for your ring and its tower
 				will get you a free extract from the database "Carillons and Chimes of the World."
 			<p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Peals">
-			<summary>Peals, clock-chimes, zvons, single bells, etc.</summary>
+		<section class="intro-section" id="Peals">
+			<h1>Peals, Clock-Chimes, Zvons, Single Bells, Etc.</h1>
 
 			<p>
 				Single tower bells and small sets of such bells are (or have been) used 
@@ -301,10 +353,10 @@
 					</li>
 				</uL>
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Great-Bells">
-			<summary>Great bells</summary>
+		<section class="intro-section" id="Great-Bells">
+			<h1>Great Bells</h1>
 
 			<p>
 				These are <i>REALLY BIG</i> bells, which impress viewers by their sheer size
@@ -313,10 +365,10 @@
 				see our <a href="data/Great_Bells.html">Great Bells page</a>.&nbsp; Some regional 
 				lists are believed to be complete, while others are known to be incomplete.
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Tubular-Bells">
-			<summary>Tubular tower bells</summary>
+		<section class="intro-section" id="Tubular-Bells">
+			<h1>Tubular Tower Bells</h1>
 
 			<p>
 				Large tubular bells, cast or extruded from approximately the same material as 
@@ -340,10 +392,10 @@
 				for your chime and its tower will get you a free extract from the database 
 				"Carillons and Chimes of the World."
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Hemispherical-Bells">
-			<summary>Hemispherical tower bells</summary>
+		<section class="intro-section" id="Hemispherical-Bells">
+			<h1>Hemispherical Tower Bells</h1>
 			<p>
 				Large hemispherical bells were made for tower use in both England and the USA in the 
 				late 19th and early 20th centuries.&nbsp; Like tubular bells, they were intended to be 
@@ -359,10 +411,10 @@
 				for your hemispherical chime and its tower will get you a free extract from the 
 				database "Carillons and Chimes of the World."
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Other-Bells">
-			<summary>Other bells</summary>
+		<section class="intro-section" id="Other-Bells">
+			<h1>Other Bells</h1>
 
 			<p>
 				There are some kinds of bells which, while not primarily intended for use as
@@ -416,10 +468,10 @@
 				magazine, <U>The Bell Tower</U>, often contains articles about other types of bells, including 
 				tower bells.
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Bellfounders">
-			<summary>Bellfounders and bell making</summary>
+		<section class="intro-section" id="Bellfounders">
+			<h1>Bellfounders and Bell Making</h1>
 			<p>
 				Tower bells are typically made in foundries which are essentially dedicated to this function,
 				since there is no longer a market for other cast bronze objects of comparable size.&nbsp;
@@ -430,10 +482,10 @@
 			<p>
 				For further information, see our page about <A HREF="../BellFoundries/BellFoundries.html">Bell Foundries</A>.
 			</p>
-		</details>
+		</section>
 
-		<details class="intro-section" id="Bell-Weights">
-			<summary>Weights of bells</summary>
+		<section class="intro-section" id="Bell-Weights">
+			<h1>Weights of Bells</h1>
 
 			<p>
 				The weights of bells can be reported in any of several different units of measure,
@@ -444,7 +496,7 @@
 				This is especially designed to handle the old British Imperial system of Cwt-Qtr-Lb, 
 				which is still in regular use to describe bells hung for change-ringing.&nbsp;
 			</p>
-		</details>
+		</section>
 	</main>
 
 	<page-footer pagePath="../../pages" 
@@ -462,6 +514,34 @@
 					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
 					 {name: 'Tower Bells Introduction', path: null}]
 			}));
+		}
+
+		function toggleSidebar() {
+			document.getElementById('sidebarToggle').classList.toggle('closed');
+			
+			let sectionList = document.getElementById('sectionList');
+			sectionList.classList.toggle('hidden');
+		}
+
+		function toggleSection(event, sectionId) {
+			window.scrollTo({top: 0, behavior: 'smooth'});
+			if(event.target.classList.contains('active')) return;
+
+			// Toggle Button State
+			let activeButton = document.querySelector('button.active');
+			if(activeButton) activeButton.classList.toggle('active');
+			event.target.classList.toggle('active');
+
+			// Toggle Section State
+			let activeSection = document.querySelector('section.active');
+			if(activeSection) activeSection.classList.toggle('active');
+
+			let targetElement = document.getElementById(sectionId);
+			targetElement.classList.toggle('active');
+
+			// Auto Close Sidebar (on mobile)
+			if(window.matchMedia('(max-width: 800px)').matches)
+				this.toggleSidebar();
 		}
 	</SCRIPT>
 </BODY>

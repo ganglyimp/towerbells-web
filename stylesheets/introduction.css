@@ -1,37 +1,103 @@
-.introduction-page h1 {
-  font-size: clamp(40px, 5vw, 70px);
-  text-align: center;
+.introduction-page {
+  display: flex;
+  min-height: calc(100vh - 200px);
+  max-width: 1500px;
+  margin: auto;
 }
 
-.introduction-page section {
-  margin: 0 0.5em;
+.introduction-page aside {
+  flex: 30%;
+  margin: 1em;
+  border-right: 1px solid var(--border-color);
 }
 
-.introduction-page section.preamble {
-  margin: 0 20%;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.introduction-page details.intro-section {
-  margin: 1em 20%;
-  padding: 0.5em;
-  border: 1px solid var(--border-color);
-  background-color: #eee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.introduction-page summary {
-  font-size: 2em;
-  color: var(--accent-color);
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  .introduction-page section.preamble {
-    margin: 0 1.5em;
+  .introduction-page .sidebar-toggle {
+    display: none;
   }
 
-  .introduction-page details.intro-section {
-    margin: 1em 1.5em;
+  .introduction-page aside nav {
+    position: sticky;
+    top: 110px;
+  }
+
+  .introduction-page aside nav button {
+    display: block;
+    margin: 1em 0;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-size: clamp(20px, 2vw, 1.5em);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .introduction-page aside nav button:hover {
+    color: var(--text-color);
+    opacity: 1;
+  }
+  .introduction-page aside nav button.active {
+    border-left: 3px solid var(--accent-color);
+    font-weight: bold;
+    color: var(--accent-color);
+    opacity: 1;
+  }
+
+.introduction-page section {
+  flex: 70%;
+  margin: 0 5em;
+}
+.introduction-page section:not(.active) {
+  display: none;
+}
+
+  .introduction-page section h1 {
+    font-size: clamp(40px, 5vw, 70px);
+    text-align: center;
+  }
+
+@media (max-width: 800px) {
+  .introduction-page {
+    display: block;
+  }
+
+  .introduction-page aside {
+    position: sticky;
+    top: 70px;
+    padding: 1em;
+    margin: 0;
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+  }
+
+  .introduction-page aside .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+    .introduction-page aside .sidebar-toggle .bi-list {
+      display: none;
+    }
+    .introduction-page aside .sidebar-toggle .bi-x-lg {
+      display: block;
+    }
+
+    .introduction-page aside .sidebar-toggle.closed .bi-list {
+      display: block;
+    }
+    .introduction-page aside .sidebar-toggle.closed .bi-x-lg {
+      display: none;
+    }
+
+  .introduction-page aside nav.hidden {
+    display: none;
+  }
+  
+  .introduction-page section {
+    margin: 0 1.5em;
   }
 }
