@@ -38,44 +38,44 @@
 			</button>
 
 			<nav id="sectionList" class="hidden">
-				<button class="active" onclick="toggleSection(event, 'Introduction')">
+				<button id="Introduction-Button" onclick="toggleSection(event, 'Introduction')">
 					Introduction
 				</button>
-				<button onclick="toggleSection(event, 'Carillons')">
+				<button id="Carillons-Button" onclick="toggleSection(event, 'Carillons')">
 					Carillons
 				</button>
-				<button onclick="toggleSection(event, 'Chimes')">
+				<button id="Chimes-Button" onclick="toggleSection(event, 'Chimes')">
 					Chimes
 				</button>
-				<button onclick="toggleSection(event, 'Rings')"
+				<button id="Rings-Button" onclick="toggleSection(event, 'Rings')"
 					>Rings; Change-Ringing
 				</button>
-				<button onclick="toggleSection(event, 'Peals')">
+				<button id="Peals-Button" onclick="toggleSection(event, 'Peals')">
 					Peals, Clock-Chimes, Zvons, Single Bells, Etc.
 				</button>
-				<button onclick="toggleSection(event, 'Great-Bells')">
+				<button id="Great-Bells-Button" onclick="toggleSection(event, 'Great-Bells')">
 					Great Bells
 				</button>
-				<button onclick="toggleSection(event, 'Tubular-Bells')">
+				<button id="Tubular-Bells-Button" onclick="toggleSection(event, 'Tubular-Bells')">
 					Tubular Tower Bells
 				</button>
-				<button onclick="toggleSection(event, 'Hemispherical-Bells')">
+				<button id="Hemispherical-Bells-Button" onclick="toggleSection(event, 'Hemispherical-Bells')">
 					Hemispherical Tower Bells
 				</button>
-				<button onclick="toggleSection(event, 'Other-Bells')">
+				<button id="Other-Bells-Button" onclick="toggleSection(event, 'Other-Bells')">
 					Other Bells
 				</button>
-				<button onclick="toggleSection(event, 'Bellfounders')">
+				<button id="Bellfounders-Button" onclick="toggleSection(event, 'Bellfounders')">
 					Bellfounders and Bell Making
 				</button>
-				<button onclick="toggleSection(event, 'Bell-Weights')">
+				<button id="Bell-Weights-Button" onclick="toggleSection(event, 'Bell-Weights')">
 					Weights of Bells
 				</button>
 			</nav>
 		</aside>
 
 		
-		<section class="intro-section active" id="Introduction">
+		<section class="intro-section" id="Introduction">
 			<h1>Tower Bells - Introduction</h1>
 			<p>
 				For more than a thousand years, tower bells have spoken to the people with
@@ -509,6 +509,11 @@
 		// Send breadcrumb data to component
 		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
 
+		// Check for URL hash + navigate to correct section.
+		let currentSection = (window.location.hash === "") ? "Introduction" : window.location.hash.substring(1);
+		document.getElementById(currentSection).classList.toggle('active');
+		document.getElementById(`${currentSection}-Button`).classList.toggle('active');
+
 		function getBreadcrumbTrail() {
 			return encodeURIComponent(JSON.stringify({
 					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
@@ -526,6 +531,9 @@
 		function toggleSection(event, sectionId) {
 			window.scrollTo({top: 0, behavior: 'smooth'});
 			if(event.target.classList.contains('active')) return;
+
+			// Add hash to URL
+			window.location.hash = sectionId;
 
 			// Toggle Button State
 			let activeButton = document.querySelector('button.active');
