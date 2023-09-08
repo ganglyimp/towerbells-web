@@ -26,7 +26,7 @@ class Breadcrumb extends HTMLElement {
 				crumbElement.textContent = crumb.name;
 
 				let separator = document.createElement('span');
-				separator.innerHTML = '&nbsp; &#707; &nbsp;';
+				separator.innerHTML = '&nbsp; &#8250; &nbsp;';
 
 				shadowRoot.querySelector('small').appendChild(crumbElement);
 				shadowRoot.querySelector('small').appendChild(separator);

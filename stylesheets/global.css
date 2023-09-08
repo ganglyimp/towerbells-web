@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Alice');
+
 :root {
   --main-bg-color: white;
   --text-color: #1C1D21;
@@ -10,7 +12,8 @@
   
   --body-font-size: 20px;
   --small-font-size: 15px;
-  --body-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  --header-font: 'Playfair Display', Cambria, Georgia, serif;
+  --body-font: 'Alice', Cambria, Georgia, serif;
 }
 
 html {
@@ -28,6 +31,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+}
+
 h1 {
   font-size: clamp(40px, 15vw, 200px);
 }
@@ -40,7 +47,7 @@ a:hover {
   text-decoration: underline;
 }
 
-p, ul, ol, table, button {
+p, a, ul, ol, table, button {
   font-size: var(--body-font-size);
 }
 
