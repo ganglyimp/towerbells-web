@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Alice');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 :root {
   --main-bg-color: white;
@@ -13,7 +13,7 @@
   --body-font-size: 20px;
   --small-font-size: 15px;
   --header-font: 'Playfair Display', Cambria, Georgia, serif;
-  --body-font: 'Alice', Cambria, Georgia, serif;
+  --body-font: Georgia, Cambria, serif;
 }
 
 html {

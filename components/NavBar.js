@@ -263,7 +263,7 @@ class NavBar extends HTMLElement {
 
 							nav dialog .fixed button {
 								background-color: transparent;
-								border: 3px solid var(--text-color);
+								border: 2px solid var(--text-color);
 								border-radius: 100%;
 								transition: all 0.3s ease-in-out;
 							}
@@ -292,6 +292,7 @@ class NavBar extends HTMLElement {
 							}
 
 								nav dialog .body section div button {
+									font-family: var(--body-font);
 									border: none;
 									border-radius: 10px;
 									background-color: transparent;

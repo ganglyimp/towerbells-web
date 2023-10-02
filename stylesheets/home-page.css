@@ -113,8 +113,7 @@
 
 @media (max-width: 800px) {
   .home-page header {
-    margin: 0 1.5em;
-    display: block;
+    display: none;
   }
 
   .home-content .home-main-links {

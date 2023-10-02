@@ -119,10 +119,8 @@ class PageFooter extends HTMLElement {
 			
 			@media (max-width: 800px) {
 				footer .footer-links {
-					flex-wrap: wrap;
-					align-items: flex-start;
-					align-content: center;
-					margin: auto;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
 					font-size: 1.25em;
 				}
 				  footer .footer-links div {
@@ -132,7 +130,6 @@ class PageFooter extends HTMLElement {
 				  footer .footer-links a {
 				  	display: flex;
 				  	align-items: center;
-				  	justify-content: center;
 				  }
 				  footer .footer-links svg {
 					height: 30px;
