@@ -1,3 +1,5 @@
+// TODO: Insert breadcrumbs via slot instead of JSON data.
+
 class Breadcrumb extends HTMLElement {
 	constructor() {
 		super();
