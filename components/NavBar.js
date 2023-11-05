@@ -192,6 +192,9 @@ class NavBar extends HTMLElement {
 							margin: 10px 0;
 						}
 
+						nav .nav-content ul li.active {
+							font-weight: bold;
+						}
 						nav .nav-content ul li.active, nav .nav-content ul li a:hover {
 							text-decoration: underline;
 						}
@@ -201,7 +204,7 @@ class NavBar extends HTMLElement {
 								text-decoration: none;
 								font-size: var(--nav-font-size);
 								color: var(--text-color);
-								transition: all 0.3s ease-in-out ;
+								transition: all 0.3s ease-in-out;
 							}
 				
 					nav .nav-content .nav-actions {

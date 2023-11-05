@@ -3,6 +3,10 @@ header, section {
   border-bottom: 1px solid var(--border-color);
 }
 
+.slotted section {
+  margin: 0;
+}
+
 header h1 {
   font-size: clamp(40px, 5vw, 70px);
   text-align: center;
@@ -17,6 +21,27 @@ header h3 {
   font-size: clamp(15px, 2vw, 30px);
   text-align: center;
   margin: 0;
+}
+
+.section-header {
+  display: block;
+  margin: 1.5em 0;
+}
+
+  .section-header > * {
+    margin: 0;
+  }
+
+section h1, section .heading-1 {
+  font-size: 50px;
+}
+
+section h2, section .heading-2 {
+  font-size: 40px;
+}
+
+section h3, section .heading-3 {
+  font-size: 30px;
 }
 
 blockquote {
@@ -82,5 +107,9 @@ th.row-comment {
 
   blockquote {
     margin: 16px;
+  }
+
+  table {
+    margin: unset;
   }
 }
