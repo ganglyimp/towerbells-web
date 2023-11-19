@@ -68,6 +68,7 @@ img {
   width: 100%;
   display: block;
   margin: auto;
+  border-radius: 10px;
 }
 
 table {
@@ -98,6 +99,15 @@ tr.section-divide td, tr.section-divide th{
 }
 th.row-comment {
   border-bottom: none;
+}
+
+.clickable-block {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.clickable-block:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 800px) {

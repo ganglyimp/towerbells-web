@@ -1,0 +1,10 @@
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .grid-2-cols {
+    display: block;
+  }
+}
