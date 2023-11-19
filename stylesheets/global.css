@@ -67,6 +67,10 @@ small {
   font-size: var(--small-font-size);
 }
 
+  small > * {
+    font-size: unset;
+  }
+
 button.action-button {
   position: relative;
   background-color: transparent;
