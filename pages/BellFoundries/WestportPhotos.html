@@ -16,7 +16,14 @@
 </HEAD>
 <BODY>
 	<nav-bar pagePath="../../pages" active=""></nav-bar>
-    <bread-crumb></bread-crumb>
+    <bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="../Introduction/TowerBells.html">Tower Bells Introduction</a>
+		<a href="./BellFoundries.html">Bell Foundries</a>
+		<a href="./StLouisBellFoundries.html">Saint Louis, MO</a>
+		<a href="./Caughlan.html">Caughlan</a>
+		<span>Westport Photos</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -195,21 +202,5 @@
 				 dateModified="2004/12/21"
 				 mailSubject="Comments on Westport Photos">
 	</page-footer>
-
-	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-					         {name: 'Tower Bells Introduction', path: '../Introduction/TowerBells.html'},
-							 {name: 'Bell Foundries', path: 'BellFoundries.html'},
-							 {name: 'Saint Louis, MO', path: 'StLouisBellFoundries.html'},
-							 {name: 'Caughlan', path: 'Caughlan.html'},
-							 {name: 'Westport Photos', path: null}]
-			}));
-		}
-    </SCRIPT>
 </BODY>
 </HTML>

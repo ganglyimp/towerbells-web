@@ -8,15 +8,20 @@
 	<META HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=iso-8859-1">
 
 	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
 
-  <SCRIPT type="module" src="../../components/NavBar.js" defer></SCRIPT>
-  <SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
-  <SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
+  	<SCRIPT type="module" src="../../components/NavBar.js" defer></SCRIPT>
+  	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
+  	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 </head>
 <body>
 	<nav-bar pagePath="../../pages" active=""></nav-bar>
-  <bread-crumb></bread-crumb>
+  	<bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="../Introduction/TowerBells.html">Tower Bells Introduction</a>
+		<a href="./BellFoundries.html">Bell Foundries</a>
+		<span>C.S. Bell</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -193,23 +198,9 @@
 	</main>
 
 	<page-footer pagePath="../../pages" 
-						   dateCreated="2004/09/06"
-						   dateModified="2022/01/03"
-						   mailSubject="Comments on Hillsboro Foundry">
+				 dateCreated="2004/09/06"
+				 dateModified="2022/01/03"
+				 mailSubject="Comments on Hillsboro Foundry">
 	</page-footer>
-
-	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-					         {name: 'Tower Bells Introduction', path: '../Introduction/TowerBells.html'},
-							 		 {name: 'Bell Foundries', path: './BellFoundries.html'},
-									 {name: 'C.S. Bell', path: null}]
-			}));
-		}
-    </SCRIPT>
 </body>
 </html>

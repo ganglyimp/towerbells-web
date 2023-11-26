@@ -16,7 +16,10 @@
 
 <body>
 	<nav-bar pagePath="../pages" active="subscribe"></nav-bar>
-    <bread-crumb></bread-crumb>
+    <bread-crumb>
+		<a href="../index.html">TowerBells Home</a>
+		<span>Subscribe</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -156,17 +159,5 @@
 				 dateModified="2015/09/30"
 				 mailSubject="Comments on Subscribe">
 	</page-footer>
-
-	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../index.html'},
-					         {name: 'Subscribe', path: null}]
-			}));
-		}
-    </SCRIPT>
 </body>
 </html>

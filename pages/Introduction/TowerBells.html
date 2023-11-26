@@ -19,7 +19,10 @@
 </HEAD>
 <BODY>
 	<nav-bar pagePath="../../pages" active="introduction"></nav-bar>
-	<bread-crumb></bread-crumb>
+	<bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<span>Tower Bells Introduction</span>
+	</bread-crumb>
 
 	<main class="introduction-page">
 		<aside>
@@ -506,20 +509,10 @@
 	</page-footer>
 
 	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
 		// Check for URL hash + navigate to correct section.
 		let currentSection = (window.location.hash === "") ? "Introduction" : window.location.hash.substring(1);
 		document.getElementById(currentSection).classList.toggle('active');
 		document.getElementById(`${currentSection}-Button`).classList.toggle('active');
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-					 {name: 'Tower Bells Introduction', path: null}]
-			}));
-		}
 
 		function toggleSidebar() {
 			document.getElementById('sidebarToggle').classList.toggle('closed');

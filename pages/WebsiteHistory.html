@@ -15,7 +15,10 @@
 </head>
 <body>
 	<nav-bar pagePath="../pages" active="web-history"></nav-bar>
-    <bread-crumb></bread-crumb>
+    <bread-crumb>
+		<a href="../index.html">TowerBells Home</a>
+		<span>Website History</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -185,17 +188,5 @@
 				 dateModified="2022/07/12"
 				 mailSubject="Comments on WebsiteHistory">
 	</page-footer>
-
-	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../index.html'},
-					         {name: 'Website History', path: null}]
-			}));
-		}
-    </SCRIPT>
 </body>
 </html>

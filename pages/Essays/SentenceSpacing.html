@@ -13,7 +13,11 @@
 	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 </HEAD>
 <BODY>
-	<bread-crumb></bread-crumb>
+	<bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="./UnrelatedEssays.html">Unrelated Essays</a>
+		<span>Sentence Spacing</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -171,18 +175,5 @@
 		 dateModified="2020/04/26"
 		 mailSubject="Comments on Sentence Spacing">
     </page-footer>
-
-	<SCRIPT>
-        // Send breadcrumb data to component
-	    document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-        
-	    function getBreadcrumbTrail() {
-	        return encodeURIComponent(JSON.stringify({
-	            crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-	                     {name: 'Unrelated Essays', path: 'UnrelatedEssays.html'},
-						 {name: 'Sentence Spacing', path: null}]
-	    	}));
-	    }
-    </SCRIPT>
 </BODY>
 </HTML>

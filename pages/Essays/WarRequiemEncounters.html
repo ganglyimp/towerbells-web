@@ -13,7 +13,11 @@
 	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 </HEAD>
 <BODY>
-	<bread-crumb></bread-crumb>
+	<bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="./UnrelatedEssays.html">Unrelated Essays</a>
+		<span>War Requiem</span>
+	</bread-crumb>
 
 	<main>
 		<header style="padding-bottom: 1em;">
@@ -24,11 +28,13 @@
 		</header>
 
 		<section>
-			<SMALL>
-				NOTE for the Web:&nbsp; The following essay was written for my colleagues in the Saint Louis Symphony Chorus 
-				as we prepared to perform Benjamin Britten's <I>War Requiem</I> at the conclusion of the 2006-07 Symphony season.&nbsp;
-				It is reproduced here unchanged except for the addition of footnotes.
-			</SMALL>
+			<p>
+				<SMALL>
+					NOTE for the Web:&nbsp; The following essay was written for my colleagues in the Saint Louis Symphony Chorus 
+					as we prepared to perform Benjamin Britten's <I>War Requiem</I> at the conclusion of the 2006-07 Symphony season.&nbsp;
+					It is reproduced here unchanged except for the addition of footnotes.
+				</SMALL>
+			</p>
 		</section>
 
 		<section>
@@ -184,18 +190,5 @@
 		 dateModified="2022/02/23"
 		 mailSubject="Comments on WarRequiemEncounters">
     </page-footer>
-
-	<SCRIPT>
-        // Send breadcrumb data to component
-	    document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-        
-	    function getBreadcrumbTrail() {
-	        return encodeURIComponent(JSON.stringify({
-	            crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-	                     {name: 'Unrelated Essays', path: 'UnrelatedEssays.html'},
-						 {name: 'War Requiem', path: null}]
-	    	}));
-	    }
-    </SCRIPT>
 </BODY>
 </HTML>

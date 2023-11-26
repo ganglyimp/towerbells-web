@@ -1,39 +1,21 @@
-// TODO: Insert breadcrumbs via slot instead of JSON data.
+// Expects to receive a series of anchor elements, followed by a final <span>
+// Inserts ">" in between each element
+// Considering that this is mainly only applying CSS styling, does this need to be a web component?
 
 class Breadcrumb extends HTMLElement {
 	constructor() {
 		super();
 		this.attachShadow({ mode: 'open' });
-		this.crumbData = JSON.parse(decodeURIComponent(this.getAttribute('crumbData'))).crumbs;
 	}
 
 	connectedCallback() {
 		const { shadowRoot } = this;
 		shadowRoot.innerHTML = 
 			`<nav aria-label="Breadcrumb" class="breadcrumb">
-				<small> </small>
+				<small>
+					<slot></slot>
+				</small>
 			</nav>`;
-		
-		// Dynamically generate breadcrumbs
-		this.crumbData.forEach(crumb => {
-			// Should be last element in list
-			if(crumb.path == null) {
-				let crumbElement = document.createElement('span');
-				crumbElement.textContent = crumb.name;
-				shadowRoot.querySelector('small').appendChild(crumbElement);
-			}
-			else {
-				let crumbElement = document.createElement('a');
-				crumbElement.setAttribute('href', crumb.path);
-				crumbElement.textContent = crumb.name;
-
-				let separator = document.createElement('span');
-				separator.innerHTML = '&nbsp; &#8250; &nbsp;';
-
-				shadowRoot.querySelector('small').appendChild(crumbElement);
-				shadowRoot.querySelector('small').appendChild(separator);
-			}
-		});
 
 		let style = document.createElement("style");
 		style.textContent = `
@@ -41,14 +23,14 @@ class Breadcrumb extends HTMLElement {
 				margin: 10px;
 		  	}
 			small {
-				font-size: 15px;
+				font-size: var(--small-font-size);
 			}
-			a {
-				color: var(--accent-color);
-				text-decoration: none;
+			small > ::slotted(*) {
+				font-size: var(--small-font-size) !important;
 			}
-			a:hover {
-				text-decoration: underline;
+			small > ::slotted(*:not(:last-child)):after {
+				content: " › ";
+				color: var(--text-color);
 			}`;
 
 		shadowRoot.appendChild(style);

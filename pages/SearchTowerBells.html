@@ -16,7 +16,10 @@
 </HEAD>
 <body>
     <nav-bar pagePath="../pages" active=""></nav-bar>
-    <bread-crumb></bread-crumb>
+    <bread-crumb>
+        <a href="../index.html">TowerBells Home</a>
+        <span>Search</span>
+    </bread-crumb>
 
     <main>
         <header>
@@ -62,16 +65,5 @@
     </page-footer>
 
     <script async src="https://cse.google.com/cse.js?cx=638104373d64d439d"></script>
-    <SCRIPT>
-        // Send breadcrumb data to component
-	      document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-	      function getBreadcrumbTrail() {
-	          return encodeURIComponent(JSON.stringify({
-	              crumbs: [{name: 'TowerBells Home', path: '../index.html'},
-	                       {name: 'Search', path: null}]
-	      	}));
-	      }
-    </SCRIPT>
 </BODY>
 </HTML>

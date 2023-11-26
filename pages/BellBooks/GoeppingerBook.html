@@ -15,7 +15,11 @@
 </HEAD>
 <BODY>
 	<nav-bar pagePath="../../pages" ></nav-bar>
-	<bread-crumb></bread-crumb>
+	<bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="./BellBooks.html">Bell Books</a>
+		<span>Goeppinger Book</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -212,18 +216,5 @@
 		 dateModified="2021/12/12"
 		 mailSubject="TowerBells GoeppingerBook">
     </page-footer>
-
-	<SCRIPT>
-        // Send breadcrumb data to component
-	    document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-        
-	    function getBreadcrumbTrail() {
-	        return encodeURIComponent(JSON.stringify({
-	            crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-	                     {name: 'Bell Books', path: 'BellBooks.html'},
-						 {name: 'Goeppinger Book', path: null}]
-	    	}));
-	    }
-    </SCRIPT>
 </BODY>
 </HTML>

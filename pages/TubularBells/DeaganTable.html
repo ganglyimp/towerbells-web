@@ -16,7 +16,12 @@
 </HEAD>
 <body>
 	<nav-bar pagePath="../../pages" active=""></nav-bar>
-    <bread-crumb></bread-crumb>
+    <bread-crumb>
+		<a href="../../index.html">TowerBells Home</a>
+		<a href="../Introduction/TowerBells.html">Tower Bells Introduction</a>
+		<a href="./TubularBells.html">Tubular Bells</a>
+		<span>Deagan Table</span>
+	</bread-crumb>
 
 	<main>
 		<header>
@@ -1122,20 +1127,5 @@
 				 dateModified="2015/09/22"
 				 mailSubject="Comments on DeaganTable">
 	</page-footer> <!-- restyled 2019/12/19 -->
-
-	<SCRIPT>
-		// Send breadcrumb data to component
-		document.querySelector('bread-crumb').setAttribute('crumbData', getBreadcrumbTrail());
-
-		function getBreadcrumbTrail() {
-			return encodeURIComponent(JSON.stringify({
-					crumbs: [{name: 'TowerBells Home', path: '../../index.html'},
-					         {name: 'Tower Bells Introduction', path: '../Introduction/TowerBells.html'},
-							 {name: 'Tubular Bells', path: './TubularBells.html'},
-							 {name: 'Deagan Table', path: null}]
-			}));
-		}
-    </SCRIPT>
-
 </BODY>
 </HTML>
