@@ -1,10 +1,29 @@
 .grid-2-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
+.flex-display, .flex-reversed {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.flex-reversed {
+  flex-direction: row-reverse;
+}
+
+  .flex-display > *, .flex-reversed > * {
+    flex: 1;
+  }
+
 @media (max-width: 800px) {
-  .grid-2-cols {
+  .grid-2-cols, .flex-display, .flex-reversed {
     display: block;
+  }
+
+  .flex-display:not(:last-child), .flex-reversed:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
   }
 }
