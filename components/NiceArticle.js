@@ -20,7 +20,9 @@ class NiceArticle extends HTMLElement {
 		this.shadowRoot.innerHTML = 
 			`<article class='nice-article'>
 				<header>
-					<h1>${this.articleTitle}</h1>
+					<slot name='article-header'>
+						<h1>${this.articleTitle}</h1>
+					</slot>
 				</header>
 
 				<div class='article-main'>
@@ -34,7 +36,7 @@ class NiceArticle extends HTMLElement {
 				</div>
 			</article>`;
 
-		let slot = this.shadowRoot.querySelector('slot');
+		let slot = this.shadowRoot.querySelector('slot[name="article-body"]');
 		slot.addEventListener('slotchange', (e) => this.onSlotChange(e, slot));
 
 		let style = document.createElement('style');
@@ -129,6 +131,8 @@ class NiceArticle extends HTMLElement {
 		const { shadowRoot } = this;
 
 		let assignedNodes = slot.assignedNodes();
+		if (assignedNodes.length < 1) return;
+
 		let headers = assignedNodes[0].querySelectorAll('h1, h2, h3, h4, h5, h6');
 
 		let navElem = shadowRoot.getElementById('sideNav');
@@ -139,7 +143,11 @@ class NiceArticle extends HTMLElement {
 		this.navSections = [];
 		let currParent = outerList;
 		let currLevel = 1;
+
 		headers.forEach(h => {
+			// If the header wasn't assigned an ID, skip
+			if (!h.id) return;
+
 			let currHead = {
 				id: h.id,
 				level: Number(h.tagName.substring(1)),
@@ -185,6 +193,8 @@ class NiceArticle extends HTMLElement {
 	}
 
 	onWindowScroll(e) {
+		if (this.navSections.length < 1) return;
+
 		clearTimeout(this.scrollTimeout);
 
 		this.scrollTimeout = setTimeout(() => {
