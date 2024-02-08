@@ -47,7 +47,7 @@ class NiceArticle extends HTMLElement {
 
 			article header {
 				border-bottom: 1px solid var(--border-color);
-				font-size: clamp(40px, 5vw, 70px);
+				font-size: clamp(20px, 2vw, 1.5rem);
 				text-align: center;
 				margin: 0 1rem;
 			}

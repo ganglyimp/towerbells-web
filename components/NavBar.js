@@ -149,7 +149,7 @@ class NavBar extends HTMLElement {
 				border-top: 1px solid var(--border-color);
 				border-bottom: 1px solid var(--border-color);
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-				font-family: var(--header-font);
+				font-family: var(--body-font);
 				overflow: hidden;
 				z-index: 1000;
 			}
