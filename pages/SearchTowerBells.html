@@ -8,11 +8,28 @@
     <META NAME="keywords" CONTENT="Search this website">
 
     <link rel="stylesheet" type="text/css" href="../stylesheets/global.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/search.css">
 
     <SCRIPT type="module" src="../components/NavBar.js" defer></SCRIPT>
     <SCRIPT type="text/javascript" src="../components/Breadcrumb.js" defer></SCRIPT>
     <SCRIPT type="text/javascript" src="../components/PageFooter.js" defer></SCRIPT>
+
+    <style>
+        header, section {
+          margin: 0 20%;
+          border-bottom: 1px solid var(--border-color);
+        }
+        
+        header h1 {
+          font-size: clamp(40px, 5vw, 70px);
+          text-align: center;
+        }
+        
+        @media (max-width: 800px) {
+          header, section {
+            margin: 0 1.5em;
+          }
+        }
+    </style>
 </HEAD>
 <body>
     <noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>

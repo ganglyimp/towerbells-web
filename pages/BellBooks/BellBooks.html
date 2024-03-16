@@ -8,12 +8,60 @@
 	<TITLE>Books | TowerBells</TITLE>
 
 	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
-	<link rel="stylesheet" type="text/css" href="../../stylesheets/bell-books.css">
 
 	<SCRIPT type="module" src="../../components/NavBar.js" defer></SCRIPT>
 	<SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
 	<SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
 	<script type="text/javascript" src="../../components/BookReview.js" defer></script>
+
+	<style>
+		header, section {
+		  margin: 0 20%;
+		  border-bottom: 1px solid var(--border-color);
+		}
+	
+		header h1 {
+		  font-size: clamp(40px, 5vw, 70px);
+		  text-align: center;
+		}
+	
+		header a:hover {
+		  text-decoration: none;
+		}
+	
+		header .section-links {
+		  display: flex;
+		  justify-content: center;
+		  flex-wrap: wrap;
+		}
+	
+		  header .section-links > * {
+			margin: 1em;
+		  }
+	
+		  section h2 {
+			font-size: 40px;
+		  }
+	
+		  section .book-review-group {
+			display: flex;
+			flex-wrap: wrap;
+		  }
+	
+			section .book-review-group > * {
+			  flex: 1;
+			}
+	
+		@media (max-width: 800px) {
+		  header, section {
+			margin: 0 1.5em;
+		  }
+	
+		  .spacer-element {
+			display: none;
+		  }
+		}
+	</style>
 </HEAD>
 <body>
 	<noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>
