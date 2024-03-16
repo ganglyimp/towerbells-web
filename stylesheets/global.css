@@ -21,6 +21,17 @@ html {
   height: 100%;
 }
 
+noscript {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--secondary-bg-color);
+}
+
 body {
   min-height: 100%;
   margin: 0;
