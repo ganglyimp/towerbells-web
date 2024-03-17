@@ -223,11 +223,21 @@ class NavBar extends HTMLElement {
 							display: flex;
 							align-items: center;
 							gap: 5px;
-							background-color: transparent;
-							border: none;
-							border-radius: 10px;
-							box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.2);
+							background-color: var(--secondary-bg-color);
+							border: 2px solid var(--text-color);
+							border-radius: var(--pill-radius);
+							color: var(--text-color);
+							box-shadow: 4px 4px 0 0 var(--text-color);
 							cursor: pointer;
+							transition: all 0.1s ease-in-out;
+						}
+						nav .nav-content .nav-actions .translate-widget:hover {
+							background-color: var(--accent-color);
+							color: var(--text-color-on-dark);
+						}
+						nav .nav-content .nav-actions .translate-widget:active {
+							box-shadow: 0 2px 2px 0 0 var(--text-color) ;
+  							transform: translate(2px, 2px);
 						}
 	
 							nav .nav-content .nav-actions .translate-widget .bi.bi-globe2 {

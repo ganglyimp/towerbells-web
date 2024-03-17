@@ -12,6 +12,8 @@
   
   --body-font-size: 20px;
   --small-font-size: 15px;
+  --bevel-radius: 10px;
+  --pill-radius: 25px;
   --header-font: 'Playfair Display', Cambria, Georgia, serif;
   --body-font: Georgia, Cambria, serif;
 }
@@ -82,7 +84,7 @@ small {
     font-size: unset;
   }
 
-button.action-button {
+.action-button {
   position: relative;
   background-color: transparent;
   border: 3px var(--text-color) solid;
@@ -91,15 +93,15 @@ button.action-button {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-button.action-button:hover {
+.action-button:hover {
   background-color: var(--accent-color);
   color: var(--text-color-on-dark);
 }
-button.action-button:focus {
+.action-button:focus {
   filter: brightness(1.5);
 }
 
-  button.action-button::before, button.action-button::after {
+  .action-button::before, .action-button::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -108,18 +110,49 @@ button.action-button:focus {
     transition: all 0.3s ease-in-out;
   }
 
-  button.action-button::before {
+  .action-button::before {
     top: 100%;
     left: 15%;
   }
-  button.action-button:hover::before {
+  .action-button:hover::before {
     left: 75%;
   }
 
-  button.action-button::after {
+  .action-button::after {
     bottom: 100%;
     right: 15%;
   }
-  button.action-button:hover::after {
+  .action-button:hover::after {
     right: 75%;
   }
+
+.simple-button {
+  min-width: 120px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 4px 4px 0 0 var(--text-color) ;
+  background-color: var(--secondary-bg-color);
+  border: 2px solid var(--text-color);
+  border-radius: var(--pill-radius);
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.simple-button:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color-on-dark);
+}
+
+.simple-button:active, .simple-button[disabled] {
+  box-shadow: 0 2px 2px 0 0 var(--text-color);
+  transform: translate(2px, 2px);
+}
+
+.simple-button[disabled] {
+  background-color: var(--border-color);
+  pointer-events: none;
+  cursor: not-allowed;
+}

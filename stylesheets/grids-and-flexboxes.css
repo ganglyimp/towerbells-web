@@ -4,17 +4,24 @@
   gap: 10px;
 }
 
-.flex-display, .flex-reversed {
+.flex-display, .flex-always, .flex-reversed {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
+.flex-display.wrap, .flex-always.wrap {
+  flex-wrap: wrap;
+}
+
 .flex-reversed {
   flex-direction: row-reverse;
 }
+.flex-reversed.wrap {
+  flex-wrap: wrap-reverse;
+}
 
-  .flex-display > *, .flex-reversed > * {
+  .flex-display > *, .flex-always > *, .flex-reversed > * {
     flex: 1;
   }
 
