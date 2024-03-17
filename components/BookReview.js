@@ -194,22 +194,25 @@ class BookReview extends HTMLElement {
 						position: absolute;
 						top: 0;
 						right: 0;
+						box-shadow: 4px 4px 0 0 var(--text-color);
 						border-radius: 100%;
-						border: 3px solid var(--text-color);
-						background-color: var(--main-bg-color);
+						border: 2px solid var(--text-color);
+						background-color: var(--secondary-bg-color);
 						cursor: pointer;
-						transition: all 0.3s ease-in-out;
+						transition: all 0.1s ease-in-out;
 					}
 					#bookModal .fixed button:hover {
-						color: var(--accent-color);
-						border-color: var(--accent-color);
+						color: var(--text-color-on-dark);
+						background-color: var(--accent-color);
+					}
+					#bookModal .fixed button:active {
+						box-shadow: 0 2px 2px 0 0 var(--text-color);
+						transform: translate(2px, 2px);
 					}
 		
 						#bookModal .fixed button .bi {
-							transition: all 0.3s ease-in-out;
-						}
-						#bookModal .fixed button:hover .bi {
-							transform: rotate(90deg);
+							width: 30px;
+							height: 30px;
 						}
 				
 				#bookModal .scrollable {

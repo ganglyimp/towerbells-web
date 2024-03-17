@@ -299,24 +299,25 @@ class NavBar extends HTMLElement {
 						}
 
 						nav dialog .fixed button {
-							background-color: transparent;
+							background-color: var(--secondary-bg-color);
 							border: 2px solid var(--text-color);
 							border-radius: 100%;
-							transition: all 0.3s ease-in-out;
+							box-shadow: 4px 4px 0 0 var(--text-color);
+							transition: all 0.1s ease-in-out;
 						}
 						nav dialog .fixed button:hover {
-							border: 3px solid var(--accent-color);
+							color: var(--text-color-on-dark);
+							background-color: var(--accent-color);
+						}
+						nav dialog .fixed button:active {
+							box-shadow: 0 2px 2px 0 0 var(--text-color);
+  							transform: translate(2px, 2px);
 						}
 
 							nav dialog .fixed button .bi {
-								width: 1.5em;
-								height: 1.5em;
-								font-size: 20px;
-								transition: all 0.3s ease-in-out; 
-							}
-							nav dialog .fixed button:hover .bi {
-								color: var(--accent-color);
-								transform: rotate(90deg);
+								width: 30px;
+								height: 30px;
+								font-size: 25px;
 							}
 
 					nav dialog .body {

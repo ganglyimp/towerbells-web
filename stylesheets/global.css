@@ -156,3 +156,7 @@ small {
   pointer-events: none;
   cursor: not-allowed;
 }
+
+.tall-line {
+  line-height: 50px;
+}
