@@ -1,7 +1,7 @@
 class NiceArticle extends HTMLElement {
 	constructor() {
 		super();
-		const shadowRoot = this.attachShadow({ mode: 'open' });
+		this.attachShadow({ mode: 'open' });
 
 		this.articleTitle = this.getAttribute('articleTitle');
 		this.navSections = [];
@@ -17,109 +17,14 @@ class NiceArticle extends HTMLElement {
 	}
 
 	connectedCallback() {
-		this.shadowRoot.innerHTML = 
-			`<article class='nice-article'>
-				<header>
-					<slot name='article-header'>
-						<h1>${this.articleTitle}</h1>
-					</slot>
-				</header>
+		const { shadowRoot } = this;
 
-				<div class='article-main'>
-					<aside class='side-nav'>
-						<nav id="sideNav"></nav>
-					</aside>
+		shadowRoot.innerHTML = this.getBaseHtml();
 
-					<div class='article-body'>
-						<slot name='article-body'></slot>
-					</div>
-				</div>
-			</article>`;
-
-		let slot = this.shadowRoot.querySelector('slot[name="article-body"]');
+		let slot = shadowRoot.querySelector('slot[name="article-body"]');
 		slot.addEventListener('slotchange', (e) => this.onSlotChange(e, slot));
 
-		let style = document.createElement('style');
-		style.textContent = `
-			h1, h2, h3, h4, h5, h6 {
-				font-family: var(--header-font);
-			}
-
-			article header {
-				border-bottom: 1px solid var(--border-color);
-				font-size: clamp(40px, 5vw, 70px);
-				text-align: center;
-				margin: 0 1rem;
-			}
-
-			article .article-main {
-				display: flex;
-			}
-
-				article .article-main .side-nav {
-					flex: 30%;
-					padding: 15px;
-				}
-
-					article .article-main .side-nav > nav {
-						position: sticky;
-						top: 100px;
-						overflow: scroll;
-						max-height: calc(100vh - 100px);
-						mask-image: linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
-					}
-
-					article .article-main .side-nav ul {
-						list-style: none;
-					}
-
-					article .article-main .side-nav li button {
-						color: rgba(0, 0, 0, 0.50);
-					}
-
-					article .article-main .side-nav li:hover button {
-						color: var(--text-color);
-					}
-
-					article .article-main .side-nav li.active {
-						border-left: 3px solid var(--accent-color);
-					}
-
-						article .article-main .side-nav li.active button {
-							color: var(--accent-color);
-							font-weight: bold;
-						}
-
-					article .article-main .side-nav button {
-						margin: 5px 0;
-						border: none;
-						background-color: transparent;
-						text-align: left;
-						font-size: clamp(20px, 2vw, 1.5em);
-						font-family: var(--body-font);
-						cursor: pointer;
-					}
-
-					article .article-main .side-nav button:hover {
-						text-decoration: underline;
-					}
-
-				article .article-main .article-body {
-					flex: 70%;
-					margin: 0 10%;
-				}
-				
-			@media (max-width: 800px) {
-				article .article-main .side-nav {
-					display: none;
-				}
-
-				article .article-main .article-body {
-					margin: 0 1rem;
-				}
-			}`;
-
-		this.shadowRoot.appendChild(style);
+		shadowRoot.appendChild(this.getStyles());
 	}
 
 	disconnectedCallback() {
@@ -240,6 +145,111 @@ class NiceArticle extends HTMLElement {
 		}
 
 		return this.navSections[0];
+	}
+
+	getBaseHtml() {
+		return `
+		<article class='nice-article'>
+			<header>
+				<slot name='article-header'>
+					<h1>${this.articleTitle}</h1>
+				</slot>
+			</header>
+
+			<div class='article-main'>
+				<aside class='side-nav'>
+					<nav id="sideNav"></nav>
+				</aside>
+
+				<div class='article-body'>
+					<slot name='article-body'></slot>
+				</div>
+			</div>
+		</article>`;
+	}
+
+	getStyles() {
+		const style = document.createElement('style');
+		style.textContent = `
+		h1, h2, h3, h4, h5, h6 {
+			font-family: var(--header-font);
+		}
+
+		article header {
+			border-bottom: 1px solid var(--border-color);
+			font-size: clamp(40px, 5vw, 70px);
+			text-align: center;
+			margin: 0 1rem;
+		}
+
+		article .article-main {
+			display: flex;
+		}
+
+			article .article-main .side-nav {
+				flex: 30%;
+				padding: 15px;
+			}
+
+				article .article-main .side-nav > nav {
+					position: sticky;
+					top: 100px;
+					overflow: scroll;
+					max-height: calc(100vh - 100px);
+					mask-image: linear-gradient(to bottom, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+				}
+
+				article .article-main .side-nav ul {
+					list-style: none;
+				}
+
+				article .article-main .side-nav li button {
+					color: rgba(0, 0, 0, 0.50);
+				}
+
+				article .article-main .side-nav li:hover button {
+					color: var(--text-color);
+				}
+
+				article .article-main .side-nav li.active {
+					border-left: 3px solid var(--accent-color);
+				}
+
+					article .article-main .side-nav li.active button {
+						color: var(--accent-color);
+						font-weight: bold;
+					}
+
+				article .article-main .side-nav button {
+					margin: 5px 0;
+					border: none;
+					background-color: transparent;
+					text-align: left;
+					font-size: clamp(20px, 2vw, 1.5em);
+					font-family: var(--body-font);
+					cursor: pointer;
+				}
+
+				article .article-main .side-nav button:hover {
+					text-decoration: underline;
+				}
+
+			article .article-main .article-body {
+				flex: 70%;
+				margin: 0 10%;
+			}
+			
+		@media (max-width: 800px) {
+			article .article-main .side-nav {
+				display: none;
+			}
+
+			article .article-main .article-body {
+				margin: 0 1rem;
+			}
+		}`;
+
+		return style;
 	}
 }
 

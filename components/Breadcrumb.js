@@ -10,30 +10,40 @@ class Breadcrumb extends HTMLElement {
 
 	connectedCallback() {
 		const { shadowRoot } = this;
-		shadowRoot.innerHTML = 
-			`<nav aria-label="Breadcrumb" class="breadcrumb">
-				<small>
-					<slot></slot>
-				</small>
-			</nav>`;
+		shadowRoot.innerHTML = this.getBaseHtml();
+		shadowRoot.appendChild(this.getStyles());
+	}
 
-		let style = document.createElement("style");
+	getBaseHtml() {
+		return `
+		<nav aria-label="Breadcrumb" class="breadcrumb">
+			<small>
+				<slot></slot>
+			</small>
+		</nav>`;
+	}
+
+	getStyles() {
+		const style = document.createElement('style');
 		style.textContent = `
-			.breadcrumb {
-				margin: 10px;
-		  	}
-			small {
-				font-size: var(--small-font-size);
-			}
+		.breadcrumb {
+			margin: 10px;
+		}
+
+		small {
+			font-size: var(--small-font-size);
+		}
+
 			small > ::slotted(*) {
 				font-size: var(--small-font-size) !important;
 			}
+		
 			small > ::slotted(*:not(:last-child)):after {
 				content: " › ";
 				color: var(--text-color);
 			}`;
 
-		shadowRoot.appendChild(style);
+		return style;
 	}
 }
 
