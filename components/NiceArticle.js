@@ -66,8 +66,6 @@ class NiceArticle extends HTMLElement {
 			innerButton.onclick = () => { 
 				if (currHead.id)
 					window.location.hash = currHead.id;
-			
-				window.scroll({ top: currHead.offsetTop, behavior: 'smooth' });
 			};
 		
 			let listItem = document.createElement('li');
@@ -183,12 +181,18 @@ class NiceArticle extends HTMLElement {
 		}
 
 		article .article-main {
-			display: flex;
+			max-width: 1500px;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			margin: 0 auto;
+			display: grid;
+			gap: 3rem;
+			grid-template-areas: "sidebarLeft main sidebarRight";
+			grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 15rem);
 		}
 
 			article .article-main .side-nav {
-				flex: 30%;
-				padding: 15px;
+				grid-area: sidebarLeft;
 			}
 
 				article .article-main .side-nav > nav {
@@ -225,7 +229,7 @@ class NiceArticle extends HTMLElement {
 					border: none;
 					background-color: transparent;
 					text-align: left;
-					font-size: clamp(20px, 2vw, 1.5em);
+					font-size: var(--body-font-size);
 					font-family: var(--body-font);
 					cursor: pointer;
 				}
@@ -235,11 +239,20 @@ class NiceArticle extends HTMLElement {
 				}
 
 			article .article-main .article-body {
-				flex: 70%;
-				margin: 0 10%;
+				grid-area: main;
 			}
+
+		@media (max-width: 1300px) {
+			article .article-main {
+				grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
+			}
+		}
 			
 		@media (max-width: 800px) {
+			article .article-main {
+				display: block;
+			}
+
 			article .article-main .side-nav {
 				display: none;
 			}

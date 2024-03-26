@@ -32,6 +32,10 @@ header h3 {
     margin: 0;
   }
 
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 100px;
+}
+
 section h1, section .heading-1 {
   font-size: 50px;
 }
