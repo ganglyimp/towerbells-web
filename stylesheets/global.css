@@ -24,11 +24,13 @@
   --text-color: var(--dark-shade);
   --text-color-rgb: var(--dark-shade-rgb);
   --text-color-inverse: var(--light-shade);
+  --text-color-on-accent: var(--light-shade);
   --secondary-bg-color: var(--light-shade-secondary);
   --secondary-bg-color-rgb: var(--light-shade-secondary-rgb);
   --accent-color: var(--main-accent);
-  --accent-secondary: var(--light-accent);
   --border-color: var(--grey-shade);
+  --footer-bg-color: var(--dark-shade);
+  --footer-text-color: var(--light-shade);
   
   --body-font-size: 20px;
   --small-font-size: 15px;
@@ -62,6 +64,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
   background-color: var(--main-bg-color);
+}
+
+body.dark-theme {
+  --main-bg-color: var(--dark-shade);
+  --text-color: var(--light-shade);
+  --text-color-rgb: var(--light-shade-rgb);
+  --text-color-inverse: var(--dark-shade);
+  --text-color-on-accent: var(--dark-shade);
+  --secondary-bg-color: var(--dark-shade-secondary);
+  --secondary-bg-color-rgb: var(--dark-shade-secondary-rgb);
+  --accent-color: var(--light-accent);
+  --accent-secondary: var(--dark-accent);
+  --border-color: var(--grey-shade);
+  --footer-bg-color: var(--dark-shade-secondary);
+  --footer-text-color: var(--light-shade);
 }
 
 p, i, b, a, ul, ol, table, button, dd, dt {
@@ -115,7 +132,7 @@ small {
 }
 .action-button:hover {
   background-color: var(--accent-color);
-  color: var(--text-color-inverse);
+  color: var(--text-color-on-accent);
 }
 .action-button:focus {
   filter: brightness(1.5);
@@ -163,7 +180,7 @@ small {
 
 .simple-button:hover {
   background-color: var(--accent-color);
-  color: var(--text-color-inverse);
+  color: var(--text-color-on-accent);
 }
 
 .simple-button:active, .simple-button[disabled] {

@@ -3,6 +3,10 @@ header, .header, section {
   border-bottom: 1px solid var(--border-color);
 }
 
+section:last-child {
+  border-bottom: unset;
+}
+
 .slotted section {
   margin: 0;
 }
@@ -86,11 +90,11 @@ tr a {
 }
 tr:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--text-color-inverse);
 }
   tr:hover a {
-    color: white;
-    background-color: black;
+    color: var(--text-color-inverse);
+    background-color: var(--text-color);;
     padding: 3px;
   }
 th, td {
@@ -98,8 +102,8 @@ th, td {
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
-tr.section-divide td, tr.section-divide th{
-  border-bottom: 1px solid black;
+tr.section-divide td, tr.section-divide th {
+  border-bottom: 1px solid var(--text-color);
 }
 th.row-comment {
   border-bottom: none;
@@ -107,11 +111,11 @@ th.row-comment {
 
 .clickable-block {
   display: block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(var(--text-color-rgb), 0.2);
   transition: all 0.3s ease-in-out;
 }
 .clickable-block:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(var(--text-color-rgb), 0.2);
 }
 
 @media (max-width: 800px) {

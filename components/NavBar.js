@@ -6,6 +6,8 @@ class NavBar extends HTMLElement {
 		this.pagePath = this.getAttribute('pagePath');
 		this.active = this.getAttribute('active');
 		this.languageData = [];
+
+		this.toggleColorTheme = this.toggleColorTheme.bind(this);
 	}
 
 	async connectedCallback() {
@@ -58,9 +60,24 @@ class NavBar extends HTMLElement {
 			navContent.classList.toggle('collapsed');
 		});
 
+		// Add event listener to toggle color theme
+		const colorPickerButton = shadowRoot.querySelector('button.color-theme-picker');
+		colorPickerButton.addEventListener('click', this.toggleColorTheme);
+
 		// Add active class
 		if(this.active)
 			shadowRoot.getElementById(this.active).classList.add('active');
+
+		// Check local storage for color theme preference
+		const colorTheme = localStorage.getItem('colorTheme');
+		const autoApplyDarkTheme = colorTheme == null 
+			&& window.matchMedia 
+			&& window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+		if (colorTheme === 'dark' || autoApplyDarkTheme) {
+			document.body.classList.add('dark-theme');
+			shadowRoot.querySelector('nav').classList.add('dark-theme');
+		}
 		
 		shadowRoot.appendChild(this.getStyles());
 	}
@@ -79,6 +96,12 @@ class NavBar extends HTMLElement {
 			: `https://translate.google.com/translate?sl=${currLang}&tl=${langCode}&u=${currPage}?${langCode}`;
 
 		window.open(googleTranslateLink);
+	}
+
+	toggleColorTheme() {
+		const hasDark = document.body.classList.toggle('dark-theme');
+		localStorage.setItem('colorTheme', (hasDark) ? 'dark' : 'light');
+		this.shadowRoot.querySelector('nav').classList.toggle('dark-theme');
 	}
 
 	getBaseHtml() {
@@ -113,13 +136,23 @@ class NavBar extends HTMLElement {
 
 				<div class="nav-actions">
 					<!-- Search Icon -->
-					<a href="${this.pagePath}/SearchTowerBells.html">
+					<a href="${this.pagePath}/SearchTowerBells.html" title="Search">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 						</svg>
 					</a>
 
-					<button class="translate-widget">
+					<button class="color-theme-picker" title="Toggle Color Theme">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+  							<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+						</svg>
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+  							<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+						</svg>
+					</button>
+
+					<button class="translate-widget" title="Choose Language">
 						<!-- Globe Icon -->
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
   							<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
@@ -178,7 +211,7 @@ class NavBar extends HTMLElement {
 			z-index: 1000;
 		}
 
-			nav .bi.bi-search, nav .bi.bi-list, nav .bi.bi-x-lg {
+			nav .bi.bi-search, nav .bi.bi-list, nav .bi.bi-x-lg, nav .bi.bi-sun, nav .bi.bi-moon {
 				display: inline-block;
 				width: 1em;
 				height: 1em;
@@ -239,8 +272,35 @@ class NavBar extends HTMLElement {
 
 					nav .nav-content .nav-actions .bi-search {
 						padding: 5px;
-						font-size: 2em;
+						font-size: 2rem;
 					}
+
+					nav .nav-content .nav-actions .color-theme-picker {
+						background-color: transparent;
+						color: var(--text-color);
+						border: none;
+						cursor: pointer;
+					}
+						nav .nav-content .nav-actions .color-theme-picker > svg {
+							padding: 5px;
+							font-size: 2rem;
+						}
+						
+						nav .nav-content .nav-actions .color-theme-picker .bi-sun {
+							display: none;
+						}
+
+						nav.dark-theme .nav-content .nav-actions .color-theme-picker .bi-sun {
+							display: block;
+						}
+						
+						nav .nav-content .nav-actions .color-theme-picker .bi-moon {
+							display: block;
+						}
+
+						nav.dark-theme .nav-content .nav-actions .color-theme-picker .bi-moon {
+							display: none;
+						}
 
 					nav .nav-content .nav-actions .translate-widget {
 						padding: 10px;
@@ -257,7 +317,7 @@ class NavBar extends HTMLElement {
 					}
 					nav .nav-content .nav-actions .translate-widget:hover {
 						background-color: var(--accent-color);
-						color: var(--text-color-inverse);
+						color: var(--text-color-on-accent);
 					}
 					nav .nav-content .nav-actions .translate-widget:active {
 						box-shadow: 0 2px 2px 0 0 var(--text-color) ;
@@ -282,6 +342,8 @@ class NavBar extends HTMLElement {
 					border: none;
 					border-radius: 10px;
 					overscroll-behavior: none;
+					background-color: var(--main-bg-color);
+					color: var(--text-color);
 				}
 
 					nav dialog .fixed {
@@ -303,10 +365,11 @@ class NavBar extends HTMLElement {
 							border: 2px solid var(--text-color);
 							border-radius: 100%;
 							box-shadow: 4px 4px 0 0 var(--text-color);
+							color: inherit;
 							transition: all 0.1s ease-in-out;
 						}
 						nav dialog .fixed button:hover {
-							color: var(--text-color-inverse);
+							color: var(--text-color-on-accent);
 							background-color: var(--accent-color);
 						}
 						nav dialog .fixed button:active {
@@ -334,6 +397,7 @@ class NavBar extends HTMLElement {
 								border: none;
 								border-radius: 10px;
 								background-color: transparent;
+								color: inherit;
 							}
 							nav dialog .body section div button:hover {
 								background-color: rgba(var(--text-color-rgb), 0.1);

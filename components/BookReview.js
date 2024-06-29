@@ -110,6 +110,10 @@ class BookReview extends HTMLElement {
 	getStyles() {
 		const style = document.createElement('style');
 		style.textContent = `
+		a {
+			color: var(--accent-color);
+		}
+
 		article.book-review {
 			width: 100%;
 			min-width: 250px;
@@ -178,10 +182,12 @@ class BookReview extends HTMLElement {
 				border-radius: 10px;
 				overscroll-behavior: none;
 				border: 2px solid var(--border-color);
+				background-color: var(--main-bg-color);
+				color: var(--text-color);
 			}
 		
 			#bookModal::backdrop {
-				background-color: rgba(var(--text-color-rgb), 0.5);
+				background-color: rgba(var(--dark-shade-rgb), 0.5);
 			}
 		
 				#bookModal .fixed {
@@ -198,6 +204,7 @@ class BookReview extends HTMLElement {
 						border-radius: 100%;
 						border: 2px solid var(--text-color);
 						background-color: var(--secondary-bg-color);
+						color: inherit;
 						cursor: pointer;
 						transition: all 0.1s ease-in-out;
 					}

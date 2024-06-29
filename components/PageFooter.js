@@ -89,13 +89,13 @@ class PageFooter extends HTMLElement {
 		footer {
 			padding: 50px 25px;
 			padding-bottom: 10px;
-			background: var(--text-color);
-			color: var(--main-bg-color);
+			background: var(--footer-bg-color);
+			color: var(--footer-text-color);
 			border-radius: 20px 20px 0 0;
 		}
 
 			footer a {
-				color: var(--text-color-inverse);
+				color: inherit;
 			}
 
 			footer .footer-links {
