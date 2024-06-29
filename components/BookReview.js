@@ -181,7 +181,7 @@ class BookReview extends HTMLElement {
 			}
 		
 			#bookModal::backdrop {
-				background-color: rgba(0, 0, 0, 0.5);
+				background-color: rgba(var(--text-color-rgb), 0.5);
 			}
 		
 				#bookModal .fixed {
@@ -202,7 +202,7 @@ class BookReview extends HTMLElement {
 						transition: all 0.1s ease-in-out;
 					}
 					#bookModal .fixed button:hover {
-						color: var(--text-color-on-dark);
+						color: var(--text-color-inverse);
 						background-color: var(--accent-color);
 					}
 					#bookModal .fixed button:active {

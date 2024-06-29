@@ -95,7 +95,7 @@ class PageFooter extends HTMLElement {
 		}
 
 			footer a {
-				color: white;
+				color: var(--text-color-inverse);
 			}
 
 			footer .footer-links {

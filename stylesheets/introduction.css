@@ -26,12 +26,12 @@
     border: none;
     background-color: transparent;
     text-align: left;
+    color: var(--text-color);
     font-size: clamp(20px, 2vw, 1.5em);
     opacity: 0.5;
     cursor: pointer;
   }
   .introduction-page aside nav button:hover {
-    color: var(--text-color);
     opacity: 1;
   }
   .introduction-page aside nav button.active {

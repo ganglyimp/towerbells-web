@@ -172,7 +172,7 @@ class NavBar extends HTMLElement {
 			background-color: var(--main-bg-color);
 			border-top: 1px solid var(--border-color);
 			border-bottom: 1px solid var(--border-color);
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			box-shadow: 0 4px 8px 0 rgba(var(--text-color-rgb), 0.2);
 			font-family: var(--body-font);
 			overflow: hidden;
 			z-index: 1000;
@@ -257,7 +257,7 @@ class NavBar extends HTMLElement {
 					}
 					nav .nav-content .nav-actions .translate-widget:hover {
 						background-color: var(--accent-color);
-						color: var(--text-color-on-dark);
+						color: var(--text-color-inverse);
 					}
 					nav .nav-content .nav-actions .translate-widget:active {
 						box-shadow: 0 2px 2px 0 0 var(--text-color) ;
@@ -306,7 +306,7 @@ class NavBar extends HTMLElement {
 							transition: all 0.1s ease-in-out;
 						}
 						nav dialog .fixed button:hover {
-							color: var(--text-color-on-dark);
+							color: var(--text-color-inverse);
 							background-color: var(--accent-color);
 						}
 						nav dialog .fixed button:active {
@@ -336,7 +336,7 @@ class NavBar extends HTMLElement {
 								background-color: transparent;
 							}
 							nav dialog .body section div button:hover {
-								background-color: rgba(0, 0, 0, 0.1);
+								background-color: rgba(var(--text-color-rgb), 0.1);
 							}
 
 		@media (max-width: 800px) {

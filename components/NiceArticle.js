@@ -208,7 +208,7 @@ class NiceArticle extends HTMLElement {
 				}
 
 				article .article-main .side-nav li button {
-					color: rgba(0, 0, 0, 0.50);
+					color: rgba(var(--text-color-rgb), 0.50);
 				}
 
 				article .article-main .side-nav li:hover button {
