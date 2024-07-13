@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Hundredweights, Quarters and Pounds Calculator | TowerBells</title>
+    <meta http-equiv=content-type content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+
+    <!-- External Scripts -->
+    <script type="module" src="/components/NavBar.js" defer></script>
+    <script type="text/javascript" src="/components/PageFooter.js" defer></script>
+    <script type="text/javascript" src="/components/Breadcrumb.js" defer></script>
+</head>
+
+<body>
+    <noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>
+    <nav-bar></nav-bar>
+    <bread-crumb>
+        <a href="/index.html">TowerBells Home</a>
+        <span>Hundredweights, Quarters and Pounds Calculator</span>
+    </bread-crumb>
+
+    <main>
+        <iframe src="/pages/Cwt-Qtr-Lb_Calculator.html" 
+            title="Hundredweights, Quarters and Pounds Calculator" 
+            scrolling="no"
+            frameborder="0" 
+            style="width: 100%;"
+            onload="resizeIframe(this)">
+        </iframe>
+    </main>
+
+    <page-footer dateCreated="2024/07/07"
+                 dateModified="2024/07/07"
+                 mailSubject="Comments on Bell Weight Calculator">
+    </page-footer>
+
+    <script>
+        function resizeIframe(iFrameObj) {
+            iFrameObj.style.height = iFrameObj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
+</body>
+</html>
