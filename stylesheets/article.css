@@ -55,7 +55,7 @@ section h3, section .heading-3 {
 blockquote {
   position: relative;
   padding: 1em;
-  box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+  box-shadow: 2px 2px 4px rgba(var(--text-color-rgb), 0.2);
   border-radius: 10px;
   background: var(--secondary-bg-color) no-repeat left / 140px;
 }
@@ -67,7 +67,7 @@ blockquote::before {
   right: 0;
   bottom: 0;
   border-radius: 10px;
-  box-shadow: inset -2px -2px 1px hsl(0 0% 100%), inset 2px 2px 4px hsl(0 0% 0% / 20%);
+  box-shadow: inset -2px -2px 1px var(--text-color-inverse), inset 2px 2px 4px rgba(var(--text-color-rgb), 0.2);
   pointer-events: none;
   z-index: 1;
 }

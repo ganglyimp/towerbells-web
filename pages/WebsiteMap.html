@@ -1,86 +1,100 @@
 <!DOCTYPE HTML>
-<HTML>
-<HEAD>
-	<!--This is file "WebsiteMap.html"-->
+<html>
+
+<head>
 	<title>Website Map | TowerBells</title>
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-	<meta name="keywords" content="carillon, tower bells">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="carillon, tower bells">
 
-	<link rel="stylesheet" type="text/css" href="../stylesheets/global.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/article.css">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="theme-color" content="#ffffff">
 
-	<script type="module" src="../components/NavBar.js" defer></script>
-	<script type="text/javascript" src="../components/Breadcrumb.js" defer></script>
-	<script type="text/javascript" src="../components/PageFooter.js" defer></script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/article.css">
+
+	<!-- Scripts -->
+	<script type="module" src="/components/NavBar.js" defer></script>
+	<script type="text/javascript" src="/components/Breadcrumb.js" defer></script>
+	<script type="text/javascript" src="/components/PageFooter.js" defer></script>
 
 	<style>
 		.button-group {
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
-		
-		  .button-group > * {
-		    margin: 1em;
-		  }
-	  
+
+		.button-group>* {
+			margin: 1em;
+		}
+
 		.site-map .nested {
-		  position: relative;
-		  padding: 1em;
-		  list-style: none;
-		  background-color: rgba(var(--secondary-bg-color-rgb), 0.8);
-		  border: 3px dotted var(--border-color);
-		  border-radius: 10px;
+			position: relative;
+			padding: 1em;
+			list-style: none;
+			background-color: rgba(var(--secondary-bg-color-rgb), 0.8);
+			border: 3px dotted var(--border-color);
+			border-radius: 10px;
 		}
-		
-		  .site-map .nested li:not(.nested) {
-		    margin-left: calc(10px + 1em);
-		  }
-	  
-		  .site-map .nested > :not(label) {
-		    overflow-y: hidden;
-		    max-height: 0;
-		    transition: all 0.5s ease-in-out;
-		  }
-		  .site-map .nested.active > :not(label) {
-		    max-height: 10000px;
-		  }
-	  
-		  .site-map .nested .toggle {
-		    width: 100%;
-		    padding-left: 10px;
-		    display: block;
-		    position: relative;
-		    cursor: pointer;
-		  }
-	  
-		  .site-map .nested > .toggle::before {
+
+		.site-map .nested li:not(.nested) {
+			margin-left: calc(10px + 1em);
+		}
+
+		.site-map .nested> :not(label) {
+			overflow-y: hidden;
+			max-height: 0;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.site-map .nested.active> :not(label) {
+			max-height: 10000px;
+		}
+
+		.site-map .nested .toggle {
+			width: 100%;
+			padding-left: 10px;
+			display: block;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.site-map .nested>.toggle::before {
 			content: "";
 			width: 16px;
 			height: 16px;
 			position: absolute;
 			top: 50%;
-		    left: -15px;
+			left: -15px;
 			transform: translateY(-50%);
 			background: var(--text-color);
-		    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
-		    transition: all 0.5s;
-		  }
-		  .site-map .nested.active > .toggle::before {
-		    transform: translateY(-50%) rotate(90deg);
-		  }
-	  
+			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+			transition: all 0.5s;
+		}
+
+		.site-map .nested.active>.toggle::before {
+			transform: translateY(-50%) rotate(90deg);
+		}
+
 		@media (max-width: 800px) {
-		  .site-map .nested {
-		    padding: 0px;
-		  }
+			.site-map .nested {
+				padding: 0px;
+			}
 		}
 	</style>
-</HEAD>
+</head>
+
 <body>
 	<noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>
-	<nav-bar pagePath="../pages" ></nav-bar>
+	<nav-bar pagePath="../pages"></nav-bar>
 	<bread-crumb>
 		<a href="../index.html">TowerBells Home</a>
 		<span>Website Map</span>
@@ -90,15 +104,15 @@
 		<header>
 			<h1>Website Map</h1>
 			<p>
-				Elsewhere on the World Wide Web (colloquially called the Web), a page like this would be 
-				called a "site map."&nbsp; Here it's called a "Website map" because we use the word "site" 
-				to mean the location of a tower bell instrument of some kind.&nbsp; That is most commonly 
-				seen in the term "site data page", which is a page (on this Website) that identifies, locates 
-				and describes one particular tower bell instrument or collection.
+				Elsewhere on the World Wide Web (colloquially called the Web), a page like this would be called a "site
+				map."&nbsp; Here it's called a "Website map" because we use the word "site" to mean the location of a
+				tower bell instrument of some kind.&nbsp; That is most commonly seen in the term "site data page", which
+				is a page (on this Website) that identifies, locates and describes one particular tower bell instrument
+				or collection.
 			</p>
 			<p>
 				This map covers only the topmost part of this Website, which is only a small portion of the total.&nbsp;
-				For the contents of the rest, see the Data Top page referenced in this map.&nbsp; See also the 
+				For the contents of the rest, see the Data Top page referenced in this map.&nbsp; See also the
 				<a href="#NavTips">Navigation Tips</a> below.
 			</p>
 
@@ -111,14 +125,14 @@
 		<section class="site-map">
 			<ul class="nested">
 				<label class="toggle" onclick="toggleAccordion(this)">
-					<a href="../index.html"><b>Home page</b></a>
+					<a href="/index.html"><b>Home page</b></a>
 				</label>
-			
+
 				<ul>
 					<li class="nested">
 						<label class="toggle" onclick="toggleAccordion(this)">
-							<A HREF="Introduction/TowerBells.html">TowerBells Introduction</A> 
-							(was the home page of this Website before April 2012) 
+							<a href="/pages/Introduction/TowerBells.html">TowerBells Introduction</a>
+							(was the home page of this Website before April 2012)
 						</label>
 
 						<ul>
@@ -127,41 +141,47 @@
 								<label class="toggle" onclick="toggleAccordion(this)">
 									<a href="BellFoundries/BellFoundries.html">Bell Foundries</a>
 								</label>
-								
+
 								<div>
 									<span>
-										Besides the following, many other bellfoundries are covered, both here and in the Data 
-										section (see Data Top, below).
+										Besides the following, many other bell foundries are covered, both here and in
+										the Data section (see Data Top, below).
 									</span>
-									
+
 									<ul>
 										<li>
-											<A HREF="BellFoundries/HolbrookFoundry.html">Holbrook</A>
+											<a href="/pages/BellFoundries/HolbrookFoundry.html">Holbrook</a>
 										</li>
 										<li>
-											<A HREF="BellFoundries/RevereFoundry.html">Revere</A>
+											<a href="/pages/BellFoundries/RevereFoundry.html">Revere</a>
 										</li>
 										<li>
-											<A HREF="BellFoundries/HillsboroFoundry.html">C.S.Bell</A>, Hillsboro, O. (steel)
+											<a href="BellFoundries/HillsboroFoundry.html">C.S.Bell</a>, Hillsboro, O.
+											(steel)
 										</li>
 										<li class="nested">
 											<label class="toggle" onclick="toggleAccordion(this)">
-												<A HREF="BellFoundries/StLouisBellFoundries.html">Saint Louis, Missouri, USA</A>
+												<a href="BellFoundries/StLouisBellFoundries.html">
+													Saint Louis, Missouri, USA
+												</a>
 											</label>
-											
+
 											<ul>
 												<li>
-													<A HREF="BellFoundries/Caughlan.html">Caughlan</A>
+													<a href="/pages/BellFoundries/Caughlan.html">Caughlan</a>
 													<ul>
 														<li>
-															<A HREF="BellFoundries/WestportPhotos.html" TARGET=BELL_W>Westport photos</A>
+															<a href="/pages/BellFoundries/WestportPhotos.html"
+																target="BELL_W">
+																Westport photos
+															</a>
 														</li>
 													</ul>
 												</li>
 											</ul>
 										</li>
 										<li>
-											<A HREF="BellFoundries/NVinNA.html">Naylor Vickers in North America</A>
+											<a href="BellFoundries/NVinNA.html">Naylor Vickers in North America</a>
 											<!-- includes BostonData.html -->
 										</li>
 									</ul>
@@ -171,31 +191,40 @@
 							<!--TUBULAR BELLS-->
 							<li class="nested">
 								<label class="toggle" onclick="toggleAccordion(this)">
-									<A HREF="TubularBells/TubularBells.html">Tubular Bells</A> - History, Makers, Installations
+									<a href="/pages/TubularBells/TubularBells.html">Tubular Bells</a> - History, Makers,
+									Installations
 								</label>
 								<ul>
 									<li>
-										<A HREF="TubularBells/TubularBellsComparison.html">Comparison of tubular tower bells</A>
+										<a href="/pages/TubularBells/TubularBellsComparison.html">
+											Comparison of tubular tower bells
+										</a>
 									</li>
 									<li>
-										<A HREF="TubularBells/TubularBellPatents.html">Tubular bell patents</A>
+										<a href="/pages/TubularBells/TubularBellPatents.html">Tubular bell patents</a>
 									</li>
 									<li>
-										<A HREF="TubularBells/DeaganSites.html">List of (original) Deagan sites</A>
+										<a href="/pages/TubularBells/DeaganSites.html">List of (original) Deagan
+											sites</a>
 										<!-- includes DeaganSummary.html -->
 									</li>
 									<li>
-										<A HREF="TubularBells/DeaganTable.html">Table of (original) Deagan sites</A>
+										<a href="/pages/TubularBells/DeaganTable.html">Table of (original) Deagan
+											sites</a>
 									</li>
 									<li>
-										A <a href="data/TU_ixs.html">set of indexes</a> in the Data section (see below),
+										A <a href="/data/TU_ixs.html">set of indexes</a> in the Data section (see
+										below),
 										providing access to all site data pages for non-UK tubular tower chimes
 									</li>
 									<li>
-										<A HREF="TubularBells/FCCSBoston.html">First Church of Christ, Scientist</A>, Boston, MA
+										<a href="/pages/TubularBells/FCCSBoston.html">First Church of Christ,
+											Scientist</a>,
+										Boston, MA
 									</li>
 									<li>
-										<A HREF="TubularBells/KeneyClockTower.html">Keney Clock Tower</A>, Hartford, CT
+										<a href="/pages/TubularBells/KeneyClockTower.html">Keney Clock Tower</a>,
+										Hartford, CT
 									</li>
 									<li>
 										Four PDF files about tubular tower chimes
@@ -204,119 +233,122 @@
 							</li>
 
 							<li>
-								<A HREF="Cwt-Qtr-Lb_Calculator.html">Online calculator</A> for converting between different 
-								units of measure for the weights of bells
+								<a href="/pages/BellWeightCalculator.html">Online calculator</a> for converting between
+								different units of measure for the weights of bells
 							</li>
 
 							<li>
-								<A HREF="Introduction/MusicalScales.html">Musical Scales in Ringing</A>
+								<a href="/pages/Introduction/MusicalScales.html">Musical Scales in Ringing</a>
 							</li>
 
 							<li>
-								<A HREF="VocabularyErrs.html">Vocabulary Oddities and Errors</A>
+								<a href="/pages/VocabularyErrs.html">Vocabulary Oddities and Errors</a>
 							</li>
 
 							<li>
-								<A HREF="Introduction/CSZ.html">About the builder</A> of this Website
+								<a href="/pages/Introduction/CSZ.html">About the builder</a> of this Website
 							</li>
 						</ul>
 					</li>
 
-					<!--DATA TOP-->	
+					<!--DATA TOP-->
 					<li class="nested">
 						<label class="toggle" onclick="toggleAccordion(this)">
-							<A HREF="data/Data_Top.html">Data Top page</A> 
+							<a href="/data/Data_Top.html">Data Top page</a>
 							(original main page for data section of www.GCNA.org from 1997 to 2012)
 						</label>
 
 						<div>
 							<p>
-								Introduction to, and Contents of, site data pages about carillons, chimes, rings, etc., 
-								together with index pages and regional locator maps to find them.&nbsp; Both conventional 
-								bells and tubular bells are now included.&nbsp; Over 4000 pages are directly or indirectly 
-								dependent from this one.&nbsp; 
+								Introduction to, and Contents of, site data pages about carillons, chimes, rings, etc.,
+								together with index pages and regional locator maps to find them.&nbsp; Both
+								conventional bells and tubular bells are now included.&nbsp; Over 4000 pages are
+								directly or indirectly dependent from this one.&nbsp; The vast majority of these are
+								hierarchically arranged as follows:
 								<!-- As of 25 Jul 2012: 2376 site data + 280 index + 50 index lists + ? others -->
-								The vast majority of these are hierarchically arranged as follows:
 							</p>
 
-							<OL>
-								<LI>
+							<ol>
+								<li>
 									Each index list linked from the Data Top page lists a group of index pages
-									<UL>
-										<LI>for a specific geographic area of the world</LI>
-										<LI>or for a specific type of tower bell instrument</LI>
-										<LI>or for a specific subject (such as bellfoundries).</LI>
-									</UL>
-								</LI>
-								<LI>
-									Each index page under any index list points into a set of site data pages, each 
-									describing one of the tower bell instruments which are known or presumed to be extant
-									within the scope of that index.&nbsp; Under any particular index list, each of the index 
-									pages lists that set of site data pages in a different sequence, depending on the nature 
-									of the index. 
-								</LI>
-								<LI>
+									<ul>
+										<li>for a specific geographic area of the world</li>
+										<li>or for a specific type of tower bell instrument</li>
+										<li>or for a specific subject (such as bell foundries).</li>
+									</ul>
+								</li>
+								<li>
+									Each index page under any index list points into a set of site data pages, each
+									describing one of the tower bell instruments which are known or presumed to be
+									extant within the scope of that index.&nbsp; Under any particular index list, each
+									of the index pages lists that set of site data pages in a different sequence,
+									depending on the nature of the index.
+								</li>
+								<li>
 									From each such site data page the following can be reached:
-									<UL>
-										<LI>
-											a description of the <A HREF="data/Std_format.html">standard format</A>
+									<ul>
+										<li>
+											a description of the <a href="/data/Std_format.html">standard format</a>
 											of such pages
-										</LI>
-										<LI>
-											an explanation of how we present <A HREF="data/KeybdRange.html">keyboard range</A>
-										</LI> 
-										<LI>
-											a page of semi-obsolete <A HREF="data/MapUse.html">map use hints</A> (only from 
-											pages which have old locator map links)
-										</LI>
-									</UL>
-								</LI>
+										</li>
+										<li>
+											an explanation of how we present
+											<a href="/data/KeybdRange.html">keyboard range</a>
+										</li>
+										<li>
+											a page of semi-obsolete <a href="/data/MapUse.html">map use hints</a> (only
+											from pages which have old locator map links)
+										</li>
+									</ul>
+								</li>
 								<LI>
-									Foundry index pages also point to paragraphs within pages which list sites that are no more.
+									Foundry index pages also point to paragraphs within pages which list sites that are
+									no more.
 								</LI>
-							</OL>
-								
+							</ol>
+
 							<p>
-								There are also special articles on various closely related subjects, all identified in the 
-								Table of Contents section of the Data Top page.
+								There are also special articles on various closely related subjects, all identified in
+								the Table of Contents section of the Data Top page.
 							</p>
 						</div>
 					</li>
 
 					<li class="nested">
 						<label class="toggle" onclick="toggleAccordion(this)">
-							<A HREF="BellBooks/BellBooks.html">Books about bells</A>
-							(A selective bibliography, with brief descriptions or full reviews)
+							<a href="/pages/BellBooks/BellBooks.html">Books about bells</a> (A selective bibliography,
+							with brief descriptions or full reviews)
 						</label>
 
 						<ul>
 							<li>
-								<A HREF="BellBooks/GoeppingerBook.html">Announcement</A> of Neil Goeppinger's 2016 book,
-								"Large Bells in America" <br />
-								Includes publicity material, reviews, errata, commentary from 
-								the Webmaster and additions based on subsequent research.
+								<a href="/pages/BellBooks/GoeppingerBook.html">Announcement</a> of Neil Goeppinger's
+								2016 book, "Large Bells in America" <br />
+								Includes publicity material, reviews, errata, commentary from the Webmaster and
+								additions based on subsequent research.
 							</li>
 						</ul>
 					<li>
-						<A HREF="WhatsNew/WhatIsNew.html">What's new in these pages?</A>
+						<a href="/pages/WhatsNew/WhatIsNew.html">What's new in these pages?</a>
 					</li>
 					<li>
-						<A HREF="Subscribe.html">Subscribing to update notices</A>
+						<a href="/pages/Subscribe.html">Subscribing to update notices</a>
 					</li>
 					<li>
-						<A HREF="WebsiteHistory.html">Website History</A>
+						<a href="/pages/WebsiteHistory.html">Website History</a>
 					</li>
 					<li>
-						<A HREF="SearchTowerBells.html">Search the Website</A> for any word, phrase or name
+						<a href="/pages/SearchTowerBells.html">Search the Website</a> for any word, phrase or name
 					</li>
 					<li>
-						<A HREF="PrivacyPolicy.html">Privacy policy</A>
+						<a href="/pages/PrivacyPolicy.html">Privacy policy</a>
 					</li>
 					<li>
-						<A HREF="Essays/UnrelatedEssays.html">Essays</A> on subjects unrelated to the rest of this Website
+						<a href="/pages/Essays/UnrelatedEssays.html">Essays</a> on subjects unrelated to the rest of
+						this Website
 					</li>
 					<li>
-						Website Map (the page that you are now reading) <!-- WebsiteMap.html -->
+						Website Map (the page that you are now reading)
 					</li>
 				</ul>
 			</ul>
@@ -326,48 +358,47 @@
 			<h2 id="NavTips">Tips on Navigating This Website</h2>
 			<ol>
 				<li>
-					Every page outside the Data section has a navigation bar at the top (as this one 
-					does), showing one possible hierarchical path between the home page and the current 
-					page.&nbsp; That bar has links back to the preceding pages on that path.&nbsp;
-					(Obviously the home page has no need of such a navigation bar.)
+					Every page outside the Data section has a navigation bar at the top (as this one does), showing one
+					possible hierarchical path between the home page and the current page.&nbsp; That bar has links back
+					to the preceding pages on that path.&nbsp; (Obviously the home page has no need of such a navigation
+					bar.)
 				</li>
 				<li>
-					Every page except the home page has a 4-item menu bar near the bottom of the page 
-					(as this one does), presenting links to a few useful pages that are not hierarchically 
-					connected.&nbsp; The selection of items presented on such menu bars in the Data section 
-					of this Website is different from the selection presented elsewhere.
+					Every page except the home page has a 4-item menu bar near the bottom of the page (as this one
+					does), presenting links to a few useful pages that are not hierarchically connected.&nbsp; The
+					selection of items presented on such menu bars in the Data section of this Website is different from
+					the selection presented elsewhere.
 				</li>
 				<li>
-					This Website Map page, together with the Contents portion of the Data Top page, shows all 
-					major topic (i.e., non-data) pages in a hierarchical layout.
+					This Website Map page, together with the Contents portion of the Data Top page, shows all major
+					topic (i.e., non-data) pages in a hierarchical layout.
 				</li>
 				<li>
-					Every site data page can be reached from several different index pages as well as from at 
-					least one regional locator map.&nbsp; The Links section of each site data page contains 
-					several back-links to the referencing lines of various such index pages (though not all).&nbsp;
-					This structure enables finding any site based on a variety of criteria, as well as exploring 
-					the relationships between any site and others that are similar to it.
+					Every site data page can be reached from several different index pages as well as from at least one
+					regional locator map.&nbsp; The Links section of each site data page contains several back-links to
+					the referencing lines of various such index pages (though not all).&nbsp; This structure enables
+					finding any site based on a variety of criteria, as well as exploring the relationships between any
+					site and others that are similar to it.
 				</li>
 				<li>
-					Index pages and other list pages within the Data section have a link near the bottom
-					which goes back to the "index list" page for that particular set of related indexes.
+					Index pages and other list pages within the Data section have a link near the bottom which goes back
+					to the "index list" page for that particular set of related indexes.
 				</li>
 				<li>
-					There are numerous cross-links between pages, as well as jump links within pages.&nbsp;
-					Watch the status bar of your Web browser as you mouse over a link to foresee where it 
-					will take you if you click it.
+					There are numerous cross-links between pages, as well as jump links within pages.&nbsp; Watch the
+					status bar of your Web browser as you mouse over a link to foresee where it will take you if you
+					click it.
 				</li>
 			</ol>
 		</section>
 	</main>
 
-	<page-footer pagePath="../pages" 
-		 dateCreated="2004/04/04"
-		 dateModified="2023/06/07"
-		 mailSubject="Comments on WebsiteMap">
-    </page-footer>
+	<page-footer dateCreated="2004/04/04" 
+				 dateModified="2023/06/07"
+				 mailSubject="Comments on WebsiteMap">
+	</page-footer>
 
-	<SCRIPT>
+	<script>
 		function toggleAccordion(element) {
 			element.parentNode.classList.toggle('active');
 		}
@@ -375,6 +406,7 @@
 		function toggleAllAccordions(state) {
 			document.querySelectorAll('.nested').forEach(elem => elem.classList.toggle('active', state));
 		}
-    </SCRIPT>
-</BODY>
-</HTML>
+	</script>
+</body>
+
+</html>

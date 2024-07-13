@@ -1,34 +1,35 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<!--This is file "Security.html"-->
 	<title>Security of This Website | TowerBells</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Website Security">
 
-	<link rel="stylesheet" type="text/css" href="../../stylesheets/global.css">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/article.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/article.css">
 
-    <SCRIPT type="module" src="../../components/NavBar.js" defer></SCRIPT>
-    <SCRIPT type="text/javascript" src="../../components/Breadcrumb.js" defer></SCRIPT>
-    <SCRIPT type="text/javascript" src="../../components/PageFooter.js" defer></SCRIPT>
+	<script type="module" src="/components/NavBar.js" defer></script>
+	<script type="text/javascript" src="/components/Breadcrumb.js" defer></script>
+	<script type="text/javascript" src="/components/PageFooter.js" defer></script>
 </head>
+
 <body>
 	<noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>
-	<nav-bar pagePath="../pages" active=""></nav-bar>
-    <bread-crumb>
-		<a href="../index.html">TowerBells Home</a>
+	<nav-bar></nav-bar>
+	<bread-crumb>
+		<a href="/index.html">TowerBells Home</a>
 		<span>Website Security</span>
 	</bread-crumb>
 
 	<main>
 		<header>
 			<h1>Is This Website Secure?</h1>
-			
+
 			<p>
-				You may be asking that question because your Web browser gave you some kind of security
-				or licensing warning about this Website.
+				You may be asking that question because your Web browser gave you some kind of security or licensing
+				warning about this Website.
 			</p>
 		</header>
 
@@ -46,95 +47,105 @@
 		<section>
 			<h2>Long Answer</h2>
 			<p>
-				The short answer of "NO" applies because TowerBells.org is not an inherently secure Website.&nbsp;
-				That is, it can be accessed via HTTP (which is insecure) instead of HTTPS (which is secure).&nbsp;
-				With HTTP, communications between a visitor and the webserver are not encrypted, so it is theoretically 
-				possible that a "man-in-the-middle" attack could steal information in transit between a user and the Website,
-				or could present false information to the user.&nbsp; For the reason why this is unimportant, see 
+				The short answer of "NO" applies because TowerBells.org is not an inherently secure Website.&nbsp; That
+				is, it can be accessed via HTTP (which is insecure) instead of HTTPS (which is secure).&nbsp; With HTTP,
+				communications between a visitor and the webserver are not encrypted, so it is theoretically possible
+				that a "man-in-the-middle" attack could steal information in transit between a user and the Website, or
+				could present false information to the user.&nbsp; For the reason why this is unimportant, see
 				"UNIMPORTANT?" below.
 			</p>
 			<p>
-				The short answer of "YES" applies because this Website CAN be accessed via HTTPS, in which case all 
-				communications between a visitor and the Webserver are encrypted and thus are secure against snooping, 
+				The short answer of "YES" applies because this Website CAN be accessed via HTTPS, in which case all
+				communications between a visitor and the Webserver are encrypted and thus are secure against snooping,
 				hacking, spoofing, etc.
 			</p>
 			<p>
-				The short answer of "SOMETIMES" applies because even if HTTPS access is used, that security is apparently 
-				based on a certificate provided by the hosting company, which is for unknown reasons not widely accepted.
+				The short answer of "SOMETIMES" applies because even if HTTPS access is used, that security is
+				apparently based on a certificate provided by the hosting company, which is for unknown reasons not
+				widely accepted.
 			</p>
 		</section>
 		<section>
 			<h2>Unimportant?</h2>
 			<p>
-				Some Web browsers (or recent versions of some Web browsers) get really fussy about security, because there 
-				are real and significant risks in the transmission of personal information over unencrypted channels.&nbsp;
-				However, such an attack would be a wasted effort on a Website such as this one.&nbsp; Not only is none of 
-				your personal information involved in visiting this Website, but there is no way that a hacker could deduce 
-				anything personal about you by noticing what parts of this Website you visit, and there is no way that a 
-				hacker could benefit by showing you information that is different from what we present here.
+				Some Web browsers (or recent versions of some Web browsers) get really fussy about security, because
+				there are real and significant risks in the transmission of personal information over unencrypted
+				channels.&nbsp; However, such an attack would be a wasted effort on a Website such as this one.&nbsp;
+				Not only is none of your personal information involved in visiting this Website, but there is no way
+				that a hacker could deduce anything personal about you by noticing what parts of this Website you visit,
+				and there is no way that a hacker could benefit by showing you information that is different from what
+				we present here.
 			</p>
 			<p>
-				Some Web browsers will allow a user to accept the supposed risk of an insecure connection and continue.&nbsp;
-				Others may force an HTTPS-only mode.&nbsp; Since the maintainer of this Website only uses two of the many Web 
-				browsers that are available, it isn't known here what options others might offer.&nbsp; Regardless of what 
-				Web browser you are using, it could be worthwhile for you to explore its Settings/Preferences options.
+				Some Web browsers will allow a user to accept the supposed risk of an insecure connection and
+				continue.&nbsp; Others may force an HTTPS-only mode.&nbsp; Since the maintainer of this Website only
+				uses two of the many Web browsers that are available, it isn't known here what options others might
+				offer.&nbsp; Regardless of what Web browser you are using, it could be worthwhile for you to explore its
+				Settings/Preferences options.
 			</p>
 			<p>
-				Clearly it would simplify life for some users if we configured this Website to make it accessible only via 
-				HTTPS.&nbsp; So why don't we that?&nbsp; In the first place, our hosting company is using a rather old Website 
-				maintenance software package, and getting away from that would probably require moving to a new hosting company, 
-				which would be a really big job.&nbsp; In the second place, the inconvenience of installing and maintaining 
-				a security certificate on this Website isn't worthwhile to the Webmaster.&nbsp; What makes it not worthwhile is 
-				that (as described above) there is absolutely nothing here that could solicit any personal information from a 
-				visitor such as you.&nbsp; Furthermore, the fact that you are visiting this Website, as well as your choice
-				of which pages to view, does not reveal anything vitally personal about you.
+				Clearly it would simplify life for some users if we configured this Website to make it accessible only
+				via HTTPS.&nbsp; So why don't we that?&nbsp; In the first place, our hosting company is using a rather
+				old Website maintenance software package, and getting away from that would probably require moving to a
+				new hosting company, which would be a really big job.&nbsp; In the second place, the inconvenience of
+				installing and maintaining a security certificate on this Website isn't worthwhile to the
+				Webmaster.&nbsp; What makes it not worthwhile is that (as described above) there is absolutely nothing
+				here that could solicit any personal information from a visitor such as you.&nbsp; Furthermore, the fact
+				that you are visiting this Website, as well as your choice of which pages to view, does not reveal
+				anything vitally personal about you.
 			</p>
 		</section>
 		<section>
 			<h2>Elsewhere</h2>
 			<p>
-				When you visit a Website that requires you to provide personal information (even if it's as minor as a password 
-				to enable access to read-only data), you don't want that information to be seen by anyone else.&nbsp; That's why 
-				HTTPS exists — to provide a secure channel of communication between you and that Website.&nbsp; And that's why you 
-				should always verify that you have a secure connection when you visit such Websites.&nbsp; How you do that 
-				verification depends again on which Web browser you are using.
+				When you visit a Website that requires you to provide personal information (even if it's as minor as a
+				password to enable access to read-only data), you don't want that information to be seen by anyone
+				else.&nbsp; That's why HTTPS exists — to provide a secure channel of communication between you and that
+				Website.&nbsp; And that's why you should always verify that you have a secure connection when you visit
+				such Websites.&nbsp; How you do that verification depends again on which Web browser you are using.
 			</p>
 			<p>
-				A different problem can occur when someone tries to use a really old Web browser (which may be the only kind that 
-				will run on a really old computer) to access a Website that is protected by a very recently-issued security certificate.&nbsp;
-				Such a browser may not be able to verify some recent security certificates, leaving you incapable of securely capable 
-				of communicating with such a Website.&nbsp; (But it will be able to communicate with this one quite nicely, using HTTP!)
+				A different problem can occur when someone tries to use a really old Web browser (which may be the only
+				kind that will run on a really old computer) to access a Website that is protected by a very
+				recently-issued security certificate.&nbsp; Such a browser may not be able to verify some recent
+				security certificates, leaving you incapable of securely capable of communicating with such a
+				Website.&nbsp; (But it will be able to communicate with this one quite nicely, using HTTP!)
 			</p>
 		</section>
 		<section>
 			<h2>Final Words</h2>
 			<p>
-				There are no ads here!&nbsp; So if you ever see any ads while visiting this Website via HTTP, you can take that as 
-				evidence of either misbehavior by the company that hosts this Website or a man-in-the-middle attack somewhere.&nbsp;
-				Please <a href="mailto:csz_stl@swbell.net?subject=TowerBells%20security%20at%20risk">notify me immediately</a> if 
-				that happens!&nbsp; Please include a screenshot of the problem, if possible.
+				There are no ads here!&nbsp; So if you ever see any ads while visiting this Website via HTTP, you can
+				take that as evidence of either misbehavior by the company that hosts this Website or a
+				man-in-the-middle attack somewhere.&nbsp; Please
+				<a href="mailto:csz_stl@swbell.net?subject=TowerBells%20security%20at%20risk">
+					notify me immediately
+				</a>
+				if that happens!&nbsp; Please include a screenshot of the problem, if possible.
 			</p>
 			<p>
-				In the future, this Website might be migrated to an HTTPS-only platform, but it is not yet known when that might happen.&nbsp;
-				Other possibilities for improving security are being actively investigated.
+				In the future, this Website might be migrated to an HTTPS-only platform, but it is not yet known when
+				that might happen.&nbsp; Other possibilities for improving security are being actively investigated.
 			</p>
 			<p>
 				For the technical-minded:
-				<dl>
-					<dt>HTTP</dt>
-					<dd>
-						HyperText Transfer Protocol = the Internet protocol for transferring information related to Webpages (which are
-						written in HyperText Markup Language, or HTML).
-					</dd>
+			<dl>
+				<dt>HTTP</dt>
+				<dd>
+					HyperText Transfer Protocol = the Internet protocol for transferring information related to Webpages
+					(which are written in HyperText Markup Language, or HTML).
+				</dd>
 
-					<dt>HTTPS = HTTP Secure</dt>
-					<dd>
-						HTTP with all possible transfers encrypted, which prevents both snooping and spoofing.
-					</dd>
-				</dl>
+				<dt>HTTPS = HTTP Secure</dt>
+				<dd>
+					HTTP with all possible transfers encrypted, which prevents both snooping and spoofing.
+				</dd>
+			</dl>
 			</p>
 			<p>
-				<a href="https://www.cloudflare.com/learning/ssl/why-use-https/">A Web-hosting company's view of HTTPS</a>
+				<a href="https://www.cloudflare.com/learning/ssl/why-use-https/">
+					A Web-hosting company's view of HTTPS
+				</a>
 			</p>
 			<p>
 				<a href="https://en.wikipedia.org/wiki/HTTPS">Wikipedia's explanation of HTTPS and its virtues</a>
@@ -142,10 +153,10 @@
 		</section>
 	</main>
 
-	<page-footer pagePath="../pages" 
-				dateCreated="2023/12/30"
-				dateModified="2024/01/01"
-				mailSubject="Comments on TowerBells Security">
+	<page-footer dateCreated="2023/12/30" 
+				 dateModified="2024/01/01" 
+				 mailSubject="Comments on TowerBells Security">
 	</page-footer>
 </body>
+
 </html>

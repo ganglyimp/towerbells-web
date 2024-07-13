@@ -81,7 +81,7 @@ body.dark-theme {
   --footer-text-color: var(--light-shade);
 }
 
-p, i, b, a, ul, ol, table, button, dd, dt {
+p, i, b, a, ul, ol, table, button, dd, dt, blockquote {
   font-size: var(--body-font-size);
 }
 
@@ -120,6 +120,10 @@ small {
   small > * {
     font-size: unset;
   }
+
+.no-margin {
+  margin: 0;
+}
 
 .action-button {
   position: relative;
