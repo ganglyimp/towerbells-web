@@ -109,7 +109,7 @@ class NavBar extends HTMLElement {
 			<div class="nav-collapsed">
 				<div class="logo-and-title">
 					<a href="/towerbells-web/index.html">
-						<img src="/images/logos/favicon_original.png" alt="Bell Logo" width="50px" />
+						<img src="/towerbells-web/images/logos/favicon_original.png" alt="Bell Logo" width="50px" />
 					</a>
 					<b>Tower Bells</b>
 				</div>
