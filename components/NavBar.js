@@ -13,7 +13,7 @@ class NavBar extends HTMLElement {
 		const { shadowRoot } = this;
 
 		// Grab external JSON data
-		let jsonResponse = await fetch(`/data/languages.json`);
+		let jsonResponse = await fetch(`/towerbells-web/data/languages.json`);
 		this.languageData = await jsonResponse.json();
 
 		shadowRoot.innerHTML = this.getBaseHtml();
