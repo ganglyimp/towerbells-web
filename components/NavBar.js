@@ -107,7 +107,12 @@ class NavBar extends HTMLElement {
 		return `
 		<nav class="nav-bar">
 			<div class="nav-collapsed">
-				<b>Tower Bells</b>
+				<div class="logo-and-title">
+					<a href="/index.html">
+						<img src="/images/logos/favicon_original.png" alt="Bell Logo" width="50px" />
+					</a>
+					<b>Tower Bells</b>
+				</div>
 
 				<button class="collapse-button">
 					<!-- List Icon -->
@@ -414,9 +419,15 @@ class NavBar extends HTMLElement {
 				}
 
 				nav .nav-collapsed {
-					display: block;
+					display: flex;
 					position: relative;
+					justify-content: space-between;
 				}
+					nav .nav-collapsed .logo-and-title {
+						display: flex;
+						gap: 1rem;
+						align-items: center;
+					}
 
 					nav .nav-collapsed button {
 						border: transparent;
