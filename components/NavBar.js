@@ -131,7 +131,7 @@ class NavBar extends HTMLElement {
 				<ul>
 					<li id="home"><a href="/index.html">Home</a></li>
 					<li id="introduction"><a href="/pages/Introduction/TowerBells.html">Introduction</a></li>
-					<li id="find-carillons"><a href="./data/Data_Top.html">Find Carillons</a></li>
+					<li id="find-carillons"><a href="/data/Data_Top.html">Find Carillons</a></li>
 					<li id="books"><a href="/pages/BellBooks/BellBooks.html">Books</a></li>
 					<li id="whats-new"><a href="/pages/WhatsNew/WhatIsNew.html">What's New</a></li>
 					<li id="subscribe"><a href="/pages/Subscribe.html">Subscribe</a></li>
