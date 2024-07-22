@@ -114,7 +114,7 @@ class NavBar extends HTMLElement {
 					<b>Tower Bells</b>
 				</div>
 
-				<button class="collapse-button">
+				<button class="icon-button collapse-button">
 					<!-- List Icon -->
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -134,23 +134,24 @@ class NavBar extends HTMLElement {
 					<li id="find-carillons"><a href="/data/Data_Top.html">Find Carillons</a></li>
 					<li id="books"><a href="/pages/BellBooks/BellBooks.html">Books</a></li>
 					<li id="whats-new"><a href="/pages/WhatsNew/WhatIsNew.html">What's New</a></li>
-					<li id="subscribe"><a href="/pages/Subscribe.html">Subscribe</a></li>
 					<li id="web-history"><a href="/pages/WebsiteHistory.html">Website History</a></li>
 				</ul>
 
 				<div class="nav-actions">
 					<!-- Search Icon -->
-					<a href="/pages/SearchTowerBells.html" title="Search">
+					<a class="icon-button" href="/pages/SearchTowerBells.html" title="Search">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 						</svg>
 					</a>
 
-					<button class="color-theme-picker" title="Toggle Color Theme">
+					<button class="icon-button color-theme-picker" title="Toggle Color Theme">
+						<!-- Sun Icon -->
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
   							<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
 						</svg>
 
+						<!-- Moon Icon -->
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
   							<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
 						</svg>
@@ -173,8 +174,8 @@ class NavBar extends HTMLElement {
 					<form method="dialog">
 						<button>
 							<!--X Icon-->
-							<svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-								  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+								<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
 							</svg>
 						</button>
 					</form>
@@ -199,7 +200,7 @@ class NavBar extends HTMLElement {
 		const style = document.createElement('style');
 		style.textContent = `
 		nav {
-			--nav-font-size: max(1.5vw, 16px);
+			--nav-font-size: max(1.5vw, 20px);
 
 			margin: 0;
 			padding: 15px;
@@ -211,18 +212,32 @@ class NavBar extends HTMLElement {
 			border-bottom: 1px solid var(--border-color);
 			box-shadow: 0 4px 8px 0 rgba(var(--text-color-rgb), 0.2);
 			font-family: var(--body-font);
+			font-size: var(--nav-font-size);
+			color: var(--text-color);
 			overflow: hidden;
 			z-index: 1000;
 		}
 
-			nav .bi.bi-search, nav .bi.bi-list, nav .bi.bi-x-lg, nav .bi.bi-sun, nav .bi.bi-moon {
-				display: inline-block;
-				width: 1em;
-				height: 1em;
-				font-size: 2em;
+			nav a {
 				color: var(--text-color);
+			}
+
+			nav .bi {
+				display: inline-block;
+				width: max(1.5vw, 2rem);
+				height: max(1.5vw, 2rem);
+				font-size: max(1.5vw, 2rem);
 				cursor: pointer;
 			}
+
+			nav .icon-button {
+				padding: 10px;
+				color: var(--text-color);
+			}
+						
+				nav .icon-button:hover {
+					color: var(--accent-color);
+				}
 
 			nav .collapse-button .bi.bi-list, nav .collapse-button .bi.bi-x-lg {
 				position: absolute;
@@ -240,7 +255,7 @@ class NavBar extends HTMLElement {
 				justify-content: space-between;
 				align-items: center;
 				list-style-type: none;
-				transition: display 0.3s;
+				transition: all 0.3s;
 			}
 
 				nav .nav-content ul {
@@ -271,24 +286,14 @@ class NavBar extends HTMLElement {
 				nav .nav-content .nav-actions {
 					display: flex;
 					align-items: center;
-					gap: 15px;
+					gap: 1rem;
 				}
-
-					nav .nav-content .nav-actions .bi-search {
-						padding: 5px;
-						font-size: 2rem;
-					}
 
 					nav .nav-content .nav-actions .color-theme-picker {
 						background-color: transparent;
-						color: var(--text-color);
 						border: none;
 						cursor: pointer;
 					}
-						nav .nav-content .nav-actions .color-theme-picker > svg {
-							padding: 5px;
-							font-size: 2rem;
-						}
 						
 						nav .nav-content .nav-actions .color-theme-picker .bi-sun {
 							display: none;
@@ -324,14 +329,13 @@ class NavBar extends HTMLElement {
 						color: var(--text-color-on-accent);
 					}
 					nav .nav-content .nav-actions .translate-widget:active {
-						box-shadow: 0 2px 2px 0 0 var(--text-color) ;
-						  transform: translate(2px, 2px);
+						box-shadow: 0 2px 2px 0 0 var(--text-color);
+						transform: translate(2px, 2px);
 					}
 
 						nav .nav-content .nav-actions .translate-widget .bi.bi-globe2 {
-							font-size: 2em;
-							width: 0.8em;
-							height: 0.8em;
+							width: 1.8rem;
+							height: 1.8rem;
 						}
 
 						nav .nav-content .nav-actions .translate-widget span {
@@ -475,15 +479,6 @@ class NavBar extends HTMLElement {
 						justify-content: space-around;
 						border-top: 1px solid var(--border-color);
 					}
-
-						nav .nav-content .nav-actions .translate-widget span {
-							font-size: 1.5em;
-						}
-
-						nav .nav-content .nav-actions .translate-widget .bi.bi-globe2 {
-							width: 1em;
-							height: 1em;
-						}
 				
 				nav dialog {
 					height: 100%;
