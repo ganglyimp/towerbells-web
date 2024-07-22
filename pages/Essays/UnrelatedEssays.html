@@ -22,6 +22,61 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="/towerbells-web/components/Breadcrumb.js" defer></script>
 	<script type="text/javascript" src="/towerbells-web/components/PageFooter.js" defer></script>
+
+	<style>
+		.carls-many-roles {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+
+			.carls-many-roles > h2 {
+				text-align: center;
+			}
+
+		ul.pill-list {
+			padding: 0;
+			list-style: none;
+		}
+
+			ul.pill-list li {
+				margin: 5px;
+				padding: 0.5rem;
+				display: inline-block;
+				border: 2px solid var(--text-color);
+				border-radius: var(--pill-radius);
+			}
+
+			ul.role-list li {
+				--index: 0;
+				background-color: rgba(var(--accent-color-rgb), 0.5);
+				filter: hue-rotate(calc(15deg * var(--index)));
+			}
+
+			ul.unwritten-essays li {
+				background-color: var(--secondary-bg-color);
+			}
+
+		.written-essays {
+			list-style: none;
+			padding: 0;
+		}
+
+			.written-essays li h3 {
+				margin: 0;
+				padding: 0;
+			}
+
+		@media (max-width: 800px) {
+			.carls-many-roles {
+				display: block;
+			}
+
+			ul.pill-list {
+				text-align: center;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -33,7 +88,7 @@
 
 	<main>
 		<header>
-			<H1>Topics Unrelated to the Rest of TowerBells</H1>
+			<h1>Topics Unrelated to the Rest of TowerBells</h1>
 
 			<p>
 				Anyone who has survived in this world for four-fifths of a century ought to have some potentially useful
@@ -44,21 +99,23 @@
 				or 45 years, or 63 years, <!-- as of Feb.2020 --> depending on what's taken as the starting point for
 				its contents and organization).
 			</p>
-
-			<p style="text-align: right;">
-				Carl Scott Zimmerman <br>
-				Campanologist &amp; Webmaster <br>
-				USAF Weather Officer (ret.) <br>
-				Senior systems analyst (ret.) <br>
-				Carillonist <br>
-				Mathematician <br>
-				Volunteer church musician <br>
-				Husband, father, grandfather <br>
-				Presbyterian with Anglican leanings <br>
-				Writer, editor, proofreader <br>
-				Problem solver
-			</p>
 		</header>
+
+		<section class="carls-many-roles">
+			<h2>Carl Scott Zimmerman</h2>
+			<ul class="pill-list role-list">
+				<li style="--index: 0">Campanologist &amp; Webmaster</li>
+				<li style="--index: 1">USAF Weather Officer (ret.)</li>
+				<li style="--index: 2">Senior systems analyst (ret.)</li>
+				<li style="--index: 3">Carillonist</li>
+				<li style="--index: 4">Mathematician</li>
+				<li style="--index: 5">Volunteer church musician</li>
+				<li style="--index: 6">Husband, father, grandfather</li>
+				<li style="--index: 7">Presbyterian with Anglican leanings</li>
+				<li style="--index: 8">Writer, editor, proofreader</li>
+				<li style="--index: 9">Problem solver</li>
+			</ul>
+		</section>
 
 		<section>
 			<p>
@@ -70,29 +127,47 @@
 				listed in alphabetic order.
 			</p>
 
-			<ul>
+			<ul class="written-essays">
 				<li>
-					<a href="/towerbells-web/pages/Essays/Principles.html">Principles for living well</a>
+					<a href="/towerbells-web/pages/Essays/Principles.html">
+						<h3>Principles for Living Well</h3>
+					</a>
+					<span>May 21st, 2020</span>
 				</li>
 				<li>
-					<a href="/towerbells-web/pages/Essays/SentenceSpacing.html">Sentence spacing</a>
+					<a href="/towerbells-web/pages/Essays/SentenceSpacing.html">
+						<h3>Sentence Spacing</h3>
+					</a>
+					<span>April 26th, 2020</span>
 				</li>
 				<li>
-					<a href="/towerbells-web/pages/Essays/Philanthropy.html">Philanthropic opportunities</a>
+					<a href="/towerbells-web/pages/Essays/Philanthropy.html">
+						<h3>Philanthropic Opportunities</h3>
+					</a>
+					<span>December 29th, 2023</span>
 				</li>
 				<li>
 					<a href="/towerbells-web/pages/Essays/Indentation.html">
-						On indentation as a reflection of logical structure
+						<h3>On Indentation as a Reflection of Logical Structure</h3>
 					</a>
+					<span>March 20th, 2018</span>
 				</li>
 				<li>
-					<a href="/towerbells-web/pages/Essays/BBEditColorPicker.html">Web colors through HTML</a>
+					<a href="/towerbells-web/pages/Essays/BBEditColorPicker.html">
+						<h3>Web Colors Through HTML</h3>
+					</a>
+					<span>March 20th, 2018</span>
 				</li>
 				<li>
 					<a href="/towerbells-web/pages/Essays/WarRequiemEncounters.html">
-						Encounters with Britten's <i>War Requiem</i>
+						<h3>Encounters with Britten's <i>War Requiem</i></h3>
 					</a>
+					<span>February 23rd, 2022</span>
 				</li>
+			</ul>
+		</section>
+		<section>
+			<ul class="pill-list unwritten-essays">
 				<li>Common grammatical errors</li>
 				<li>Maintainable HTML</li>
 				<li>On discrimination, prejudice and representation</li>
@@ -100,6 +175,7 @@
 				<li>On religion; emphasis: Christianity</li>
 				<li>On the mismanagement of email</li>
 				<li>On the use of standards</li>
+				<li>On the use of turn signals</li>
 				<li>On the value and limitations of science</li>
 				<li>Rescuing non-spam email</li>
 				<li>Why not a blog?</li>
@@ -108,9 +184,7 @@
 		</section>
 	</main>
 
-	<page-footer dateCreated="2015/02/12" 
-				 dateModified="2020/05/21"
-				 mailSubject="Comments on UnrelatedEssays">
+	<page-footer dateCreated="2015/02/12" dateModified="2022/11/25" mailSubject="Comments on UnrelatedEssays">
 	</page-footer>
 </body>
 

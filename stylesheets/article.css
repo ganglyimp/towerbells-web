@@ -1,6 +1,7 @@
 header, .header, section {
   margin: 0 20%;
   border-bottom: 1px solid var(--border-color);
+  font-size: var(--body-font-size);
 }
 
 section:last-child {
