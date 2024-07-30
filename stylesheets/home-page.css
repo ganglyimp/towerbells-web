@@ -41,6 +41,11 @@
     .home-page header section p {
       max-width: 50ch;
       font-size: 25px;
+      color: black;
+    }
+
+    body.dark-theme .home-page header section p {
+      color: inherit;
     }
 
       .home-page header section p > * {
