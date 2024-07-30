@@ -200,7 +200,7 @@ class NavBar extends HTMLElement {
 		const style = document.createElement('style');
 		style.textContent = `
 		nav {
-			--nav-font-size: max(1.5vw, 20px);
+			--nav-font-size: clamp(20px, 1.5vw, 25px);
 
 			margin: 0;
 			padding: 15px;
@@ -406,6 +406,7 @@ class NavBar extends HTMLElement {
 								border-radius: 10px;
 								background-color: transparent;
 								color: inherit;
+								font-size: 15px;
 							}
 							nav dialog .body section div button:hover {
 								background-color: rgba(var(--text-color-rgb), 0.1);
