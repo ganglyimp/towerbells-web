@@ -4,8 +4,9 @@ class NavBar extends HTMLElement {
 		this.attachShadow({ mode: 'open' });
 
 		this.active = this.getAttribute('active');
-		this.languageData = [];
+		this.outsideTowerBells = this.getAttribute('outsideTowerBells');
 
+		this.languageData = [];
 		this.toggleColorTheme = this.toggleColorTheme.bind(this);
 	}
 
@@ -105,13 +106,13 @@ class NavBar extends HTMLElement {
 
 	getBaseHtml() {
 		return `
-		<nav class="nav-bar">
+		<nav class="nav-bar ${(this.outsideTowerBells ? 'outside-towerbells' : '')}">
 			<div class="nav-collapsed">
 				<div class="logo-and-title">
 					<a href="/index.html">
 						<img src="/images/logos/favicon_original.png" alt="Bell Logo" width="50px" />
 					</a>
-					<b>Tower Bells</b>
+					<b class="hide-outside">Tower Bells</b>
 				</div>
 
 				<button class="icon-button collapse-button">
@@ -128,7 +129,11 @@ class NavBar extends HTMLElement {
 			</div>
 
 			<div class="nav-content collapsed">
-				<ul>
+				<ul class="hide-inside">
+					<li id="home"><a href="/index.html">&hookleftarrow; Return to TowerBells</a></li>
+				</ul>
+
+				<ul class="hide-outside">
 					<li id="home"><a href="/index.html">Home</a></li>
 					<li id="introduction"><a href="/pages/Introduction/TowerBells.html">Introduction</a></li>
 					<li id="find-carillons"><a href="/data/Data_Top.html">Find Carillons</a></li>
@@ -217,6 +222,18 @@ class NavBar extends HTMLElement {
 			overflow: hidden;
 			z-index: 1000;
 		}
+
+			nav .hide-inside {
+				display: none;
+			}
+
+			nav.outside-towerbells .hide-inside {
+				display: block;
+			}
+
+			nav.outside-towerbells .hide-outside {
+				display: none;
+			}
 
 			nav a {
 				color: var(--text-color);
