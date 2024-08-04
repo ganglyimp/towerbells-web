@@ -13,8 +13,8 @@
 
   --main-accent: #3161CE;
   --main-accent-rgb: 49, 97, 206;
-  --light-accent: #D295B0;
-  --light-accent-rgb: 210, 149, 176;
+  --light-accent: #C295D2;
+  --light-accent-rgb: rgb(194, 149, 210);
   --dark-accent: #A31621;
   --grey-shade: #D3D3D3;
 
@@ -185,12 +185,12 @@ small {
   transition: all 0.1s ease-in-out;
 }
 
-.simple-button:hover {
+.simple-button:hover, .simple-button.active {
   background-color: var(--accent-color);
   color: var(--text-color-on-accent);
 }
 
-.simple-button:active, .simple-button[disabled] {
+.simple-button:active, .simple-button.active, .simple-button[disabled] {
   box-shadow: 0 2px 2px 0 0 var(--text-color);
   transform: translate(2px, 2px);
 }
