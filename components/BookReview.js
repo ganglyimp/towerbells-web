@@ -4,6 +4,7 @@ class BookReview extends HTMLElement {
 		this.attachShadow({ mode: 'open' });
 
 		this.bookTitle = this.getAttribute('bookTitle');
+		this.bookSubtitle = this.getAttribute('bookSubtitle');
 		this.author = this.getAttribute('author');
 		this.illustrator = this.getAttribute('illustrator');
 		this.publisherInfo = this.getAttribute('publisherInfo');
@@ -25,10 +26,16 @@ class BookReview extends HTMLElement {
 			bookTitleElement = document.createElement("a");
 			bookTitleElement.href = this.bookLink;
 			bookTitleElement.innerText = this.bookTitle;
+
+			if (this.bookSubtitle)
+				bookTitleElement.innerText += ` - ${this.bookSubtitle}`;
 		}
 		else {
 			bookTitleElement = document.createElement("span");
 			bookTitleElement.innerText = this.bookTitle;
+
+			if (this.bookSubtitle)
+				bookTitleElement.innerText += ` - ${this.bookSubtitle}`;
 		}
 		bookTitle.appendChild(bookTitleElement);
 
