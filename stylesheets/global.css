@@ -13,8 +13,9 @@
 
   --main-accent: #3161CE;
   --main-accent-rgb: 49, 97, 206;
-  --light-accent: #C295D2;
-  --light-accent-rgb: rgb(194, 149, 210);
+  /* TODO: Find a better dark-mode accent color */
+  --light-accent: #D295B0;
+  --light-accent-rgb: 210, 149, 176;
   --dark-accent: #A31621;
   --grey-shade: #D3D3D3;
 
@@ -122,6 +123,14 @@ small {
 
   small > * {
     font-size: unset;
+  }
+
+dt {
+  font-weight: bold;
+}
+
+  dt:not(:first-child) {
+    margin-top: 1rem;
   }
 
 .no-margin {
