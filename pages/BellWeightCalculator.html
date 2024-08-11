@@ -21,6 +21,12 @@
     <script type="module" src="/components/NavBar.js" defer></script>
     <script type="text/javascript" src="/components/PageFooter.js" defer></script>
     <script type="text/javascript" src="/components/Breadcrumb.js" defer></script>
+
+    <style>
+        #iframeElem {
+            transition: height 0.5s ease-in-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +38,8 @@
     </bread-crumb>
 
     <main>
-        <iframe src="/pages/Cwt-Qtr-Lb_Calculator.html" 
+        <iframe id="iframeElem"
+            src="/pages/Cwt-Qtr-Lb_Calculator.html" 
             title="Hundredweights, Quarters and Pounds Calculator" 
             scrolling="no"
             frameborder="0" 
@@ -47,8 +54,16 @@
     </page-footer>
 
     <script>
+        let resizeTimeout = null;
+        window.addEventListener('resize', () => debounceResize(document.getElementById('iframeElem')));
+
         function resizeIframe(iFrameObj) {
-            iFrameObj.style.height = iFrameObj.contentWindow.document.documentElement.scrollHeight + 'px';
+            iFrameObj.style.height = iFrameObj.contentWindow.document.documentElement.offsetHeight + 'px';
+        }
+
+        function debounceResize(resizeElem) {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => resizeIframe(resizeElem), 100);
         }
     </script>
 </body>
