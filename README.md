@@ -43,3 +43,7 @@ Carl has been recently convinced to try to move his database into a NoSQL databa
 ## Other Contributors
 
 Favicons were designed by Rendell L.
+
+Header images from the home page were drawn by Baylee Bell
+
+Card icons seen on the home page were drawn by Margot M.
