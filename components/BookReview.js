@@ -4,6 +4,7 @@ class BookReview extends HTMLElement {
 		this.attachShadow({ mode: 'open' });
 
 		this.bookTitle = this.getAttribute('bookTitle');
+		this.bookSubtitle = this.getAttribute('bookSubtitle');
 		this.author = this.getAttribute('author');
 		this.illustrator = this.getAttribute('illustrator');
 		this.publisherInfo = this.getAttribute('publisherInfo');
@@ -25,10 +26,16 @@ class BookReview extends HTMLElement {
 			bookTitleElement = document.createElement("a");
 			bookTitleElement.href = this.bookLink;
 			bookTitleElement.innerText = this.bookTitle;
+
+			if (this.bookSubtitle)
+				bookTitleElement.innerText += ` - ${this.bookSubtitle}`;
 		}
 		else {
 			bookTitleElement = document.createElement("span");
 			bookTitleElement.innerText = this.bookTitle;
+
+			if (this.bookSubtitle)
+				bookTitleElement.innerText += ` - ${this.bookSubtitle}`;
 		}
 		bookTitle.appendChild(bookTitleElement);
 
@@ -137,29 +144,18 @@ class BookReview extends HTMLElement {
 					padding: 0;
 					background-color: transparent;
 					border: none;
-					box-shadow: 2px 3px 5px 1px var(--border-color);
+					box-shadow: 0 4px 8px 0 rgba(var(--text-color-rgb), 0.3);
 					border-radius: 10px;
 					cursor: pointer;
-					transition: all 0.5s;
+					transition: all 0.3s;
 				}
+
 				#bookModalToggle:active {
 					box-shadow: unset;
 				}
-		
-				#bookModalToggle:hover::before, #bookModalToggle:hover::after {
-					content: "";
-					position: absolute;
-					top: -10px;
-					left: -10px;
-					right: -10px;
-					bottom: -10px;
-					border: 5px solid var(--accent-color);
-					transition: all 0.5s;
-					animation: bookHover 3s infinite linear;
-					border-radius: 10px;
-				}
-				#bookModalToggle:hover::after {
-					animation: bookHover 3s infinite -1.5s;
+
+				#bookModalToggle:hover {
+					box-shadow: 0 8px 16px 0 rgba(var(--text-color-rgb), 0.3);
 				}
 		
 				#bookModalToggle.cover-missing {
@@ -264,22 +260,6 @@ class BookReview extends HTMLElement {
 					text-align: center;
 					font-weight: bold;
 				}
-		
-			@keyframes bookHover {
-				0%, 
-				100% {
-				  clip-path: inset(0 0 98% 0);
-				}
-				25% {
-				  clip-path: inset(0 98% 0 0);
-				}
-				50% {
-				  clip-path: inset(98% 0 0 0);
-				}
-				75% {
-				  clip-path: inset(0 0 0 98%);
-				}
-			}
 		
 		@media (max-width: 800px) {
 			#bookModal {

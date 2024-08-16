@@ -17,51 +17,25 @@ class PageFooter extends HTMLElement {
 	getDefaultHtml() {
 		return `
 		<footer>
-			<div class="footer-links">
-				<div>
-					<a href="/towerbells-web/pages/SearchTowerBells.html">
-						<!-- Search Icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-						</svg>
-						<br>
-						<b>Search</b>
-					</a>
-				</div>
+			<div class="footer-content">
+				<a href="/towerbells-web/index.html">
+					<img src="/towerbells-web/images/logos/bell_logo.png" alt="TowerBells Logo" width="100px" />
+				</a>
 
-				<div>
-					<a href="/towerbells-web/pages/WebsiteMap.html">
-						<!-- Map Icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
-						  </svg>
-						<br>
-						<b>Site Map</b>
-					</a>
-				</div>
-
-				<div>
-					<a href="/towerbells-web/pages/Introduction/CSZ.html">
-						<!-- Person Circle Icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-						  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-						  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-						</svg>
-						<br>
-						<b>About</b>
-					</a>
-				</div>
-
-				<div>
-					<a href="/towerbells-web/pages/Subscribe.html">
-						<!-- Bell Icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-  							<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
-						</svg>
-						<br>
-						<b>Subscribe</b>
-					</a>
-				</div>
+				<ul>
+					<li>
+						<a href="/towerbells-web/pages/SearchTowerBells.html">Search</a>
+					</li>
+					<li>
+						<a href="/towerbells-web/pages/WebsiteMap.html">Site Map</a>
+					</li>
+					<li>
+						<a href="/towerbells-web/pages/Introduction/CSZ.html">About</a>
+					</li>
+					<li>
+						<a href="/towerbells-web/pages/Subscribe.html">Subscribe</a>
+					</li>
+				</ul>
 			</div>
 
 			<small>
@@ -70,14 +44,14 @@ class PageFooter extends HTMLElement {
 				</p>
 				<b>&#x2022;</b>
 				<p>
-					<a href="/towerbells-web/pages/PrivacyPolicy.html">Privacy Policy</a>
-				</p>
-				<b>&#x2022;</b>
-				<p>
 					Send comments about this page to 
 					<a href="mailto:csz_stl@swbell.net?subject=${this.mailSubject}">
 						the site owner
-					</a><br>
+					</a>
+				</p>
+				<b>&#x2022;</b>
+				<p>
+					<a href="/towerbells-web/pages/PrivacyPolicy.html">Privacy Policy</a>
 				</p>
 			</small>
 		</footer>`;
@@ -87,7 +61,7 @@ class PageFooter extends HTMLElement {
 		const style = document.createElement('style');
 		style.textContent = `
 		footer {
-			padding: 50px 25px;
+			padding: 1rem;
 			padding-bottom: 10px;
 			background: var(--footer-bg-color);
 			color: var(--footer-text-color);
@@ -98,61 +72,69 @@ class PageFooter extends HTMLElement {
 				color: inherit;
 			}
 
-			footer .footer-links {
+			footer .footer-content {
 				width: 100%;
-				margin: auto;
-				margin: auto 10px;
 				display: flex;
+				gap: 1rem;
 				align-items: center;
-				justify-content: center;
-				font-size: 1.5em;
-				text-align: center;
 			}
 
-				footer .footer-links div {
-					margin: 0 20px;
+				footer .footer-content img {
+					width: 85px;
+					filter: invert(1);
 				}
 
-				footer .footer-links svg {
-					height: 50px;
-					width: 50px;
+				footer .footer-content ul {
+					width: 100%;
+					padding: 0;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					gap: 1rem;
+					font-size: 1.5rem;
+					list-style: none;
 				}
+
+					footer .footer-content ul li:not(:last-child) {
+						border-right: 2px solid var(--footer-text-color);
+						padding-right: 1rem;
+					}
 
 			footer small {
 				display: flex;
 				justify-content: center;
-				margin-top: 30px;
+				align-items: center;
 				font-size: 16px;
 			}
 				footer small p {
 					margin: 0 10px;
+					text-align: center;
+				}
+
+				footer small p:first-child {
+					margin-left: 0;
+				}
+
+				footer small p:last-child {
+					margin-right: 0;
 				}
 		  
 		  @media (max-width: 800px) {
-				footer .footer-links {
+				footer .footer-content ul {
 					display: grid;
 				  	grid-template-columns: 1fr 1fr;
 				  	font-size: 1.25em;
 			  	}
 
-				footer .footer-links div {
-					flex: 50%;
-					margin: 5px 0;
-				}
+					footer .footer-content ul li:not(:last-child) {
+						border-right: none;
+						padding-right: 0;
+					}
 				
-				footer .footer-links a {
+				footer .footer-content a {
+					width: fit-content;
 					display: flex;
 					align-items: center;
-				}
-				
-				footer .footer-links svg {
-					height: 30px;
-					width: 30px;
-					margin-right: 10px;
-				}
-
-				footer .footer-links br {
-					display: none;
 				}
 			  
 				footer small {
@@ -160,6 +142,10 @@ class PageFooter extends HTMLElement {
 					text-align: center;
 					font-size: 14px;
 				}
+
+					footer small p {
+						margin: 0;
+					}
 					
 					footer small b {
 						display: none;

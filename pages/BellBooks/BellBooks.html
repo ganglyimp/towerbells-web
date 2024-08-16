@@ -8,11 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/images/logos/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/towerbells-web/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/towerbells-web/favicon-16x16.png">
 	<link rel="manifest" href="/towerbells-web/site.webmanifest">
-	<link rel="mask-icon" href="/towerbells-web/safari-pinned-tab.svg" color="#000000">
+	<link rel="mask-icon" href="/towerbells-web/images/logos/safari-pinned-tab.svg" color="#000000">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 
@@ -32,6 +32,10 @@
 			border-bottom: 1px solid var(--border-color);
 		}
 
+		section:last-child {
+			border-bottom: none;
+		}
+
 		header h1 {
 			font-size: clamp(40px, 5vw, 70px);
 			text-align: center;
@@ -42,37 +46,37 @@
 		}
 
 		header .section-links {
+			margin: 1rem;
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
 		}
 
-		header .section-links>* {
-			margin: 1em;
+		header .section-links > * {
+			margin: 0.5rem;
 		}
 
 		section h2 {
 			font-size: 40px;
 		}
 
-		section .book-review-group {
-			display: flex;
-			flex-wrap: wrap;
+		section.book-review-group {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		}
 
-		section .book-review-group>* {
-			flex: 1;
+			section.book-review-group > * {
+				max-width: 600px;
+			}
+
+		section.book-review-group:has(.active) > *:not(.active) {
+			display: none;
 		}
 
 		@media (max-width: 800px) {
-
 			header,
 			section {
 				margin: 0 1.5em;
-			}
-
-			.spacer-element {
-				display: none;
 			}
 		}
 	</style>
@@ -102,236 +106,238 @@
 				Within each section, entries are presented in reverse chronological order of publication.
 			</p>
 
-			<nav class="section-links">
-				<a href="#Recent">
-					<button class="simple-button tall-line">Recent Publications</button>
-				</a>
+			<div class="section-links">
+				<button class="simple-button" onclick="filterBooks(event, category.recentPublications)">
+					Recent Publications
+				</button>
 
-				<a href="#FoundriesUSA">
-					<button class="simple-button tall-line">American Bellfounders</button>
-				</a>
+				<button class="simple-button" onclick="filterBooks(event, category.americanBellfounders)">
+					American Bellfounders
+				</button>
 
-				<a href="#Fiction">
-					<button class="simple-button tall-line">Fiction</button>
-				</a>
+				<button class="simple-button" onclick="filterBooks(event, category.surveys)">
+					Surveys
+				</button>
 
-				<a href="#General">
-					<button class="simple-button tall-line">General</button>
-				</a>
-			</nav>
+				<button class="simple-button" onclick="filterBooks(event, category.fiction)">
+					Fiction
+				</button>
+
+				<button class="simple-button" onclick="filterBooks(event, category.general)">
+					General
+				</button>
+			</div>
 		</header>
 
-		<section>
-			<h2 id="Recent">Recent Publications</h2>
-
-			<div class="book-review-group">
-				<book-review 
-				 	bookTitle="Bells of Falmouth - Stories from a historic Massachusetts town, uncovered by curiosity about bells"
-					author="Ken Peal" 
-					publisherInfo="EBookBakery Books, 2023" 
-					isbn="978-1-953080-43-1"
-					materialInfo='9" x 6", paperback, viii+96pp, illus.'
-					coverImageSrc="../../images/BellsOfFalmouth_Peal.jpg"
-					bookLink="https://books.google.com/books?id=G4UW0AEACAAJ">
-					<div slot="review-text">
-						<p>
-							Ken's interesting book not only provides a catalog of an important category of surviving
-							historical artifacts, but also presents the social and economic contexts that led to the
-							original acquisition, usage and (in most cases) eventual survival of each one.&nbsp; As
-							such, it helps us to appreciate the heritage of a soundscape that our ancestors knew and
-							that we can to some extent still hear today.
-						</p>
-						<p>
-							With a chapter about each bell (or group of related bells) plus some background material
-							about bells in general, this book provides excellent coverage of its subject.&nbsp; While I
-							could have wished for more photos of the bells themselves, their absence is partly explained
-							by the relative inaccessibility of many of the bells.&nbsp; And it is more than compensated
-							by the inclusion of locator maps, tables of essential details, and a listing of the
-							inscriptions on surviving or otherwise known bells.
-						</p>
-						<p>
-							Altogether, this book is a fine example of what historians elsewhere could do to document
-							and preserve an important but often under-appreciated part of our heritage.
-						</p>
-						<p>
-							Other reviews are available at the book's listing on the Websites of both Amazon and Barnes
-							& Noble.
-						</p>
-					</div>
-				</book-review>
-
-				<div class="spacer-element"></div>
-			</div>
-		</section>
-
-		<section>
-			<h2 id="FoundriesUSA">American Bellfounders</h2>
-
-			<div class="book-review-group">
-				<book-review
-					bookTitle="Large Bells of America - History of Church Bells, Fire Bells, School Bells, Dinner Bells and Their Foundries"
-					author="Neil Goeppinger" 
-					publisherInfo="Suncoast Digital Press, Inc., Sarasota, Florida, USA, 2016"
-					isbn="978-1-939237-45-3" 
-					materialInfo='8.9"x11.4", hardcover, 180pp'
-					coverImageSrc="../../images/LargeBells_Goeppinger.jpg"
-					bookLink="https://books.google.com/books?id=R5AbvgAACAAJ">
-					<p slot="review-text">
-						<a href="/towerbells-web/pages/BellBooks/GoeppingerBook.html">Click here</a> for everything you need to know about 
-						this marvelous book, especially if you already own a copy!
+		<section class="book-review-group">
+			<book-review class="recent-books"
+				bookTitle="Bells of Falmouth"
+				bookSubtitle="Stories from a historic Massachusetts town, uncovered by curiosity about bells"
+				author="Ken Peal" 
+				publisherInfo="EBookBakery Books, 2023" 
+				isbn="978-1-953080-43-1"
+				materialInfo='9" x 6", paperback, viii+96pp, illus.'
+				coverImageSrc="/images/BellsOfFalmouth_Peal.jpg"
+				bookLink="https://books.google.com/books?id=G4UW0AEACAAJ">
+				<div slot="review-text">
+					<p>
+						Ken's interesting book not only provides a catalog of an important category of surviving
+						historical artifacts, but also presents the social and economic contexts that led to the
+						original acquisition, usage and (in most cases) eventual survival of each one.&nbsp; As
+						such, it helps us to appreciate the heritage of a soundscape that our ancestors knew and
+						that we can to some extent still hear today.
 					</p>
-				</book-review>
-
-				<book-review 
-					bookTitle="Paul Revere & the World He Lived In" 
-					author="Esther Forbes"
-					publisherInfo="Houghton Mifflin Company, Boston, 1942"
-					materialInfo="At least two printings exist, in different sizes but with identical content and pagination."
-					coverImageSrc="../../images/PaulRevere_Forbes.jpg"
-					bookLink="https://books.google.com/books?id=-r6sNI9dUfYC">
-					<p slot="review-text">
-						In this authoritative biography of a great American patriot, seven pages (470-476) are devoted
-						to Paul Revere's work as the first important American bellfounder, and there are further
-						mentions of that work in several other places (see the Index to find them).
+					<p>
+						With a chapter about each bell (or group of related bells) plus some background material
+						about bells in general, this book provides excellent coverage of its subject.&nbsp; While I
+						could have wished for more photos of the bells themselves, their absence is partly explained
+						by the relative inaccessibility of many of the bells.&nbsp; And it is more than compensated
+						by the inclusion of locator maps, tables of essential details, and a listing of the
+						inscriptions on surviving or otherwise known bells.
 					</p>
-				</book-review>
-			</div>
-		</section>
+					<p>
+						Altogether, this book is a fine example of what historians elsewhere could do to document
+						and preserve an important but often under-appreciated part of our heritage.
+					</p>
+					<p>
+						Other reviews are available at the book's listing on the Websites of both Amazon and Barnes
+						& Noble.
+					</p>
+				</div>
+			</book-review>
 
-		<section>
-			<h2 id="Fiction">Fiction</h2>
+			<book-review class="bellfounders-books"
+				bookTitle="Large Bells of America"
+				bookSubtitle="History of Church Bells, Fire Bells, School Bells, Dinner Bells and Their Foundries"
+				author="Neil Goeppinger" 
+				publisherInfo="Suncoast Digital Press, Inc., Sarasota, Florida, USA, 2016"
+				isbn="978-1-939237-45-3" 
+				materialInfo='8.9"x11.4", hardcover, 180pp'
+				coverImageSrc="/towerbells-web/images/LargeBells_Goeppinger.jpg"
+				bookLink="https://books.google.com/books?id=R5AbvgAACAAJ">
+				<p slot="review-text">
+					<a href="/towerbells-web/pages/BellBooks/GoeppingerBook.html">Click here</a> for everything you need to know about
+					this marvelous book, especially if you already own a copy!
+				</p>
+			</book-review>
 
-			<div class="book-review-group">
-				<book-review 
-					bookTitle="Is This My Home?" 
-					author="Lynnli Wang" 
-					illustrator="Asako Maruyama"
-					publisherInfo="Metz Grand Carillon, Indiana University, Bloomington, Indiana, USA, 2021"
-					materialInfo='8.6"x5.5", paperback, 20pp' 
-					coverImageSrc="../../images/IsThisHome_Wang.png">
-					<div slot="review-text">
-						<p>
-							This delightful little children's book explains the three tower bell instruments of Indiana
-							University at Bloomington (two carillons and a chime) through the tale of Arthur the
-							squirrel, who seeks his old home in the Metz Carillon but finds a new one in the relocated
-							and expanded Metz Grand Carillon.
-						</p>
-						<p>
-							This book is self published. If you wish to acquire a copy, contact Indiana University's
-							current <a href="https://blogs.iu.edu/jsomorgan/carillon/">University Carillonneur</a>.
-						</p>
-					</div>
-				</book-review>
+			<book-review class="bellfounders-books" 
+				bookTitle="Paul Revere and the World He Lived In"
+				author="Esther Forbes" 
+				publisherInfo="Houghton Mifflin Company, Boston, 1942"
+				materialInfo="At least two printings exist, in different sizes but with identical content and pagination."
+				coverImageSrc="/towerbells-web/images/PaulRevere_Forbes.jpg"
+				bookLink="https://books.google.com/books?id=-r6sNI9dUfYC">
+				<p slot="review-text">
+					In this authoritative biography of a great American patriot, seven pages (470-476) are devoted
+					to Paul Revere's work as the first important American bellfounder, and there are further
+					mentions of that work in several other places (see the Index to find them).
+				</p>
+			</book-review>
 
-				<div class="spacer-element"></div>
-			</div>
-		</section>
+			<book-review class="fiction-books" 
+				bookTitle="Is This My Home?" 
+				author="Lynnli Wang"
+				illustrator="Asako Maruyama"
+				publisherInfo="Metz Grand Carillon, Indiana University, Bloomington, Indiana, USA, 2021"
+				materialInfo='8.6"x5.5", paperback, 20pp' 
+				coverImageSrc="/towerbells-web/images/IsThisHome_Wang.png">
+				<div slot="review-text">
+					<p>
+						This delightful little children's book explains the three tower bell instruments of Indiana
+						University at Bloomington (two carillons and a chime) through the tale of Arthur the
+						squirrel, who seeks his old home in the Metz Carillon but finds a new one in the relocated
+						and expanded Metz Grand Carillon.
+					</p>
+					<p>
+						This book is self published. If you wish to acquire a copy, contact Indiana University's
+						current <a href="https://blogs.iu.edu/jsomorgan/carillon/">University Carillonneur</a>.
+					</p>
+				</div>
+			</book-review>
 
-		<section>
-			<h2 id="Surveys">Surveys</h2>
+			<book-review class="survey-books" 
+				bookTitle="Historic Alabama Bells" 
+				author="Thomas Kaufmann"
+				publisherInfo="The History Press, Charleston, South Carolina, USA, 2019" 
+				isbn="978-1-4671-4495-7"
+				materialInfo='6"x9", paperback, 160pp' 
+				coverImageSrc="/towerbells-web/images/AlabamaBells_Kaufmann.jpg"
+				bookLink="https://books.google.com/books?id=BQC5DwAAQBAJ">
+				<div slot="review-text">
+					<p>
+						This well-written book begins with an introductory chapter, followed by one which briefly
+						identifies and locates ten early bells, ranging from an 1847 Meneely to an 1881 McShane, and
+						including an 1849 T.I.Dyre Jr. and an 1848 Regester &amp; Webb.&nbsp; The next eight
+						chapters alternate between the history of a significant American bell foundry and an Alabama
+						example of its work:&nbsp; Revere, 1828; Hooper, 1859; Blake, 1880 &amp; 1894; Wilbank,
+						1841.&nbsp; A chapter about the Liberty Bell (both the original's visit to the state in 1885
+						and the 1950 Paccard reproduction) is followed by twelve chapters in which the historical
+						significance of both an old bell and the building in which it is located are covered.&nbsp;
+						A concluding chapter expresses hope for the installation of real bells in currently empty
+						bell towers.
+					</p>
+					<p>
+						The book is filled with interesting black-and-white photographs of bells and
+						buildings.&nbsp; Unfortunately, many of those depicting bell inscriptions are almost
+						impossible to decipher.&nbsp; This is only partly because bells are inherently low-contrast
+						subjects for photography.
+					</p>
+					<p>
+						No typographical errors were noted, and only three very minor errors of substance.&nbsp;
+						The 1887 McShane bell pictured on page 34 is not connected to a place (unless the year is
+						a typo).&nbsp; The location of the C.S.Bell foundry (mentioned on page 37) was in Hillsboro
+						(not Hillsborough), Ohio.&nbsp; The proprietorship of the Buckeye Bell Foundry in 1876
+						(mentioned twice on page 143) was not "Vanduzen Tift" but the partnership of E.W.Vanduzen
+						and C.T.Tift, commonly shown on their bells as "Vanduzen &amp; Tift".&nbsp;
+					</p>
+					<p>
+						The author's expertise as an architectural historian shines through in the relatively
+						extensive coverage of the histories of the buildings which house the listed bells.&nbsp;
+						That emphasis on history might explain the general lack of technical information about
+						these bells, such as weights, sizes, and musical notes.&nbsp; That might also explain the
+						curious shift of emphasis from foundry histories in the first half of the book to building
+						histories in the second half of the book.&nbsp; It would have benefitted from more
+						information about the histories of Naylor Vickers of England, the two Meneely foundries of
+						New York state, McShane of Baltimore and Buckeye of Cincinnati, as well as the significant
+						differences between bronze and steel bells and the changes in mounting methods through the
+						decades of the 19th century.
+					</p>
+					<p>
+						Nevertheless, this is a very good general interest book, which may help to stir more
+						widespread interest in the long-neglected tower bells of America.
+					</p>
+				</div>
+			</book-review>
 
-			<div class="book-review-group">
-				<book-review 
-					bookTitle="Historic Alabama Bells" 
-					author="Thomas Kaufmann"
-					publisherInfo="The History Press, Charleston, South Carolina, USA, 2019" 
-					isbn="978-1-4671-4495-7"
-					materialInfo='6"x9", paperback, 160pp' 
-					coverImageSrc="../../images/AlabamaBells_Kaufmann.jpg"
-					bookLink="https://books.google.com/books?id=BQC5DwAAQBAJ">
-					<div slot="review-text">
-						<p>
-							This well-written book begins with an introductory chapter, followed by one which briefly
-							identifies and locates ten early bells, ranging from an 1847 Meneely to an 1881 McShane, and
-							including an 1849 T.I.Dyre Jr. and an 1848 Regester &amp; Webb.&nbsp; The next eight
-							chapters alternate between the history of a significant American bell foundry and an Alabama
-							example of its work:&nbsp; Revere, 1828; Hooper, 1859; Blake, 1880 &amp; 1894; Wilbank,
-							1841.&nbsp; A chapter about the Liberty Bell (both the original's visit to the state in 1885
-							and the 1950 Paccard reproduction) is followed by twelve chapters in which the historical
-							significance of both an old bell and the building in which it is located are covered.&nbsp;
-							A concluding chapter expresses hope for the installation of real bells in currently empty
-							bell towers.
-						</p>
-						<p>
-							The book is filled with interesting black-and-white photographs of bells and
-							buildings.&nbsp; Unfortunately, many of those depicting bell inscriptions are almost
-							impossible to decipher.&nbsp; This is only partly because bells are inherently low-contrast
-							subjects for photography.
-						</p>
-						<p>
-							No typographical errors were noted, and only three very minor errors of substance.&nbsp;
-							The 1887 McShane bell pictured on page 34 is not connected to a place (unless the year is
-							a typo).&nbsp; The location of the C.S.Bell foundry (mentioned on page 37) was in Hillsboro
-							(not Hillsborough), Ohio.&nbsp; The proprietorship of the Buckeye Bell Foundry in 1876
-							(mentioned twice on page 143) was not "Vanduzen Tift" but the partnership of E.W.Vanduzen
-							and C.T.Tift, commonly shown on their bells as "Vanduzen &amp; Tift".&nbsp;
-						</p>
-						<p>
-							The author's expertise as an architectural historian shines through in the relatively
-							extensive coverage of the histories of the buildings which house the listed bells.&nbsp;
-							That emphasis on history might explain the general lack of technical information about
-							these bells, such as weights, sizes, and musical notes.&nbsp; That might also explain the
-							curious shift of emphasis from foundry histories in the first half of the book to building
-							histories in the second half of the book.&nbsp; It would have benefitted from more
-							information about the histories of Naylor Vickers of England, the two Meneely foundries of
-							New York state, McShane of Baltimore and Buckeye of Cincinnati, as well as the significant
-							differences between bronze and steel bells and the changes in mounting methods through the
-							decades of the 19th century.
-						</p>
-						<p>
-							Nevertheless, this is a very good general interest book, which may help to stir more
-							widespread interest in the long-neglected tower bells of America.
-						</p>
-					</div>
-				</book-review>
-
-				<div class="spacer-element"></div>
-			</div>
-		</section>
-
-		<section>
-			<h2 id="General">General</h2>
-
-			<div class="book-review-group">
-				<book-review
-					bookTitle="Bell Ringing - Chimes&mdash;Carillons&mdash;Handbells: the World of the Bell and the Ringer"
-					author="John Camp" 
-					publisherInfo="David & Charles, Newton Abbot, Devon, 1974"
-					isbn="[old style] 0 7153 6088 4"
-					materialInfo='8.5"x5.5", hardback, 160pp, including 16pp of b/w photographs'
-					coverImageSrc="../../images/BellRinging_Camp.png"
-					bookLink="https://books.google.com/books?id=dMoXAQAAIAAJ">
-					<div slot="review-text">
-						<p>
-							The author, an English change ringer, has selected a title that may seem to imply a broader
-							coverage than this book actually has.&nbsp; With a brief introduction, 13 chapters, three
-							appendices, a bibliography and an index, it provides comprehensive coverage of all matters
-							related to change ringing, with only brief excursions into a few other ways that tower bells
-							may be rung.&nbsp; Nevertheless, his somewhat casual style of writing, along with his
-							inclusion of many interesting historical details, makes this a book of very nearly general
-							interest.
-						</p>
-						<p>
-							There are two graphical errors&mdash;Figure 2 (p28) fails to include a ground pulley for the
-							bell rope, and the photo on p108 (top) is upside-down.&nbsp; I do not venture to critique
-							what is written about change ringing.
-						</p>
-						<p>
-							The reviewer's copy of this book, formerly in the holdings of the Norfolk County Library,
-							was signed by the author.
-						</p>
-					</div>
-				</book-review>
-
-				<div class="spacer-element"></div>
-			</div>
+			<book-review class="general-books"
+				bookTitle="Bell Ringing"
+				bookSubtitle="Chimes&mdash;Carillons&mdash;Handbells: the World of the Bell and the Ringer"
+				author="John Camp" publisherInfo="David & Charles, Newton Abbot, Devon, 1974"
+				isbn="[old style] 0 7153 6088 4"
+				materialInfo='8.5"x5.5", hardback, 160pp, including 16pp of b/w photographs'
+				coverImageSrc="/towerbells-web/images/BellRinging_Camp.png"
+				bookLink="https://books.google.com/books?id=dMoXAQAAIAAJ">
+				<div slot="review-text">
+					<p>
+						The author, an English change ringer, has selected a title that may seem to imply a broader
+						coverage than this book actually has.&nbsp; With a brief introduction, 13 chapters, three
+						appendices, a bibliography and an index, it provides comprehensive coverage of all matters
+						related to change ringing, with only brief excursions into a few other ways that tower bells
+						may be rung.&nbsp; Nevertheless, his somewhat casual style of writing, along with his
+						inclusion of many interesting historical details, makes this a book of very nearly general
+						interest.
+					</p>
+					<p>
+						There are two graphical errors&mdash;Figure 2 (p28) fails to include a ground pulley for the
+						bell rope, and the photo on p108 (top) is upside-down.&nbsp; I do not venture to critique
+						what is written about change ringing.
+					</p>
+					<p>
+						The reviewer's copy of this book, formerly in the holdings of the Norfolk County Library,
+						was signed by the author.
+					</p>
+				</div>
+			</book-review>
 		</section>
 	</main>
 
 	<page-footer dateCreated="2019/11/18" 
-				 dateModified="2023/10/28"
+				 dateModified="2023/10/28" 
 				 mailSubject="Comments on BellBooks">
 	</page-footer>
+
+	<script>
+		const category = {
+			recentPublications: 'recent-books',
+			americanBellfounders: 'bellfounders-books',
+			surveys: 'survey-books',
+			fiction: 'fiction-books',
+			general: 'general-books',
+		}
+
+		function filterBooks(clickEvent, categoryClass) {
+			// Unselect the previously selected button
+			const activeElem = document.querySelector('button.active');
+			if (activeElem)
+				activeElem?.classList?.toggle('active');
+
+			// Select the button that was clicked
+			const isUnselectingSelf = activeElem === clickEvent.target;
+			if (!isUnselectingSelf)
+				clickEvent.target.classList.toggle('active');
+
+			// Unmark previously selected books
+			const previouslySelectedBooks = document.querySelectorAll(`.book-review-group > .active`);
+			previouslySelectedBooks?.forEach(b => b.classList.toggle('active'));
+
+			// Mark newly selected books
+			if (!isUnselectingSelf) {
+				const newlySelectedBooks = document.querySelectorAll(`.book-review-group > .${categoryClass}`);
+				newlySelectedBooks?.forEach(b => b.classList.toggle('active'));
+			}
+		}
+	</script>
 </body>
 
 </html>

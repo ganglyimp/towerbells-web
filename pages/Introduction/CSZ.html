@@ -10,11 +10,11 @@
 		bellfoundries, bell foundries, bellfoundry, bell foundry">
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/images/logos/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/towerbells-web/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/towerbells-web/favicon-16x16.png">
 	<link rel="manifest" href="/towerbells-web/site.webmanifest">
-	<link rel="mask-icon" href="/towerbells-web/safari-pinned-tab.svg" color="#000000">
+	<link rel="mask-icon" href="/towerbells-web/images/logos/safari-pinned-tab.svg" color="#000000">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 
@@ -26,6 +26,34 @@
 	<script type="module" src="/towerbells-web/components/NavBar.js" defer></script>
 	<script type="text/javascript" src="/towerbells-web/components/Breadcrumb.js" defer></script>
 	<script type="text/javascript" src="/towerbells-web/components/PageFooter.js" defer></script>
+
+	<style>
+		.bell-group-list {
+			margin: 1rem 0;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+			gap: 1rem;
+		}
+
+			.bell-group-list figure {
+				margin: 0;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 1rem;
+			}
+
+				.bell-group-list figure img {
+					width: 150px;
+					margin: 0;
+					padding: 5px;
+					background-color: var(--light-shade);
+				}
+
+				.bell-group-list figure figcaption > * {
+					display: block;
+				}
+	</style>
 </head>
 
 <body>
@@ -39,14 +67,32 @@
 
 	<main>
 		<header>
-			<h1>Tower Bells</h1>
+			<h1>About TowerBells</h1>
 		</header>
 
 		<section>
 			<p>
+				The TowerBells project has been around for over 30 years. For more details, please refer to our page on 
+				the <a href="/pages/WebsiteHistory.html">Website History</a>.
+			</p>
+		</section>
+
+		<section>
+			<h2>About Carl Scott Zimmerman</h2>
+			<p>
+				The TowerBells project has been around for over 30 years. For more details, please refer to our page on 
+				the <a href="/towerbells-web/pages/WebsiteHistory.html">Website History</a>.
+			</p>
+		</section>
+
+		<section>
+			<h2>About Carl Scott Zimmerman</h2>
+			<p>
 				The <a href="/towerbells-web/index.html">Tower Bells Supersite</a> is a personal project of Carl Scott Zimmerman,
 				whose connections to the worlds of bells are as follows:
 			</p>
+
+			<h3>Carillons</h3>
 			<ul>
 				<li>
 					A Carillonneur member of the Guild of Carillonneurs in North America
@@ -73,14 +119,18 @@
 					(<a href="https://www.carillon.org/">WCF</a>) for two terms; member of the Executive Committee of
 					the WCF as well as its Treasurer
 				</li>
+			</ul>
 
-				<br>
+			<h3>Change-Ringing</h3>
+			<ul>
 				<li>
 					A Resident member (Unattached) of the North American Guild of Change Ringers
 					(<a href="http://www.nagcr.org/">NAGCR</a>) since 1979
 				</li>
-				<br>
+			</ul>
 
+			<h3>Handbells</h3>
+			<ul>
 				<li>
 					A regular member of the Handbell Musicians of America
 					(<a href="https://handbellmusicians.org/">HMA</a>), formerly known as the American Guild
@@ -98,51 +148,58 @@
 						href="http://www.gatewayringers.org/">Gateway Ringers</a>,
 					the first auditioned community handbell choir in the St.Louis, Missouri, area
 				</li>
+			</ul>
 
-				<br>
+			<h3>Campanology</h3>
+			<ul>
 				<li>
 					A historian & genealogist & industrial archaeologist with respect to bellfounders who operated in
 					the city of St.Louis, Missouri, USA, during the 19th and early 20th centuries, with occasional
 					forays into similar investigations for other major cities of the USA
 				</li>
-				<br>
-
-				<li>
-					Member of the following bell-related associations:
-				</li>
-				<dl>
-					<dt>
-						ABAII
-					</dt>
-					<dd>
-						<a href="http://www.americanbell.org/">American Bell Association International, Inc.</a>
-					</dd>
-					<dt>
-						CSBI
-					</dt>
-					<dd>
-						<a href="https://carillonsbi.org/">Carillon Society of Britain and Ireland</a> <br />
-						Originally the British Carillon Society (BCS)
-					</dd>
-					<dt>
-						KNKV
-					</dt>
-					<dd>
-						<a href="https://www.klokkenspel.org/">Koninklijke Nederlandse Klokkenspel Vereniging</a> <br />
-						Originally the Nederlandse Klokkenspel Vereniging (NKV)
-					</dd>
-					<dt>
-						NAWCC/TSCC134
-					</dt>
-					<dd>
-						<a href="https://www.nawcc.org/">National Association of Watch and Clock Collectors</a> /
-						<a href="https://www.tscchapter134/">Tower and Street Clock Chapter</a>
-					</dd>
-				</dl>
 			</ul>
-		</section>
 
-		<section>
+			<h3>Bell Associations</h3>
+			<p>
+				CSZ is also a member of the following bell-related associations:
+			</p>
+			<div class="bell-group-list">
+				<figure>
+					<img src="/towerbells-web/images/logos/ABA_logo.jpg" alt="ABAII Logo" />
+					<figcaption>
+						<b>ABAII</b>
+						<a href="http://www.americanbell.org/">American Bell Association International, Inc.</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/towerbells-web/images/logos/CSBI_logo.png" alt="CSBI Logo" />
+					<figcaption>
+						<b>CSBI</b>
+						<a href="https://carillonsbi.org/">Carillon Society of Britain and Ireland</a>
+						<span>Originally the British Carillon Society (BCS)</span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/towerbells-web/images/logos/KNKV_logo.png" alt="KNKV Logo" />
+					<figcaption>
+						<b>KNKV</b>
+						<a href="https://www.klokkenspel.org/">Koninklijke Nederlandse Klokkenspel Vereniging</a>
+						<span>Originally the Nederlandse Klokkenspel Vereniging (NKV)</span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/towerbells-web/images/logos/NAWCC_logo.png" alt="NAWCC Logo" />
+					<figcaption>
+						<b>NAWCC/TSCC134</b>
+						<span>
+							<a href="https://www.nawcc.org/">National Association of Watch and Clock Collectors</a> /
+							<a href="https://www.tscchapter134.org">Tower and Street Clock Chapter</a>
+						</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<h3>Media Appearances</h3>
 			<p>
 				On Christmas Day of 2022, KPLR-TV (St. Louis) broadcast "Let Them Ring: Bells Past and Present" -- a
 				<a href="https://hecmedia.org/posts/let-them-ring-bells-past-and-present">video</a> in which CSZ
@@ -151,9 +208,17 @@
 		</section>
 
 		<section>
-			<p>
-				See also the <a href="/towerbells-web/pages/WebsiteHistory.html">Website History</a>.
-			</p>
+			<h2>Other Contributors</h2>
+			<dl>
+				<dt>Rendell L.</dt>
+				<dd>Designed site logo and favicons</dd>
+
+				<dt>Baylee Bell</dt>
+				<dd>Created bell tower illustrations displayed on the home page's header.</dd>
+
+				<dt>Margot M.</dt>
+				<dd>Created icons used on home page cards.</dd>
+			</dl>
 		</section>
 	</main>
 

@@ -7,11 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/towerbells-web/images/logos/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/towerbells-web/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/towerbells-web/favicon-16x16.png">
 	<link rel="manifest" href="/towerbells-web/site.webmanifest">
-	<link rel="mask-icon" href="/towerbells-web/safari-pinned-tab.svg" color="#000000">
+	<link rel="mask-icon" href="/towerbells-web/images/logos/safari-pinned-tab.svg" color="#000000">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 
@@ -20,12 +20,14 @@
 	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/article.css">
 
 	<!-- Scripts -->
+	<script type="module" src="/towerbells-web/components/NavBar.js" defer></script>
 	<script type="text/javascript" src="/towerbells-web/components/Breadcrumb.js" defer></script>
 	<script type="text/javascript" src="/towerbells-web/components/PageFooter.js" defer></script>
 </head>
 
 <body>
 	<noscript>JavaScript has been disabled in your browser. Some functionality on this website may be broken.</noscript>
+	<nav-bar outsideTowerBells="true"></nav-bar>	
 	<bread-crumb>
 		<a href="/towerbells-web/index.html">TowerBells Home</a>
 		<a href="/towerbells-web/pages/Essays/UnrelatedEssays.html">Unrelated Essays</a>
@@ -99,23 +101,23 @@
 				above.
 			</p>
 
-			<table>
+			<table style="color: black;">
 				<tr>
-					<td style="background-color: #ffffff;">
+					<td style="background-color: #ffffff; color: black;">
 						Code: #FFFFFF <br />
 						Color: White
 					</td>
-					<td style="background-color: #000000;">
+					<td style="background-color: #000000; color: white;">
 						Code: #000000 <br />
 						Color: Black
 					</td>
-					<td>
+					<td style="color: inherit;">
 						At left:&nbsp; Code: #000000 <br />
 						Color: Black
 					</td>
 				</tr>
 				<tr>
-					<td style="background-color: #ff0000;">
+					<td style="background-color: #ff0000; color: white;">
 						Code: #FF0000 <br />
 						Color: Red
 					</td>
@@ -123,7 +125,7 @@
 						Code: #00FF00 <br />
 						Color: Green
 					</td>
-					<td style="background-color: #0000FF">
+					<td style="background-color: #0000FF; color: white;">
 						Code: #0000FF <br />
 						Color: Blue
 					</td>
@@ -152,13 +154,13 @@
 				Because colors are additive, reducing the amount of a color tends towards black, not towards white:
 			</p>
 
-			<table>
+			<table style="color: white;">
 				<tr>
 					<td style="background-color: #FF0000">
 						Code: #FF0000 <br />
 						Color: Red
 					</td>
-					<td style="background-color: #00FF00">
+					<td style="background-color: #00FF00; color: black;">
 						Code: #00FF00 <br />
 						Color: Green
 					</td>
@@ -198,9 +200,9 @@
 				amounts:
 			</p>
 
-			<table>
+			<table style="color: black;">
 				<tr>
-					<td style="background-color: #FF0000">
+					<td style="background-color: #FF0000; color: white;">
 						Code: #FF0000 <br />
 						Color: Red
 					</td>
@@ -208,9 +210,8 @@
 						Code: #00FF00 <br />
 						Color: Green
 					</td>
-					<td style="background-color: #0000FF">
-						Code: #0000FF
-						<Bbr />
+					<td style="background-color: #0000FF; color: white;">
+						Code: #0000FF <br />
 						Color: Blue
 					</td>
 				</tr>
@@ -243,31 +244,31 @@
 				To get the lighter shades of a secondary color, it is necessary to add the third color.
 			</p>
 
-			<table>
+			<table style="color: black;">
 				<tr>
-					<td BGCOLOR="#00FFFF">Code: #00FFFF<BR>Color: Aqua</td>
-					<td BGCOLOR="#FF00FF">Code: #FF00FF<BR>Color: Magenta</td>
-					<td BGCOLOR="#FFFF00">Code: #FFFF00<BR>Color: Yellow</td>
+					<td style="background-color: #00FFFF">Code: #00FFFF<BR>Color: Aqua</td>
+					<td style="background-color: #FF00FF">Code: #FF00FF<BR>Color: Magenta</td>
+					<td style="background-color: #FFFF00">Code: #FFFF00<BR>Color: Yellow</td>
 				</tr>
 				<tr>
-					<td BGCOLOR="#33FFFF">Code: #33FFFF</td>
-					<td BGCOLOR="#FF33FF">Code: #FF33FF</td>
-					<td BGCOLOR="#FFFF33">Code: #FFFF33</td>
+					<td style="background-color: #33FFFF">Code: #33FFFF</td>
+					<td style="background-color: #FF33FF">Code: #FF33FF</td>
+					<td style="background-color: #FFFF33">Code: #FFFF33</td>
 				</tr>
 				<tr>
-					<td BGCOLOR="#66FFFF">Code: #66FFFF</td>
-					<td BGCOLOR="#FF66FF">Code: #FF66FF</td>
-					<td BGCOLOR="#FFFF66">Code: #FFFF66</td>
+					<td style="background-color: #66FFFF">Code: #66FFFF</td>
+					<td style="background-color: #FF66FF">Code: #FF66FF</td>
+					<td style="background-color: #FFFF66">Code: #FFFF66</td>
 				</tr>
 				<tr>
-					<td BGCOLOR="#99FFFF">Code: #99FFFF</td>
-					<td BGCOLOR="#FF99FF">Code: #FF99FF</td>
-					<td BGCOLOR="#FFFF99">Code: #FFFF99</td>
+					<td style="background-color: #99FFFF">Code: #99FFFF</td>
+					<td style="background-color: #FF99FF">Code: #FF99FF</td>
+					<td style="background-color: #FFFF99">Code: #FFFF99</td>
 				</tr>
 				<tr>
-					<td BGCOLOR="#CCFFFF">Code: #CCFFFF</td>
-					<td BGCOLOR="#FFCCFF">Code: #FFCCFF</td>
-					<td BGCOLOR="#FFFFCC">Code: #FFFFCC</td>
+					<td style="background-color: #CCFFFF">Code: #CCFFFF</td>
+					<td style="background-color: #FFCCFF">Code: #FFCCFF</td>
+					<td style="background-color: #FFFFCC">Code: #FFFFCC</td>
 				</tr>
 			</table>
 
