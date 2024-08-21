@@ -6,8 +6,13 @@ class NavBar extends HTMLElement {
 		this.active = this.getAttribute('active');
 		this.outsideTowerBells = this.getAttribute('outsideTowerBells');
 
+		this.resizeTimeout = null;
 		this.languageData = [];
+
 		this.toggleColorTheme = this.toggleColorTheme.bind(this);
+		this.onWindowResize = this.onWindowResize.bind(this);
+
+		window.addEventListener('resize', this.onWindowResize);
 	}
 
 	async connectedCallback() {
@@ -78,8 +83,15 @@ class NavBar extends HTMLElement {
 			document.body.classList.add('dark-theme');
 			shadowRoot.querySelector('nav').classList.add('dark-theme');
 		}
+
+		// Initializes the nav bar height variable
+		this.onWindowResize();
 		
 		shadowRoot.appendChild(this.getStyles());
+	}
+
+	disconnectedCallback() {
+		window.removeEventListener('resize', this.onWindowResize);
 	}
 
 	openLanguageDropdown() {
@@ -102,6 +114,16 @@ class NavBar extends HTMLElement {
 		const hasDark = document.body.classList.toggle('dark-theme');
 		localStorage.setItem('colorTheme', (hasDark) ? 'dark' : 'light');
 		this.shadowRoot.querySelector('nav').classList.toggle('dark-theme');
+	}
+
+	onWindowResize(e) {
+		clearTimeout(this.resizeTimeout);
+
+		// Sets the height of the nav bar as a CSS variable
+		this.resizeTimeout = setTimeout(() => {
+			const navRect = this.getBoundingClientRect();
+			document.body.style.setProperty('--nav-bar-height', `${navRect.height}px`);
+		}, 100);
 	}
 
 	getBaseHtml() {
@@ -241,9 +263,9 @@ class NavBar extends HTMLElement {
 
 			nav .bi {
 				display: inline-block;
-				width: max(1.5vw, 2rem);
-				height: max(1.5vw, 2rem);
-				font-size: max(1.5vw, 2rem);
+				width: 2rem;
+				height: 2rem;
+				font-size: 2rem;
 				cursor: pointer;
 			}
 

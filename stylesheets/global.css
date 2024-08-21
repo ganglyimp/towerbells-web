@@ -41,6 +41,7 @@
   --small-font-size: 15px;
   --bevel-radius: 10px;
   --pill-radius: 25px;
+  --nav-bar-height: 90px; /* Automatically set by NavBar.js */
   --header-font: 'Playfair Display', Cambria, Georgia, serif;
   --body-font: Georgia, Cambria, serif;
 }
@@ -212,4 +213,8 @@ dt {
 
 .tall-line {
   line-height: 50px;
+}
+
+.center-text {
+  text-align: center;
 }
