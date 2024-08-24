@@ -24,6 +24,30 @@
     <script type="module" src="/components/NavBar.js" defer></script>
     <script type="text/javascript" src="/components/Breadcrumb.js" defer></script>
     <script type="text/javascript" src="/components/PageFooter.js" defer></script>
+
+    <style>
+        .button-group {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table:not(.active) {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            table {
+                font-size: clamp(14px, 0.9vw, var(--body-font-size));
+            }
+
+            .row-comment {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +76,23 @@
                 That order also makes this table fit any number of bells, though the "ringing number" in the first
                 header line only fits an octave of bells.&nbsp; (For more bells than 8, simply repeat to the right.)
             </p>
-            <table>
+            <p>
+                Notice that the keys of Gb and F# are identical from a ringer's viewpoint, though different from a 
+                musician's viewpoint.
+            </p>
+
+            <div class="button-group">
+                <button class="simple-button tall-line active" onclick="setActiveTable(event, 'by-key-signature')">
+                    Sort By Key
+                </button>
+                <button class="simple-button tall-line" onclick="setActiveTable(event, 'by-alphabet')">
+                    Sort Alphabetically
+                </button>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table class="column-row-hover active" id="by-key-signature">
                 <tr>
                     <th>Ringing #</th>
                     <td>8</td>
@@ -246,13 +286,7 @@
                 </tr>
             </table>
 
-            <p>
-                The table above lists the keys in key-signature order from flats to sharps; the table below lists them
-                in alphabetic order from A-flat to G.&nbsp; Notice that the keys of Gb and F# are identical from a
-                ringer's viewpoint, though different from a musician's viewpoint.
-            </p>
-
-            <table>
+            <table class="column-row-hover" id="by-alphabet">
                 <tr>
                     <th>Ringing #</th>
                     <td>8</td>
@@ -473,6 +507,26 @@
                  dateModified="2006/12/09"
                  mailSubject="Comments on Musical Scales">
     </page-footer>
+
+    <script>
+        function setActiveTable(event, tableId) {
+            // If button is already active, do nothing
+            const buttonTarget = event.target;
+            if (buttonTarget.classList.contains('active')) return;
+
+            // Setting state of active buttons
+            const activeButton = document.querySelector('.button-group > button.active');
+            activeButton?.classList?.remove('active');
+
+            buttonTarget.classList.add('active');
+
+            // Setting state of active tables
+            const activeTable = document.querySelector('table.active');
+            activeTable?.classList?.remove('active');
+
+            document.getElementById(tableId).classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
