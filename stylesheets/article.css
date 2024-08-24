@@ -97,9 +97,12 @@ img {
 
 table {
   margin: auto;
+  width: 100%;
   max-width: 100%;
-  border-spacing: 0;
   border-collapse: collapse;
+}
+table.fit-content {
+  width: fit-content;
 }
 table.column-row-hover {
   overflow: hidden;
