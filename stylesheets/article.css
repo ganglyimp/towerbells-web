@@ -80,11 +80,29 @@ img {
   border-radius: 10px;
 }
 
+.table-container {
+  margin: 1rem auto;
+}
+
+.table-container.overflow {
+  height: 500px; 
+  overflow: auto;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10px, black calc(100% - 20px), transparent 100%);
+  padding-bottom: 20px;
+}
+
+  .table-container.overflow > table > thead.sticky {
+    top: 0;
+  }
+
 table {
   margin: auto;
   max-width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
+}
+table.column-row-hover {
+  overflow: hidden;
 }
 
   table tr {
@@ -95,7 +113,14 @@ table {
     background-color: var(--accent-color);
     color: var(--text-color-inverse);
   }
-  table thead tr:hover {
+
+  table.column-row-hover tr:hover {
+    background-color: rgba(var(--accent-color-rgb), 25%);
+		color: var(--text-color);
+  }
+
+  table thead tr:hover, 
+  table.column-row-hover thead tr:hover {
     background-color: transparent;
     color: var(--text-color);
   }
@@ -116,9 +141,27 @@ table {
     border-bottom: 1px solid var(--border-color);
   }
 
+  table.column-row-hover th, 
+  table.column-row-hover td {
+    position: relative;
+  }
+
+    table.column-row-hover td:hover::after,
+    table.column-row-hover th:hover::after {
+      content: "";
+      position: absolute;
+      top: -5000px;
+      left: 0;
+      height: 10000px;
+      width: 100%;
+      background-color: rgba(var(--accent-color-rgb), 25%);
+      z-index: -1;
+    }
+
   table thead.sticky {
     position: sticky;
     top: var(--nav-bar-height);
+    z-index: 999;
   }
 
     table thead.sticky th {
@@ -127,6 +170,10 @@ table {
       border-bottom: 3px solid var(--border-color);
       background-clip: padding-box;
     }
+
+      table thead.sticky tr {
+        border-radius: var(--bevel-radius) var(--bevel-radius) 0 0;
+      }
 
       table thead.sticky th:first-child {
         border-radius: var(--bevel-radius) 0 0 0;
@@ -162,8 +209,13 @@ table {
     margin: 16px;
   }
 
+  .table-container.overflow:has(table.responsive) {
+    height: unset;
+    mask-image: unset;
+  }
+
   table.responsive {
-    margin: unset;
+    margin: auto;
     border: 0;
   }
 
@@ -179,6 +231,7 @@ table {
     }
 
     table.responsive tr {
+      min-width: 250px;
       margin-bottom: 1rem;
       display: block;
       border: 1px solid var(--border-color);
@@ -202,6 +255,10 @@ table {
       font-size: 1rem;
       text-align: right;
     }
+
+      table.responsive td:empty {
+        display: none;
+      }
     
       table.responsive td::before {
         content: attr(data-label);
@@ -214,6 +271,10 @@ table {
       border-radius: var(--bevel-radius) var(--bevel-radius) 0 0;
       background-color: var(--secondary-bg-color);
     }
+
+      table.responsive th:empty {
+        display: none;
+      }
   
       table.responsive tr:hover th {
         color: var(--text-color);
@@ -222,4 +283,14 @@ table {
       table.responsive th:last-child {
         border-radius: var(--bevel-radius);
       }
+
+    table.responsive.column-row-hover tr:hover {
+      background-color: var(--accent-color);
+      color: var(--text-color-inverse);
+    }
+
+    table.responsive.column-row-hover td:hover::after,
+    table.responsive.column-row-hover th:hover::after {
+      display: none;
+    }
 }
