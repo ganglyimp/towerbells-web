@@ -80,36 +80,6 @@ img {
   border-radius: 10px;
 }
 
-table {
-  width: 100%;
-  margin: 1em;
-  border-collapse: collapse;
-}
-tr a {
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-tr:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color-inverse);
-}
-  tr:hover a {
-    color: var(--text-color-inverse);
-    background-color: var(--text-color);;
-    padding: 3px;
-  }
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid var(--border-color);
-}
-tr.section-divide td, tr.section-divide th {
-  border-bottom: 1px solid var(--text-color);
-}
-th.row-comment {
-  border-bottom: none;
-}
-
 .clickable-block {
   display: block;
   box-shadow: 0 4px 8px 0 rgba(var(--text-color-rgb), 0.2);
@@ -126,9 +96,5 @@ th.row-comment {
 
   blockquote {
     margin: 16px;
-  }
-
-  table {
-    margin: unset;
   }
 }

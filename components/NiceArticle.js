@@ -4,8 +4,8 @@ class NiceArticle extends HTMLElement {
 		this.attachShadow({ mode: 'open' });
 
 		this.articleTitle = this.getAttribute('articleTitle');
-		this.navSections = [];
 
+		this.navSections = [];
 		this.scrollTimeout = null;
 		this.resizeTimeout = null;
 

@@ -19,11 +19,33 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/global.css">
 	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/article.css">
+	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/grids-flexboxes-tables.css">
 
 	<!-- Scripts -->
-	<SCRIPT type="module" src="/towerbells-web/components/NavBar.js" defer></SCRIPT>
-	<SCRIPT type="text/javascript" src="/towerbells-web/components/Breadcrumb.js" defer></SCRIPT>
-	<SCRIPT type="text/javascript" src="/towerbells-web/components/PageFooter.js" defer></SCRIPT>
+	<script type="module" src="/towerbells-web/components/NavBar.js" defer></script>
+	<script type="text/javascript" src="/towerbells-web/components/Breadcrumb.js" defer></script>
+	<script type="text/javascript" src="/towerbells-web/components/PageFooter.js" defer></script>
+
+	<style>
+		@media (max-width: 800px) {
+			table tr:has(th[data-label="Note"]) {
+				border: none;
+				border-top: 2px solid var(--border-color);
+				border-bottom: 2px solid var(--border-color);
+				border-radius: 0;
+			}
+
+				table tr th[data-label="Note"] {
+					background-color: transparent;
+					font-size: 1.5rem;
+					text-align: center;
+				}
+
+				table tr:has([data-label="Note"]):hover {
+					background-color: transparent;
+				}
+		}
+	</style>
 </head>
 
 <body>
@@ -56,513 +78,881 @@
 				with a 4&nbsp;1/2" deep hole bored in the bottom end to leave the indicated wall thickness.
 			</p>
 		</header>
-		<section style="margin: auto;">
-			<table>
+		<section class="table-container">
+			<table class="responsive fit-content">
 				<caption>
-					<h3>Table of Sizes of Tubular Tower Bells From the Three Major Manufacturers</h3>
+					<h3>
+						Table of Sizes of Tubular Tower Bells From the Three Major Manufacturers
+					</h3>
 				</caption>
-				<thead>
+				<thead class="sticky">
 					<tr>
-						<th rowspan="2">Note</th>
-						<th colspan="4">Harrington (1880s-1920s)</th>
-						<th colspan="4">Durfee/USTubular (1880s-1920s)</th>
-						<th colspan="4">Deagan (1916-1957)</th>
-					</tr>
-					<tr>
-						<th>Length</th>
-						<th>Diameter</th>
-						<th>Thickness</th>
-						<th>Weight</th>
-						<th>Length</th>
-						<th>Diameter</th>
-						<th>Thickness</th>
-						<th>Weight</th>
-						<th>Length</th>
-						<th>Diameter</th>
-						<th>Thickness</th>
-						<th>Weight</th>
+						<th scope="col">Note</th>
+						<th scope="col">Bellfounder</th>
+						<th scope="col">Length</th>
+						<th scope="col">Diameter</th>
+						<th scope="col">Thickness</th>
+						<th scope="col">Weight</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<th>C1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington (1880s-1920s)</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular (1880s-1920s)</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan (1916-1957)</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>C#1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C#1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D#1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>E1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D#1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							E1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F#1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>139 1/4"</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>G1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F#1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">139 1/4"</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>G#1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							G1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>A1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>112"</td>
-						<td>4 1/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							G#1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>A#1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							A1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">112"</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide note-group">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>B1</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>105 1/4"</td>
-						<td>4 1/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							A#1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>C2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>4 1/2"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							B1
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">105 1/4"</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>C#2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>98"</td>
-						<td>4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/2"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>95"</td>
-						<td>4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C#2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">98"</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D#2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>91 1/2"</td>
-						<td>4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">95"</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>E2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>88 1/2"</td>
-						<td>4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4 1/4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D#2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">91 1/2"</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							E2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">91 1/2"</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4 1/4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F#2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>82 1/4"</td>
-						<td>3 3/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>G2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>79 3/4"</td>
-						<td>3 3/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F#2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">82 1/4"</td>
+							<td data-label="Diameter">3 3/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>G#2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>76 1/8"</td>
-						<td>3 3/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>4"</td>
-						<td>3/4"</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							G2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">79 3/4"</td>
+							<td data-label="Diameter">3 3/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>A2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>73 5/8"</td>
-						<td>3 3/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>3 1/2"</td>
-						<td>3/4" <B>*</B></td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							G#2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">76 1/8"</td>
+							<td data-label="Diameter">3 3/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">4"</td>
+							<td data-label="Thickness">3/4"</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>A#2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>3 1/2"</td>
-						<td>3/4" <B>*</B></td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							A2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">73 5/8"</td>
+							<td data-label="Diameter">3 3/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">3/4" *</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>B2</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>68 5/8"</td>
-						<td>3 3/4"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>3 3/8"</td>
-						<td>3/4" <B>*</B></td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							A#2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">3/4" *</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>C3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>3 3/8"</td>
-						<td>3/4" <B>*</B></td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							B2
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">68 5/8"</td>
+							<td data-label="Diameter">3 3/4"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">3 3/8"</td>
+							<td data-label="Thickness">3/4" *</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>C#3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>63 1/4"</td>
-						<td>3 1/2"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>62 3/4"</td>
-						<td>3 3/8"</td>
-						<td>3/4" <B>*</B></td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">3 3/8"</td>
+							<td data-label="Thickness">3/4" *</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>60 5/8"</td>
-						<td>3 1/2"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							C#3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">63 1/4"</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">62 3/4"</td>
+							<td data-label="Diameter">3 3/8"</td>
+							<td data-label="Thickness">3/4" *</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>D#3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">60 5/8"</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>E3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>3 1/2"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							D#3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							E3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>F#3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>52"</td>
-						<td>3 1/2"</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
-					<tr>
-						<th>G3</th>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>(n/a)</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
-						<td>?</td>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							F#3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">52"</td>
+							<td data-label="Diameter">3 1/2"</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+					</tr>
+					<tr class="section-divide note-group">
+						<th rowspan="4" data-label="Note">
+							G3
+						</th>
+						<tr>
+							<th data-label="Bellfounder">Harrington</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
+						<tr>
+							<th data-label="Bellfounder">Durfee/USTubular</th>
+							<td data-label="Length">(n/a)</td>
+							<td data-label="Diameter">(n/a)</td>
+							<td data-label="Thickness">(n/a)</td>
+							<td data-label="Weight">(n/a)</td>
+						</tr>
+						<tr class="section-divide">
+							<th data-label="Bellfounder">Deagan</th>
+							<td data-label="Length">?</td>
+							<td data-label="Diameter">?</td>
+							<td data-label="Thickness">?</td>
+							<td data-label="Weight">?</td>
+						</tr>
 					</tr>
 				</tbody>
 			</table>

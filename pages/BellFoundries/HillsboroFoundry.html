@@ -18,6 +18,7 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/global.css">
 	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/article.css">
+	<link rel="stylesheet" type="text/css" href="/towerbells-web/stylesheets/grids-flexboxes-tables.css">
 
 	<!-- Scripts -->
 	<script type="module" src="/towerbells-web/components/NavBar.js" defer></script>
@@ -45,27 +46,31 @@
 				Ohio, it is at least possible to determine the time period within which the bell must have been
 				made.&nbsp; That is because the name of the firm changed as follows:
 			</p>
-			<table>
-				<tr>
-					<th>Name</th>
-					<th>Years of Operation</th>
-					<th>Type of Operation</th>
-				</tr>
-				<tr>
-					<td>C. S. Bell</td>
-					<td>1875 - 1882</td>
-					<td>Single proprietorship</td>
-				</tr>
-				<tr>
-					<td>C. S. Bell &amp; Co.</td>
-					<td>1882 - 1894</td>
-					<td>Partnership</td>
-				</tr>
-				<tr>
-					<td>The C. S. Bell Co.</td>
-					<td>1894 - 1970s</td>
-					<td>Corporation</td>
-				</tr>
+			<table class="responsive">
+				<thead>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Years of Operation</th>
+						<th scope="col">Type of Operation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th data-label="Name">C. S. Bell</th>
+						<td data-label="Years of Operation">1875 - 1882</td>
+						<td data-label="Type of Operation">Single proprietorship</td>
+					</tr>
+					<tr>
+						<th data-label="Name">C. S. Bell &amp; Co.</th>
+						<td data-label="Years of Operation">1882 - 1894</td>
+						<td data-label="Type of Operation">Partnership</td>
+					</tr>
+					<tr>
+						<th data-label="Name">The C. S. Bell Co.</th>
+						<td data-label="Years of Operation">1894 - 1970s</td>
+						<td data-label="Type of Operation">Corporation</td>
+					</tr>
+				</tbody>
 			</table>
 			<p>
 				<small>
