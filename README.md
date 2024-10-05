@@ -15,7 +15,7 @@ TowerBells is a gigantic database of bell towers (obviously) spanning carillons,
 
 ## So how are *you* involved with TowerBells?
 
-So glad you asked. Back when I was a university student, I got *very* involved in carillons (y'know, those giant bells played by a giant wooden keyboard). I often used TowerBells.org as a resource whenever traveling, and it was invaluable in helping me figure out *which exact* church I would need to harass into letting me inside of their belfry. 
+So glad you asked. Back when I was a university student, I got *very* involved in carillons (y'know, those giant bells played by a giant wooden keyboard). I often used TowerBells.org as a resource whenever traveling, and it was invaluable in helping me figure out *which exact* church I would need to harass into letting me inside of their belfry.
 
 Looking at this site, a few things begun to weigh on my mind. The design is a bit... dated. The site's structured like a winding labyrinth. And the entire front-end is written in glorious HTML4 (for reference, [HTML5 was published as a W3C Recommendation in 2014](https://www.w3.org/press-releases/2014/html5-rec/)). Carl explains some of these design choices on [this page here](https://towerbells.org/data/maintenance.html). I've been told that people have spent *years* trying to convince him to modernize, but to no avail. So as a tragically inexperienced comp sci graduate, I thought maybe I could try sending him an email.
 
