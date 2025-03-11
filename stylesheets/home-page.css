@@ -66,6 +66,11 @@
         font-size: inherit;
       }
 
+.home-page main {
+  max-width: 1500px;
+  margin: auto;
+}
+
 .home-page h2 {
   border-top: 1px solid var(--text-color);
   border-bottom: 1px solid var(--text-color);
