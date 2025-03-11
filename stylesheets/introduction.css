@@ -27,7 +27,7 @@
     background-color: transparent;
     text-align: left;
     color: var(--text-color);
-    font-size: clamp(20px, 2vw, 1.5em);
+    font-size: clamp(20px, 2vw, 1.3rem);
     opacity: 0.5;
     cursor: pointer;
   }
